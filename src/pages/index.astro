@@ -1,6 +1,5 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
@@ -10,106 +9,35 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header />
-		<section class="desktop">
-				<div class="container">
-					<div class="desktop-folder">
-						<div class="index-tab"></div>
-					</div>
-					<p>Blogs</p>
-				</div>
-				<div class="container">
-					<div class="desktop-folder">
-						<div class="index-tab"></div>
-					</div>
-					<p>Leerdoelen</p>
-				</div>
-				<div class="container">
-					<div class="desktop-folder">
-						<div class="index-tab"></div>
-					</div>
-					<p>Vakken</p>
-				</div>
-			</section>
 		<main>
-			<div class="hero">
-				<div class="deco"></div>
-				<h1>Alisha's weekly <br> nerd blog</h1>
-				<p>Mijn collectie van blogs van de sprekers voor de Minor Web Design & Development (MWDD)</p>
-			</div>
-			<article class="folder">
-				<a href="/blog/first-post/">
-					<div class="map">
-						<div class="tab odd">
-							<mark>Kilian Valkhof</mark>
-							<mark>01</mark>
+			<section class="desktop">
+				<a href="/blogs">
+					<div class="container">
+						<div class="desktop-folder">
+							<div class="index-tab"></div>
 						</div>
+						<p>Blogs</p>
 					</div>
 				</a>
-				<a href="/blog/second-post/">
-					<div class="map">
-						<div class="tab even">
-							<mark>PPK</mark>
-							<mark>02</mark>
+					<div class="container">
+						<div class="desktop-folder">
+							<div class="index-tab"></div>
 						</div>
+						<p>Leerdoelen</p>
 					</div>
-				</a>
-				<a href="/blog/third-post/">
-					<div class="map">
-						<div class="tab odd">
-							<mark>Nils Binder</mark>
-							<mark>03</mark>
+					<div class="container">
+						<div class="desktop-folder">
+							<div class="index-tab"></div>
 						</div>
+						<p>Vakken</p>
 					</div>
-				</a>
-				<a href="/blog/robbert/">
-					<div class="map">
-						<div class="tab middle">
-							<mark>Robbert Broersma</mark>
-							<mark>04</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/rosa/">
-					<div class="map">
-						<div class="tab even">
-							<mark>Rosa</mark>
-							<mark>05</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/johan/">
-					<div class="map">
-						<div class="tab middle">
-							<mark>Johan</mark>
-							<mark>06</mark>
-						</div>
-					</div>
-				</a>
-				<a href="blogs/smashingconf.html">
-					<div class="map">
-						<div class="tab odd">
-							<mark>Smashing conf</mark>
-							<mark>dag 1</mark>
-						</div>
-					</div>
-				</a>
-				<a href="blogs/twyw.html">
-					<div class="map">
-						<div class="tab middle">
-							<mark>TWYW</mark>
-							<mark>dag 1</mark>
-						</div>
-					</div>
-				</a>
-				<div class="map">
-					<div class="tab even">
-						<mark>CSS day</mark>
-						<mark>(soon)</mark>
-					</div>
-				</div>
-				<button><a href="blogs/wn4.html">Random blog!</a></button>
-			</article>
+			</section>
 		</main>
 	</body>
 </html>
+
+<style>
+	main {
+		align-items: start;
+	}
+</style>

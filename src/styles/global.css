@@ -11,7 +11,6 @@
 
 main {
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
@@ -73,108 +72,8 @@ ol li {
 	margin: 10px 0;
 }
 
-.folder {
-	display: flex;
-	flex-direction: column;
-	outline: 1px solid var(--off-black);
-	padding: 75px 25px 40px 25px;
-	border-radius: 5px;
-	width: 1000px;
-	box-shadow: 15px 15px 0 var(--off-black);
-}
-
-.hero {
-	padding: 50px 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-
-.deco {
-	width: 15px;
-	aspect-ratio: 1;
-	box-shadow: 
-    15px 0 green,
-    30px 0 rgb(105, 41, 255),
-	45px 0 blue;
-	background-color: red;
-}
-
-.map {
-	outline: 1px solid var(--off-black);
-	position: relative;
-	padding: 10px;
-	height: 35px;
-	background-color: var(--bg);
-	animation: moveUp 1s ease;
-}
-
-.blog-content {
-	width: 80ch;
-	padding: 25px 0;
-}
-
-.map:hover {
-	cursor: pointer;
-	background-color: var(--bg-hover);
-	.tab {
-		background-color: var(--bg-hover);
-	}
-}
-
-.tab {
-	width: 250px;
-	color: black;
-	border-top: 1px solid var(--off-black);
-	border-left: 1px solid var(--off-black);
-	border-right: 1px solid var(--off-black);
-	background-color: var(--bg);
-	position: absolute;
-	bottom: 35px;
-	padding: 10px 40px;
-	border-radius: 5px 5px 0 0;
-	display: flex;
-    justify-content: space-between;
-}
-
-.odd {
-	left: 45px;
-}
-
-.ref {
-	width: 80ch;
-}
-
-.even {
-	right: 45px;
-}
-
-.middle {
-	right: 350px;
-}
-
-.blog-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.active {
-	background: var(--bg-hover);
-}
-
-.vakken-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 25px;
-	flex-wrap: wrap;
-}
-
 .desktop {
 	padding: 30px;
-	display: flex;
 }
 
 .container {
@@ -187,7 +86,7 @@ ol li {
 	position: relative;
 	width: 140px;
 	height: 64px;
-	margin: 15px 0;
+	margin: 2cap 0;
 	box-shadow: 10px 10px 0 var(--off-black);
 	border-radius: 0 3px 3px 3px;
 	&:hover {
@@ -207,13 +106,4 @@ ol li {
 	position: absolute;
 	bottom: 64px;
 	left: -1px;
-}
-
-@keyframes moveUp {
-	0% {
-		margin-top: -25px;
-	}
-	100% {
-		margin-top: 0;
-	}
 }

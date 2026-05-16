@@ -1,0 +1,216 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="blog" description="blogs" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="hero">
+				<div class="deco"></div>
+				<h1>Alisha's weekly <br> nerd blog</h1>
+				<p>Mijn collectie van blogs van de sprekers voor de Minor Web Design & Development (MWDD)</p>
+			</div>
+			<article class="folder">
+				<a href="/blog/first-post/">
+					<div class="map">
+						<div class="tab odd">
+							<mark>Kilian Valkhof</mark>
+							<mark>01</mark>
+						</div>
+					</div>
+				</a>
+				<a href="/blog/second-post/">
+					<div class="map">
+						<div class="tab even">
+							<mark>PPK</mark>
+							<mark>02</mark>
+						</div>
+					</div>
+				</a>
+				<a href="/blog/third-post/">
+					<div class="map">
+						<div class="tab odd">
+							<mark>Nils Binder</mark>
+							<mark>03</mark>
+						</div>
+					</div>
+				</a>
+				<a href="/blog/robbert/">
+					<div class="map">
+						<div class="tab middle">
+							<mark>Robbert Broersma</mark>
+							<mark>04</mark>
+						</div>
+					</div>
+				</a>
+				<a href="/blog/rosa/">
+					<div class="map">
+						<div class="tab even">
+							<mark>Rosa</mark>
+							<mark>05</mark>
+						</div>
+					</div>
+				</a>
+				<a href="/blog/johan/">
+					<div class="map">
+						<div class="tab middle">
+							<mark>Johan</mark>
+							<mark>06</mark>
+						</div>
+					</div>
+				</a>
+				<a href="blogs/smashingconf.html">
+					<div class="map">
+						<div class="tab odd">
+							<mark>Smashing conf</mark>
+							<mark>dag 1</mark>
+						</div>
+					</div>
+				</a>
+				<a href="blogs/twyw.html">
+					<div class="map">
+						<div class="tab middle">
+							<mark>TWYW</mark>
+							<mark>dag 1</mark>
+						</div>
+					</div>
+				</a>
+				<div class="map">
+					<div class="tab even">
+						<mark>CSS day</mark>
+						<mark>(soon)</mark>
+					</div>
+				</div>
+				<button><a href="blogs/wn4.html">Random blog!</a></button>
+			</article>
+		</main>
+	</body>
+</html>
+
+<style>
+	:root {
+	--bg: #DEDEDE;
+	--bg-hover: #cdcdcd;
+	--off-black: rgb(26, 26, 26);
+	}
+
+
+	main {
+		align-items: center;
+	}
+
+	.folder {
+		display: flex;
+		flex-direction: column;
+		outline: 1px solid var(--off-black);
+		padding: 75px 25px 40px 25px;
+		border-radius: 5px;
+		width: 1000px;
+		box-shadow: 15px 15px 0 var(--off-black);
+	}
+
+.hero {
+	padding: 50px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.deco {
+	width: 15px;
+	aspect-ratio: 1;
+	box-shadow: 
+    15px 0 green,
+    30px 0 rgb(105, 41, 255),
+	45px 0 blue;
+	background-color: red;
+}
+
+.map {
+	outline: 1px solid var(--off-black);
+	position: relative;
+	padding: 10px;
+	height: 35px;
+	background-color: var(--bg);
+	animation: moveUp 1s ease;
+}
+
+.blog-content {
+	width: 80ch;
+	padding: 25px 0;
+}
+
+.map:hover {
+	cursor: pointer;
+	background-color: var(--bg-hover);
+	.tab {
+		background-color: var(--bg-hover);
+	}
+}
+
+.tab {
+	width: 250px;
+	color: black;
+	border-top: 1px solid var(--off-black);
+	border-left: 1px solid var(--off-black);
+	border-right: 1px solid var(--off-black);
+	background-color: var(--bg);
+	position: absolute;
+	bottom: 35px;
+	padding: 10px 40px;
+	border-radius: 5px 5px 0 0;
+	display: flex;
+    justify-content: space-between;
+}
+
+.odd {
+	left: 45px;
+}
+
+.ref {
+	width: 80ch;
+}
+
+.even {
+	right: 45px;
+}
+
+.middle {
+	right: 350px;
+}
+
+.blog-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.active {
+	background: var(--bg-hover);
+}
+
+.vakken-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 25px;
+	flex-wrap: wrap;
+}
+
+@keyframes moveUp {
+	0% {
+		margin-top: -25px;
+	}
+	100% {
+		margin-top: 0;
+	}
+}
+
+</style>
