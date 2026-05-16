@@ -1,16 +1,83 @@
 ---
-title: 'Third post'
+title: 'Nils Binder - WN 3'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 22 2022'
-heroImage: '../../assets/blog-placeholder-2.jpg'
+pubDate: '4 March 2026'
+heroImage: '../../assets/a.jpg'
+
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+# WN 3
+## Nils Binder
+## On Creativity on the web
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Nils from 9 elements.
+Nils is still a UX designer, he works for FC Schalke 04. Did the UX design for the app -> biggest project he's worked on
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+OECD -> worked on an internal project and is still working on a project
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+CSS day 2023 felt boring
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+Back in the day everyone used photoshop to design websites. Now people use figma 
+to design websites. Figma's layout aligns with css properties, can use variables for colors.
+
+So we have these great tools but what kind of websites are we designing?
+
+<img src="img/wire.png">
+
+ChatGPT
+Figma
+Tailwind
+React
+are cool but also create boring websites
+
+When designing a layout don't look at pixels, look at the layout.
+
+```html
+.fancy-text {
+	display: grid;
+	grid-template-columns: 2fr 3fr auto 1fr;
+}
+
+h1 {
+	grid-column: 2/4;
+}
+
+p {
+	grid-column: 3/4;
+}
+```
+
+The website for R26
+[r26.ruhr](https://r26.ruhr/)
+didn't use a video instead they used an image script. It's a script with 31 images that's like a flipbook. 
+
+```
+animation: stop-motion 3s steps(31,end) infinite;
+```
+
+### subgrid
+When you define a grid you can use another grid in it to make more interesting layouts.
+
+[blog about subgrid timetable](https://9elements.com/blog/building-a-multi-stage-timetable-with-modern-css-using-grid-subgrid-round-and-mod/)
+
+
+we like todo layouts that are not just centered 
+[ernst+co](https://ernst-co.com/de/)
+ 
+You can select a first line in a text with the first-line selector
+```html
+ p::first-line {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+```
+
+[Bonabry](https://www.bonabry.de/en/)
+A good example of using viewtransitions
+
+[Bonamic](https://www.bonamic.de/)
+Theres a lot of subgrid going on to make this possible. It's nice to 
+see something that's diffrent.
+
+Usaly designers give a 2d design without animations, it's up to you as a creative coder to think of the animations.

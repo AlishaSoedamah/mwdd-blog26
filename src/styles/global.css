@@ -189,13 +189,17 @@ ol li {
 	height: 64px;
 	margin: 15px 0;
 	box-shadow: 10px 10px 0 var(--off-black);
-
+	border-radius: 0 3px 3px 3px;
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 .index-tab {
 	border-top: 1px solid black;
 	border-left: 1px solid black;
 	border-right: 1px solid var(--off-black);
+	border-radius: 3px 3px 0 0;
 	background-color: var(--bg);
 	padding: 5px;
 	width: 50px;
