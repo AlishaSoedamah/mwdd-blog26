@@ -1,0 +1,107 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import Header from '../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+<body>
+	<section>
+		<main>
+			<Header />
+			<h2>Leerdoelen meesterproef</h2>
+			<ol>
+				<li>
+					Ik wil voor de meesterproef meer betsaande CSS tools op een manier gebruiken die ik niet vaak gebruikt heb. Waarom: het is handig voor mezelf om te weten wat je allemaal kunt kun met bestaande CSS technieken.
+					Om dit leerdoel te behalen ben ik van plan om bijvoorbeeld meer met SVG filters, view transitions en gradients te gaan werken. Ik heb deze dingen wel eens een keer gebruikt en geanimeerd maar ik had nooit door hoe veel dingen 
+					ze eigenlijk kunnen en hoe creatief deze tools kunnen worden ingezet.
+				</li>
+				<li>
+					Kwaliteit > kwantiteit. Eigenlijk wil je liever een goed klein gedeelte hebben
+					van een website dan de hele website die dan slecht gebouwd is en de "wauw" mist. Ik heb heel vaak dat ik maar gewoon iets wil maken dat "af"
+					is en niet per se tot de details is uitgewerkt. Wat jammer is want ik kan best goed iets uitwerken als ik er echt voor ga zitten. Om dit
+					leerdoel te halen ga ik hier bewuster van worden en ga ik me meer focusen op micro interacties/details.
+				</li>
+				<li>
+					Professionele doelen: voor het professionele doel wil ik vooral meer initiatief nemen voor de taken binnen meesterproef omdat ik vaak wegval bij groeps projecten als iets niet gaat zoals ik dat wil. Ik ben van plan dit te doen door bepaalde taken op me te nemen, mijn mening naar de groep te uiten en vaker om hulp vragen als ik vast zit.
+				</li>
+			</ol>
+			<h3>Reflectie</h3>
+			<p class="ref">
+				Tijdens mijn projecten ben ik gegroeid in zowel web development als mijn manier van ontwikkelen. Ik ben beter geworden in het maken van consistente designs waarbij onderdelen goed bij elkaar passen en samen één geheel vormen. Hierdoor let ik bewuster op thema's, CSS technieken en de algemene uitstraling van een website. Ik merk dat mijn ontwerpen hierdoor professioneler aanvoelen.
+				Daarnaast ben ik georganiseerder gaan werken in code. Waar ik eerder soms zonder duidelijke structuur werkte, denk ik nu meer na over de opbouw van mijn bestanden en componenten. Ik heb nieuwe manieren ontdekt om mijn code overzichtelijker en efficiënter te maken. Dit helpt niet alleen mijzelf tijdens het ontwikkelen, maar maakt het ook makkelijker om later onderdelen aan te passen of terug te vinden.
+				Ook ben ik me bewuster geworden van toegankelijkheid binnen websites. Ik heb meer geleerd over hoe screen readers werken en waarom het belangrijk is om websites toegankelijk te maken voor verschillende gebruikers. Hierdoor let ik nu beter op semantische HTML, duidelijke structuur en het correct gebruiken van labels en elementen. Ik realiseer me dat toegankelijkheid niet iets extra’s is, maar een belangrijk onderdeel van goed webdesign en development.
+				Wat ik vooral meeneem uit deze periode is dat een goed eindresultaat niet alleen draait om hoe iets eruitziet, maar ook om structuur, gebruiksvriendelijkheid en toegankelijkheid. In toekomstige projecten wil ik mezelf verder ontwikkelen in het combineren van design, techniek en accessibility.
+			</p>
+			<h3>Weekly Nerds</h3>
+			<p class="ref">Ik vond de WN van Robbert Broersma het meest interesant omdat ik vooral daaruit inspo heb gekregen voor het vak BT. Ik heb uit zijn talk het volgende gehaald:</p>
+			<ul>
+				<li>Geen jargon of gekke afkorting(en) gebruiken</li>
+				<li>Icons van 44x44px zijn gebruiksvriedelijk</li>
+				<li>Het duidelijk in welke stap heet formulier daadwerkelijk wordt verzonden</li>
+				<li>Er staat verpicht of niet verplicht in tekst en niet allen een '*'</li>
+				<li>Elke invoerveld heeft een label</li>
+			</ul>
+			<h3>Hackaton</h3>
+			<p class="ref">
+				Wij hebben de eerste plek gewonnen bij de hackaton en mochten naar the smashing conf
+				Tijdens de hackaton hebben ik Choice, Romy en Mats een website gemaakt
+				voor Nebula Xplorer.
+			</p>
+				<h4>Dag 1 - 23.03.2026</h4>
+				<p class="ref">
+					Tijdens de eerste dag hadden we het over alle dingen die we op de website wilde laten terug komen zoals de satellite
+					en dat we veel scroll animaties gingen gebruiken in de site. We hadden toen een lijst met dit:
+				</p>
+				<ul>
+					<li>De cursor is een planeet die verandered als de pagina opnieuw wordt geladen</li>
+					<li>De satelliet veranderd naar de sketch versie als je erover hoverd</li>
+					<li>Wat het design van de hero ging worden</li>
+					<li>Een zwart gat voordat je de website in komt</li>
+					<li>Dat de satelliet als scrollbar wordt gebruikt hoe verder je naar beneden gaat</li>
+					<li>Sterren op de achtergrond van de website</li>
+				</ul>
+				<h4>Dag 2 - 24.03.2026</h4>
+				<ul>
+					<li>De rest van de body van de site opmaken</li>
+					<li>Een easter egg toevoegen + het geluid</li>
+					<li>De footer van de website design + uitbouwen </li>
+				</ul>
+				<h4>Dag 3 - 25.03.2026</h4>
+				<ul>
+					<li>Vooral de site responsive maken</li>
+					<li>Nog meer animaties op de website</li>
+					<li>afmaken van de laatste dingen</li>
+					<li>3d object in de easter egg gedaan</li>
+				</ul>
+				<h4>Dag 4 - 26.03.2026</h4>
+				<p>De laaste dag van de hackaton, afsluiting en de reflectie inleveren</p>
+		</main>
+	</section>
+	<section>
+		<h2>Sitemap</h2>
+		<pre>
+			wn/
+			├── blogs/
+			│   ├── KilianValkhof.md
+			│   ├── PPK.md
+			│   ├── NilsBinder.md
+			│   ├── RobbertBroersma.md
+			│   ├── Rosa.md
+			│   ├── Johan.md
+			│   ├── sp0.md
+			│   ├── webYouWant.md
+			│   ├── smashingConf.md
+			│   ├── cssDay.md
+			│   └── Hackaton.md
+			├── leerdoelen.html
+			├── vakken.html
+			└── index.html
+		</pre>
+	</section>
+</body>
+</html>
