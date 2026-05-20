@@ -1,0 +1,59 @@
+<div class="custom-menu" id="customMenu">
+	<ul>
+		<li><a href="/">Project 1</a></li>
+		<li><a href={`/blogs`}>Project 2</a></li>
+		<li><a href={`/vakken`}>Project 3</a></li>
+		<li><a href={`/leerdoelen`}>Project 4</a></li>
+	</ul>
+</div>
+
+<style>
+	.custom-menu {
+		position: fixed;
+		border-radius: 2px;
+		background: var(--bg);
+		z-index: 2;
+		li:first-child
+		{
+			border-radius: 5px 5px 0 0;
+		}
+		li:last-child
+		{
+			border-radius: 0 0 5px 5px;
+		}
+	}
+
+	.custom-menu > ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		width: 225px;
+		box-shadow: 8px 8px 0 var(--off-black);
+		background: var(--bg);
+		border-radius: 5px;
+		li {
+			font-family: 'Silkscreen', 'Courier New', Courier, monospace;
+			font-weight: 400;
+			font-style: normal;
+			border: 1px solid var(--off-black);
+			padding: 10px;
+			margin-left: -1px;
+			margin-top: -1px;
+			margin-bottom: -1px;
+		}
+	}
+</style>
+
+<script>
+	const customMenu = document.getElementById("customMenu");
+	document.addEventListener("contextmenu", (event) => {
+		event.preventDefault();
+		customMenu.style.top = `${event.clientY}px`;
+		customMenu.style.left = `${event.clientX}px`;
+		customMenu.style.display = "block";
+	});
+
+	document.addEventListener("click", () => {
+		customMenu.style.display = "none";
+	});
+</script>

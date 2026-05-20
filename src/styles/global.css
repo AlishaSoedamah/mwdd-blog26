@@ -22,10 +22,16 @@ body {
 
 p {
 	line-height: 150%;
+	font-family: 'Silkscreen', 'Courier New', Courier, monospace;
+	font-weight: 400;
+  	font-style: normal;
 }
 
 mark {
 	background-color: transparent;
+	font-family: 'Silkscreen', 'Courier New', Courier, monospace;
+	font-weight: 400;
+  	font-style: normal;
 }
 
 h1 {
@@ -72,6 +78,35 @@ ol li {
 	margin: 10px 0;
 }
 
+footer {
+	outline: rgb(0, 0, 0) solid 1px;
+	padding: 20px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+}
+
+svg {
+	width: 0;
+	height: 0;
+}
+
+body::before {
+	z-index: 3;
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: "";
+	width: 150vw;
+	height: 150vh;
+	mix-blend-mode: color-burn;
+	opacity: 100%;
+	filter: url(#noiseFilter) contrast(100%);
+	animation: --move-static 0.5s infinite;
+	pointer-events: none;
+}
+
 .desktop {
 	padding: 30px;
 }
@@ -106,4 +141,50 @@ ol li {
 	position: absolute;
 	bottom: 80px;
 	left: -1px;
+}
+
+.file-corner {
+	position: absolute;
+	right: -1px;
+    top: -1px;
+	width: 25px;
+	aspect-ratio: 1;
+	border-top: #DEDEDE solid 1px;
+	border-right: #DEDEDE solid 1px;
+	border-left: rgb(0, 0, 0) solid 1px;
+	border-bottom: rgb(0, 0, 0) solid 1px;
+	z-index: 1;
+	&::after {
+		content: "";
+		position: absolute;
+		background: var(--off-black);
+		width: 35px;
+		height: 1px;
+		transform: rotate(45deg);
+		top: 11px;
+		right: -6px;
+	}
+}
+
+.file-desktop {
+	position: relative;
+	width: 100px;
+	height: 120px;
+	border: rgb(0, 0, 0) solid 1px;
+	margin: 20px 0;
+	z-index: 0;
+}
+
+@keyframes --move-static {
+	0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(5%,5%) }
+    30% { transform: translate(-5%,-5%) }
+    40% { transform: translate(5%,5%) }
+    50% { transform: translate(-5%,5%) }
+    60% { transform: translate(5%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-5%,0) }
+    90% { transform: translate(5%,5%) }
+    100% { transform: translate(-5%,0) }
 }

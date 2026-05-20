@@ -1,6 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
+import ContextMenu from '../components/ContextMenu.astro';
 ---
 
 <!doctype html>
@@ -9,7 +9,18 @@ import Header from '../components/Header.astro';
 		<BaseHead title="blog" description="blogs" />
 	</head>
 	<body>
-		<Header />
+		<ContextMenu/>
+		<svg>
+			<filter id="noiseFilter">
+				<feTurbulence
+				type="noise"
+				baseFrequency="1"
+				numOctaves="8"
+				stitchTiles="stitch"
+				>
+				</feTurbulence>
+			</filter>
+		</svg>
 		<main>
 			<div class="hero">
 				<div class="deco"></div>
@@ -114,94 +125,94 @@ import Header from '../components/Header.astro';
 		box-shadow: 15px 15px 0 var(--off-black);
 	}
 
-.hero {
-	padding: 50px 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-
-.deco {
-	width: 15px;
-	aspect-ratio: 1;
-	box-shadow: 
-    15px 0 green,
-    30px 0 rgb(105, 41, 255),
-	45px 0 blue;
-	background-color: red;
-}
-
-.map {
-	outline: 1px solid var(--off-black);
-	position: relative;
-	padding: 10px;
-	height: 35px;
-	background-color: var(--bg);
-	animation: moveUp 1s ease;
-}
-
-.blog-content {
-	width: 80ch;
-	padding: 25px 0;
-}
-
-.map:hover {
-	cursor: pointer;
-	background-color: var(--bg-hover);
-	.tab {
-		background-color: var(--bg-hover);
+	.hero {
+		padding: 50px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
 	}
-}
 
-.tab {
-	width: 250px;
-	color: black;
-	border-top: 1px solid var(--off-black);
-	border-left: 1px solid var(--off-black);
-	border-right: 1px solid var(--off-black);
-	background-color: var(--bg);
-	position: absolute;
-	bottom: 35px;
-	padding: 10px 40px;
-	border-radius: 5px 5px 0 0;
-	display: flex;
-    justify-content: space-between;
-}
+	.deco {
+		width: 15px;
+		aspect-ratio: 1;
+		box-shadow: 
+		15px 0 green,
+		30px 0 rgb(105, 41, 255),
+		45px 0 blue;
+		background-color: red;
+	}
 
-.odd {
-	left: 45px;
-}
+	.map {
+		outline: 1px solid var(--off-black);
+		position: relative;
+		padding: 10px;
+		height: 35px;
+		background-color: var(--bg);
+		animation: moveUp 1s ease;
+	}
 
-.ref {
-	width: 80ch;
-}
+	.blog-content {
+		width: 80ch;
+		padding: 25px 0;
+	}
 
-.even {
-	right: 45px;
-}
+	.map:hover {
+		cursor: pointer;
+		background-color: var(--bg-hover);
+		.tab {
+			background-color: var(--bg-hover);
+		}
+	}
 
-.middle {
-	right: 350px;
-}
+	.tab {
+		width: 250px;
+		color: black;
+		border-top: 1px solid var(--off-black);
+		border-left: 1px solid var(--off-black);
+		border-right: 1px solid var(--off-black);
+		background-color: var(--bg);
+		position: absolute;
+		bottom: 35px;
+		padding: 10px 40px;
+		border-radius: 5px 5px 0 0;
+		display: flex;
+		justify-content: space-between;
+	}
 
-.blog-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+	.odd {
+		left: 45px;
+	}
 
-.active {
-	background: var(--bg-hover);
-}
+	.ref {
+		width: 80ch;
+	}
 
-.vakken-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 25px;
-	flex-wrap: wrap;
-}
+	.even {
+		right: 45px;
+	}
+
+	.middle {
+		right: 350px;
+	}
+
+	.blog-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.active {
+		background: var(--bg-hover);
+	}
+
+	.vakken-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 25px;
+		flex-wrap: wrap;
+	}
 
 @keyframes moveUp {
 	0% {

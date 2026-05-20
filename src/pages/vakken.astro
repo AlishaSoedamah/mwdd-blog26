@@ -1,7 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
-import Header from '../components/Header.astro';
+import ContextMenu from '../components/ContextMenu.astro';
 ---
 
 <!doctype html>
@@ -10,9 +10,20 @@ import Header from '../components/Header.astro';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 <body>
-		<main>
-			<Header />
-			<h2>faka</h2>
-		</main>
+	<svg>
+		<filter id="noiseFilter">
+			<feTurbulence
+			type="noise"
+			baseFrequency="1"
+			numOctaves="8"
+			stitchTiles="stitch"
+			>
+			</feTurbulence>
+		</filter>
+	</svg>
+	<ContextMenu/>
+	<main>
+		<h2>faka</h2>
+	</main>
 </body>
 </html>

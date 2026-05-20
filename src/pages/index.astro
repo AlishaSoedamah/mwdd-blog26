@@ -1,5 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
+import ContextMenu from '../components/ContextMenu.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
@@ -9,6 +10,18 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
+		<svg>
+			<filter id="noiseFilter">
+				<feTurbulence
+				type="noise"
+				baseFrequency="1"
+				numOctaves="8"
+				stitchTiles="stitch"
+				>
+				</feTurbulence>
+			</filter>
+		</svg>
+		<ContextMenu/>
 		<main>
 			<section class="desktop">
 				<a href="/blogs">
@@ -35,8 +48,21 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 						<p>Vakken</p>
 					</div>
 				</a>
+				<a href="#">
+					<div class="container-file">
+						<div class="file-desktop">
+							<div class="file-corner"></div>
+						</div>
+						<p>doelen.md</p>
+					</div>
+				</a>
 			</section>
 		</main>
+		<footer>
+			<nav>
+				icons go here
+			</nav>
+		</footer>
 	</body>
 </html>
 
@@ -45,3 +71,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		align-items: start;
 	}
 </style>
+
+<script>
+	document.documentElement.style.cursor = `url("assets/test.png") 16 16, auto`;
+</script>
