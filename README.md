@@ -15,10 +15,10 @@
 ├── package.json
 └── tsconfig.json
 ```
-# Idee
-<img>
-<img>
-<img>
+# Sfeerfoto's
+<img src="readme/1.jpg">
+<img src="readme/2.jpg">
+<img src="readme/3.jpg">
 
 Dit zowel mijn portfolio site en blog.
 Veel animatie en transitions
