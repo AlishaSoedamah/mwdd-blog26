@@ -21,6 +21,14 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				</feTurbulence>
 			</filter>
 		</svg>
+		<div class="loadingScreen">
+			<div class="counterBox">
+				<h1 class="counter">0%</h1>
+			</div>
+			<p>Booting the system</p>
+			<p>Kernel Initialization</p>
+			<p>OS Services</p>
+    	</div>
 		<ContextMenu/>
 		<main>
 			<section class="desktop">
@@ -60,7 +68,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		</main>
 		<footer>
 			<nav>
-				icons go here
+				<div class="icon"></div>
 			</nav>
 		</footer>
 	</body>
@@ -70,8 +78,71 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	main {
 		align-items: start;
 	}
+
+	.icon {
+		outline: 1px solid black;
+		border-radius: 30px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.loadingScreen {
+		position: fixed;
+		inset: 0;
+		background: var(--off-black);
+		color: var(--bg);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		z-index: 9999;
+
+		animation: fadeOut 1s ease 5s forwards; 
+		}
+
+	.counter {
+		font-size: 8em;
+		font-weight: bold;
+		font-family: sans-serif;
+	}
+
+	.counterBox {
+		outline: 1px solid white;
+	}
+
+	@keyframes fadeOut {
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	@view-transition {
+		navigation: auto;
+	}
 </style>
 
 <script>
-	document.documentElement.style.cursor = `url("assets/test.png") 16 16, auto`;
+
+	const counter = document.querySelector(".counter");
+
+	let current = 0;
+	const target = 100;
+	const speed = 30;
+
+	const interval = setInterval(() => {
+	current++;
+	counter.textContent = current + "%";
+
+		if (current >= target) {
+			counter.textContent = "Ready";
+			clearInterval(interval);
+		}
+	}, speed);
+
 </script>
