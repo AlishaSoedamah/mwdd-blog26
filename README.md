@@ -27,6 +27,7 @@ Veel animatie en transitions
 # TODOs be4 19 June
 
 - [ ] Heel sicke loader maken
+- [ ] Add noise SVG filter animation
 - [ ] Make homepage -> moet zeg maar ook echt een desktop voorstellen...
 - [ ] Transitions from homepage to other pages with View Transition API
 - [ ] Make everything look nice
@@ -35,10 +36,14 @@ Veel animatie en transitions
 - [ ] Responsive
 - [ ] Give it more...vibe
 - [ ] Fix all typos
-- [ ] Make other pages vakken/leerdoelen
-- [ ] Add noise SVG filter animation
 - [ ] Micro animations
-- [ ] Maak eigen context menu -> html,css,js
+- [x] Make other pages vakken/leerdoelen
+- [x] Maak eigen context menu -> html,css,js
+
+# WIP
+- [ ] Heel sicke loader maken
+- [ ] Add noise SVG filter animation -> meer contrast nodig
+
 
 ## Credit
 
