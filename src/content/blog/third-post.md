@@ -1,7 +1,7 @@
 ---
 title: 'Nils Binder - WN 3'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: '4 March 2026'
+pubDate: '4 Mar 2026'
 heroImage: '../../assets/a.jpg'
 
 ---

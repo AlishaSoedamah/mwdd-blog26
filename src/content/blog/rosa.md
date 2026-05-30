@@ -1,13 +1,11 @@
 ---
 title: 'Rosa - WN 5'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 15 2022'
+pubDate: 'Apr 2 2026'
 heroImage: '../../assets/blog-placeholder-5.jpg'
 ---
 
 # WN 5
-
-tags: usefull 10% too all over the place
 
 ## Rosa 
 2/4/2026

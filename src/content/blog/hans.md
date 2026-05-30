@@ -1,8 +1,8 @@
 ---
 title: 'Niets te verbergen? - WN 7'
-description: 'Niets te verbergen?'
-pubDate: 'Mei 21 2026'
-heroImage: '../../assets/blog-placeholder-1.jpg'
+description: 'Lorem ipsum dolor sit amet'
+pubDate: '9 Apr 2026'
+heroImage: '../../assets/blog-placeholder-2.jpg'
 ---
 
 # Hans de Zwart

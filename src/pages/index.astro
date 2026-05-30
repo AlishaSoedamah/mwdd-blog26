@@ -10,7 +10,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<svg>
+		<!-- <svg>
 			<filter id="noiseFilter">
 				<feTurbulence
 				type="noise"
@@ -20,15 +20,26 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				>
 				</feTurbulence>
 			</filter>
-		</svg>
-		<div class="loadingScreen">
-			<div class="counterBox">
-				<h1 class="counter">0%</h1>
+		</svg> -->
+		<div id="preloader" class="fixedContainer">
+			<div class="loadingScreen">
+				<div class="containerLoading">
+					<p class="topOne">Loading</p>
+					<span class="deco"></span>
+					<div class="leftInfo">
+						<p>>Init...</p>
+						<p>>Init creativity...</p>
+						<p>>Booting...</p>
+					</div>
+					<div class="counterBox">
+						<div class="counterOutline">
+							<h1 class="counter">0%</h1>
+						</div>
+						<p>Booting the system...</p>
+					</div>
+				</div>
 			</div>
-			<p>Booting the system</p>
-			<p>Kernel Initialization</p>
-			<p>OS Services</p>
-    	</div>
+		</div>
 		<ContextMenu/>
 		<main>
 			<section class="desktop">
@@ -86,21 +97,80 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		height: 30px;
 	}
 
-	.loadingScreen {
+	.fixedContainer {
 		position: fixed;
+		z-index: 10;
+		background: var(--bg);
+		color: var(--off-black);
+	}
+
+	.loadingScreen {
+		font-size: 24px;
 		inset: 0;
-		background: var(--off-black);
-		color: var(--bg);
+		width: 100vw;
+	}
 
-		display: flex;
-		justify-content: center;
+	.containerLoading {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 200px 300px 300px;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		justify-items: center;
 		align-items: center;
-		flex-direction: column;
+		margin: 45px;
+		background-color: #9090903c;
+		outline: 1px solid var(--off-black);
+	}
 
-		z-index: 9999;
+	.counterBox {
+		grid-area: 2 / 2 / 2 / 1;
+	}
 
-		animation: fadeOut 1s ease 5s forwards; 
-		}
+	.topOne {
+		grid-area: 1 / 1 / 2 / 2;
+		justify-self: start;
+		padding-left: 45px;
+	}
+
+	.leftInfo {
+		grid-area: 3 / 1 / 4 / 2;
+		justify-self: start;
+		padding-left: 45px;
+	}
+
+	.deco {
+		grid-area: 2 / 2 / 3 / 3;
+		display: block;
+		position: relative;
+		margin: 10px;
+		width: 2px;
+		height: 50px;
+		background: var(--off-black);
+	}
+
+	.containerLoading::after {
+		content: "";
+		top: 0;
+		left: 0;
+		position: absolute;
+		border-left: var(--off-black) solid 2px;
+		border-top: var(--off-black) solid 2px;
+		width: 40px;
+		height: 40px;
+	}
+
+	.containerLoading::before {
+		content: "";
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		border-right: var(--off-black) solid 2px;
+		border-bottom: var(--off-black) solid 2px;
+		width: 40px;
+		height: 40px;
+	}
 
 	.counter {
 		font-size: 8em;
@@ -108,8 +178,50 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		font-family: sans-serif;
 	}
 
-	.counterBox {
-		outline: 1px solid white;
+	.counterOutline {
+		outline: 1px solid var(--off-black);
+		position: relative;
+		width: 400px;
+		aspect-ratio: 10/1;
+		margin: 15px 0;
+	}
+
+	.counterOutline::after {
+		content: "";
+		top: 0;
+		position: absolute;
+		border-left: var(--off-black) solid 2px;
+		border-top: var(--off-black) solid 2px;
+		width: 40px;
+		height: 40px;
+	}
+
+	.counterOutline::before {
+		content: "";
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		border-bottom: var(--off-black) solid 2px;
+		border-right: var(--off-black) solid 2px;
+		width: 40px;
+		height: 40px;
+	}
+
+	.counterBox > p {
+		background: var(--off-black);
+		color: var(--bg);
+	}
+
+	.deco::after {
+		content: "";
+		display: block;
+		position: absolute;
+		margin: 10px;
+		width: 50px;
+		height: 2px;
+		right: -35px;
+		top: 13px;
+		background: var(--off-black);
 	}
 
 	@keyframes fadeOut {
@@ -125,6 +237,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 <script>
 	const counter = document.querySelector(".counter");
+	const preloader = document.getElementById('preloader');
 
 	let current = 0;
 	const target = 100;
@@ -135,9 +248,18 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	counter.textContent = current + "%";
 
 		if (current >= target) {
-			counter.textContent = "Ready";
+			counter.textContent = "★";
 			clearInterval(interval);
 		}
 	}, speed);
 
+	if (sessionStorage.getItem('preloaderShown')) {
+		preloader.style.display = 'none';
+	} else {
+		sessionStorage.setItem('preloaderShown', 'true');
+
+		setTimeout(() => {
+		preloader.style.display = 'none';
+		}, 5000);
+	}
 </script>

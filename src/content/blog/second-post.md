@@ -1,7 +1,7 @@
 ---
 title: 'PPK - WN 2'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 15 2022'
+pubDate: 'Feb 19 2026'
 heroImage: '../../assets/blog-placeholder-about.jpg'
 ---
 

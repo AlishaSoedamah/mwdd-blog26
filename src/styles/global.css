@@ -36,7 +36,6 @@ mark {
 
 h1 {
 	font-size: 6em;
-	padding: 25px;
 	text-align: center;
 }
 
@@ -92,7 +91,7 @@ svg {
 	height: 0;
 }
 
-body::before {
+/* body::before {
 	z-index: 3;
 	position: absolute;
 	left: 0;
@@ -105,7 +104,7 @@ body::before {
 	filter: url(#noiseFilter) contrast(100%);
 	animation: --move-static 0.5s infinite;
 	pointer-events: none;
-}
+} */
 
 .desktop {
 	padding: 30px;
@@ -174,7 +173,7 @@ body::before {
 	margin: 20px 0;
 	z-index: 0;
 }
-
+/* 
 @keyframes --move-static {
 	0% { transform: translate(0,0) }
     10% { transform: translate(-5%,-5%) }
@@ -187,4 +186,4 @@ body::before {
     80% { transform: translate(-5%,0) }
     90% { transform: translate(5%,5%) }
     100% { transform: translate(-5%,0) }
-}
+} */

@@ -26,11 +26,10 @@ Veel animatie en transitions
 
 # TODOs be4 19 June
 
-- [ ] Heel sicke loader maken
+- [x] Heel sicke loader maken
 - [ ] Add noise SVG filter animation
 - [ ] Make homepage -> moet zeg maar ook echt een desktop voorstellen...
 - [ ] Transitions from homepage to other pages with View Transition API
-- [ ] Make everything look nice
 - [ ] Pick font
 - [ ] Add dark mode
 - [ ] Responsive
@@ -41,7 +40,7 @@ Veel animatie en transitions
 - [x] Maak eigen context menu -> html,css,js
 
 # WIP
-- [ ] Heel sicke loader maken
+- [x] Heel sicke loader maken
 - [ ] Add noise SVG filter animation -> meer contrast nodig
 
 

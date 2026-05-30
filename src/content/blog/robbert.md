@@ -1,13 +1,11 @@
 ---
 title: 'Robbert Broersma - WN 4'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 15 2022'
+pubDate: 'Mar 12 2026'
 heroImage: '../../assets/blog-placeholder-1.jpg'
 
 ---
 # WN 4
-
-tags: usefull 10%
 
 ## Robbert Broersma
 12/3/2026
