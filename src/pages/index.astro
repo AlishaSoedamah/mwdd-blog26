@@ -126,6 +126,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 	.counterBox {
 		grid-area: 2 / 2 / 2 / 1;
+		margin: 0 45px;
 	}
 
 	.topOne {
@@ -183,7 +184,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		position: relative;
 		width: 400px;
 		aspect-ratio: 10/1;
-		margin: 15px 0;
+		margin: 25px 0;
 	}
 
 	.counterOutline::after {
@@ -248,7 +249,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	counter.textContent = current + "%";
 
 		if (current >= target) {
-			counter.textContent = "★";
+			counter.textContent = ":D";
 			clearInterval(interval);
 		}
 	}, speed);
