@@ -35,12 +35,12 @@ body::before {
 	pointer-events: none;
 }
 
-/* p {
+p {
 	line-height: 150%;
 	font-family: 'Silkscreen', 'Courier New', Courier, monospace;
 	font-weight: 400;
   	font-style: normal;
-} */
+}
 
 mark {
 	background-color: transparent;
