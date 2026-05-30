@@ -20,12 +20,27 @@ body {
 	background-color: var(--bg);
 }
 
-p {
+body::before {
+	z-index: 3;
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: "";
+	width: 150vw;
+	height: 150vh;
+	mix-blend-mode: color-burn;
+	opacity: 100%;
+	filter: url(#noiseFilter) contrast(100%);
+	animation: --move-static 0.5s infinite;
+	pointer-events: none;
+}
+
+/* p {
 	line-height: 150%;
 	font-family: 'Silkscreen', 'Courier New', Courier, monospace;
 	font-weight: 400;
   	font-style: normal;
-}
+} */
 
 mark {
 	background-color: transparent;
@@ -91,21 +106,6 @@ svg {
 	height: 0;
 }
 
-/* body::before {
-	z-index: 3;
-	position: absolute;
-	left: 0;
-	top: 0;
-	content: "";
-	width: 150vw;
-	height: 150vh;
-	mix-blend-mode: color-burn;
-	opacity: 100%;
-	filter: url(#noiseFilter) contrast(100%);
-	animation: --move-static 0.5s infinite;
-	pointer-events: none;
-} */
-
 .desktop {
 	padding: 30px;
 }
@@ -121,7 +121,6 @@ svg {
 	width: 140px;
 	height: 80px;
 	margin: 2cap 0;
-	box-shadow: 10px 10px 0 var(--off-black);
 	border-radius: 0 3px 3px 3px;
 	&:hover {
 		cursor: pointer;
@@ -173,7 +172,29 @@ svg {
 	margin: 20px 0;
 	z-index: 0;
 }
-/* 
+
+@view-transition {
+  navigation: auto;
+}
+
+.post-title {
+  view-transition-name: post-title;
+}
+
+.folder {
+	view-transition-name: folder-expand;
+}
+
+.post-title { view-transition-name: post-title; }
+
+.folder { view-transition-name: folder-expand;}
+
+::view-transition-old(post-title),
+::view-transition-new(post-title) {
+  animation-duration: .5s;
+}
+
+
 @keyframes --move-static {
 	0% { transform: translate(0,0) }
     10% { transform: translate(-5%,-5%) }
@@ -186,4 +207,4 @@ svg {
     80% { transform: translate(-5%,0) }
     90% { transform: translate(5%,5%) }
     100% { transform: translate(-5%,0) }
-} */
+}

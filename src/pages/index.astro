@@ -27,28 +27,30 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 					<p class="topOne">Loading</p>
 					<span class="deco"></span>
 					<div class="leftInfo">
-						<p>>Init...</p>
-						<p>>Init creativity...</p>
-						<p>>Booting...</p>
+						<p>> Init...</p>
+						<p>> Init creativity...</p>
+						<p>> Booting...</p>
 					</div>
 					<div class="counterBox">
 						<div class="counterOutline">
 							<h1 class="counter">0%</h1>
 						</div>
-						<p>Booting the system...</p>
+						<div class="bgBox">
+							<p class="blink">Booting the system...</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<ContextMenu/>
+		<!-- <ContextMenu/> -->
 		<main>
 			<section class="desktop">
-				<a href="/blogs">
-					<div class="container">
+				<a class="post-link" href="/blogs">
+					<div class="folder container">
 						<div class="desktop-folder">
 							<div class="index-tab"></div>
 						</div>
-						<p>Blogs</p>
+						<p class="post-title">Blogs</p>
 					</div>
 				</a>
 				<a href="/leerdoelen">
@@ -90,6 +92,10 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		align-items: start;
 	}
 
+	.desktop {
+		display: flex;
+	}
+
 	.icon {
 		outline: 1px solid black;
 		border-radius: 30px;
@@ -122,6 +128,10 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		margin: 45px;
 		background-color: #9090903c;
 		outline: 1px solid var(--off-black);
+	}
+
+	.bgBox {
+		background: var(--off-black);
 	}
 
 	.counterBox {
@@ -174,7 +184,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	}
 
 	.counter {
-		font-size: 8em;
+		font-size: 7em;
 		font-weight: bold;
 		font-family: sans-serif;
 	}
@@ -208,8 +218,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		height: 40px;
 	}
 
-	.counterBox > p {
-		background: var(--off-black);
+	.bgBox > p {
 		color: var(--bg);
 	}
 
@@ -225,6 +234,10 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		background: var(--off-black);
 	}
 
+	.blink {
+  		animation: blinker 2s linear infinite;
+	}
+
 	@keyframes fadeOut {
 		from {
 			opacity: 1;
@@ -233,6 +246,12 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 			opacity: 0;
 			visibility: hidden;
 		}
+	}
+
+	@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
 	}
 </style>
 

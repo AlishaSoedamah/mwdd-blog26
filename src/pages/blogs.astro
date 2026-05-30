@@ -9,8 +9,8 @@ import ContextMenu from '../components/ContextMenu.astro';
 		<BaseHead title="blog" description="blogs" />
 	</head>
 	<body>
-		<ContextMenu/>
-		<svg>
+		<!-- <ContextMenu/> -->
+		<!-- <svg>
 			<filter id="noiseFilter">
 				<feTurbulence
 				type="noise"
@@ -20,11 +20,12 @@ import ContextMenu from '../components/ContextMenu.astro';
 				>
 				</feTurbulence>
 			</filter>
-		</svg>
+		</svg> -->
 		<main>
+			<a href="/">Back to home</a>
 			<div class="hero">
 				<div class="deco"></div>
-				<h1>Alisha's weekly <br> nerd blog</h1>
+				<h1 class="post-title">Blogs</h1>
 				<p>Mijn collectie van blogs van de sprekers voor de Minor Web Design & Development (MWDD)</p>
 			</div>
 			<article class="folder">
@@ -138,7 +139,7 @@ import ContextMenu from '../components/ContextMenu.astro';
 		padding: 75px 25px 40px 25px;
 		border-radius: 5px;
 		width: 1000px;
-		box-shadow: 15px 15px 0 var(--off-black);
+		/* box-shadow: 15px 15px 0 var(--off-black); */
 	}
 
 	.hero {
