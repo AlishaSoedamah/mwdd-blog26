@@ -24,7 +24,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<div id="preloader" class="fixedContainer">
 			<div class="loadingScreen">
 				<div class="containerLoading">
-					<p class="topOne">Loading</p>
+					<p class="topOne blink">Loading</p>
 					<span class="deco"></span>
 					<div class="leftInfo">
 						<p>> Init...</p>
@@ -35,9 +35,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 						<div class="counterOutline">
 							<h1 class="counter">0%</h1>
 						</div>
-						<div class="bgBox">
-							<p class="blink">Booting the system...</p>
-						</div>
+						<p>Booting the system...</p>
 					</div>
 				</div>
 			</div>
@@ -129,11 +127,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		background-color: #9090903c;
 		outline: 1px solid var(--off-black);
 	}
-
-	.bgBox {
-		background: var(--off-black);
-	}
-
+	
 	.counterBox {
 		grid-area: 2 / 2 / 2 / 1;
 		margin: 0 45px;
@@ -218,8 +212,10 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		height: 40px;
 	}
 
-	.bgBox > p {
+	.counterBox > p {
 		color: var(--bg);
+		background: var(--off-black);
+
 	}
 
 	.deco::after {
@@ -235,7 +231,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	}
 
 	.blink {
-  		animation: blinker 2s linear infinite;
+  		animation: blinker 1s linear infinite;
 	}
 
 	@keyframes fadeOut {
