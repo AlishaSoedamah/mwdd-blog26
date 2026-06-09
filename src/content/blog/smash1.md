@@ -8,7 +8,7 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 ## Christine Vallaure – *The Invisible Divide*
 
-*From Moon Learning*
+*Van Moon Learning*
 
 ### Topics covered
 
