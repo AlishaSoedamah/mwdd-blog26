@@ -20,7 +20,7 @@ body {
 	background-color: var(--bg);
 }
 
-body::before {
+/* body::before {
 	z-index: 3;
 	position: absolute;
 	left: 0;
@@ -33,7 +33,7 @@ body::before {
 	filter: url(#noiseFilter) contrast(100%);
 	animation: --move-static 0.5s infinite;
 	pointer-events: none;
-}
+} */
 
 p {
 	line-height: 150%;
