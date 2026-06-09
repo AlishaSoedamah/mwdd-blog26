@@ -1,91 +1,112 @@
 ---
-title: 'Rosa - WN 5'
+title: 'More Hackers - Rosa'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Apr 2 2026'
 heroImage: '../../assets/blog-placeholder-5.jpg'
 ---
 
-# WN 5
+## Wat is een hacker?
 
-## Rosa 
-2/4/2026
+Een hacker is een persoon die vaardig is in informatietechnologie en alternatieve manieren gebruikt om kwetsbaarheden in computersystemen te ontdekken of te benutten.
 
-### More hackers
+## Over Rosa
 
-wat is een hacker? person skilled in information tech and alternitve ways of exploiting vulnerabilities in computer systems
+* MFA Experimental Publishing
+* Geluid & noise
 
-### Over Rosa
-- MFA Experimental publishing
-- Geluid & noice
+## Doe-het-zelf (DIY / DIWO)
 
-### Doe het zelf
+* Learn through failure
+* Collective research
+* Skill sharing
+* Hands-on ervaring met hardware, servers, websites en networking
 
-DIY/DIWO
-learn thru failutre
-collective research
-skill sharing
-handson eervaring met hardware servers websites networking
+Het idee is om erachter te komen hoeveel je zelf kunt maken en beheren. Hoe meer je zelf bouwt, hoe meer controle je behoudt.
 
-Er achter komen hoeveel je gewoon zelf kunt 
-hoe meer je zelf maakt hoe meer je zelf in controle blijft
+Maar dit wordt steeds lastiger.
+
+De enige oplossing lijkt vaak: **nieuw kopen**.
+
+Dit leidt tot een grotere afhankelijkheid.
+
+## Planned obsolescence
+
+Planned obsolescence werkt reparatie en hacken actief tegen.
+
+Voorbeelden:
+
+* Elektronica die moeilijk te repareren is (bijv. iPhones met niet-standaard schroeven)
+* Chromebooks die vaak na 2–3 jaar verouderen of niet meer bruikbaar zijn
+
+Soms moet je zelfs hardware aanpassen of solderen om iets nog werkend te krijgen.
+
+## Grotere afhankelijkheid
+
+We verliezen steeds meer gevoel van hoe systemen werken.
+
+Er wordt vaak gesproken over “de cloud”, maar dit is eigenlijk gewoon andermans computer waar je geen controle over hebt.
+
+Je hebt geen idee wat er in een datacenter gebeurt.
+
+## Kan het ook anders?
+
+Ja, er zijn alternatieven.
+
+### Low-tech Magazine server
+
+* Raspberry Pi op zonne-energie
+* Afhankelijk van zonlicht en batterij
+* Als het te lang donker is, gaat de server offline
+
+https://solar.lowtechmagazine.com/
+
+Kenmerken:
+
+* statische site generator
+* 95,26% uptime
+* bewust omgaan met energie en beschikbaarheid
 
 
-Maar dit wordt steeds lastiger
+## Rosa – The Travelling Server
 
-enige oplossing lijkt nieuw kopne
+* Publieke sysadmin-sessies
+* Volledig gedocumenteerd
+* Collaborative project
 
-grotere afhankelijkheid
 
-planned obsolescence werkt reparatie en hacken actif tegen
+## Wat doet een server?
 
-zooi -> een iphone met schroefjes die niet op de markt zit
-Chrome books zijn meestal na 2/3 jaar helemaal uitgewerkt. Je moet pinnetjes solderen om
+Een server is een computer waarop je bestanden (zoals HTML) zet, zodat anderen die via het internet kunnen benaderen.
 
-### Grotere afhankelijkheid
-verlies je gevoel van waar alles op leeft
-veel wordt gesproken over de cloud, ergens waar je geen invloed op hebt
-je hebt geen idee wat er binnen een data center gebreurt. 
+## Voorbeeld: eco-driven servers
 
-### Kan het ook anders?
-server van de low tech magazine -> rasparry pie hangt een zonne pannel op een batterij af
-als het een tijdje niet zo zonig is valt ie uit
+* Gebruik van bestaande middelen
+* Bash-scripts die bijvoorbeeld DNS elk uur updaten
+* Focus op minimale infrastructuur
 
-Low tech magazine 
-dithereed imgs
-static site generator
-95.26% uptime
+Soms is de enige downtime stroomuitval.
 
-Rosa, the travelling server
-- publieke sys-admin sessies
-- uitgebreid gedocumenteerd
-- collaborative
 
-### Wat doet een server
-de server is een computer waar je je html bestanden opzet waar je bij kunt op een andere computer
+## Rosa
 
-voorbeeld van nog een sever
-eco-driven server 
-veel eco dingen
+Rosa werkt momenteel aan een alternatieve kalender voor Rotterdam.
 
-### een computer router
-gebruik maken van de middelen die je al hebt
-bash scritp dat elk uur de dns update
+## Static site generators ❤️
 
-laatste maanden alleen downtime bij stroom uitval
+* Minder belasting op servers
+* Als het faalt, heb je nog steeds Markdown
+* 11ty heeft een grote community en goede documentatie
+* Code blijft leesbaar en simpel
 
-rosa werkt nu aan een alternatieve kalender voor rotterdam
+## Zelf hosten
 
-### <3 static site generators
-- minder impact op de server
-- if it fails hebben we nog md
-- 11ty grote communiy veel documentatie
-- leesbare code
+Voorbeelden:
 
-### zelf hosten van
-- git gitea/forgejo
-- eigen messaging platform zulip, libera chat
-- je eigen website instaleren op je eigen server.
+* Git hosting: Gitea / Forgejo
+* Messaging: Zulip / Libera Chat
+* Eigen websites draaien op je eigen server
 
-### DIY!DIWO!
-- elke donderdag in rotterdam 
-- LAG social evening elke vrijdagavond
+## DIY / DIWO communities
+
+* Elke donderdag in Rotterdam
+* LAG social evening elke vrijdagavond

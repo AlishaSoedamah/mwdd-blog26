@@ -1,7 +1,7 @@
 ---
 title: 'Niets te verbergen? - Hans de Zwart'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: '9 Apr 2026'
+pubDate: '21 May 2026'
 heroImage: '../../assets/blog-placeholder-2.jpg'
 ---
 
