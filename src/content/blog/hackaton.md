@@ -7,7 +7,7 @@ heroImage: '../../assets/blog-placeholder-4.jpg'
 ---
 
 Wij hebben de eerste plek gewonnen bij de hackaton en mochten naar the smashing conf
- Tijdens de hackaton hebben ik Choice, Romy en Mats een website gemaakt
+Tijdens de hackaton hebben ik Choice, Romy en Mats een website gemaakt
 voor Nebula Xplorer.
 
 Dag 1 - 23.03.2026

@@ -19,3 +19,4 @@ Hoe dan wel website toegankelijk maken?
 - operable
 - understandable
 - robust
+

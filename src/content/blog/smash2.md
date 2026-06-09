@@ -6,8 +6,6 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 ---
 
-dina amin
-			Some of yall need wimsy in your life. this is wimsy
 
 			Kevin 
 			Media queries vs container queries

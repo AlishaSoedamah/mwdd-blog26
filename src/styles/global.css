@@ -37,7 +37,7 @@ body::before {
 
 p {
 	line-height: 150%;
-	font-family: 'Silkscreen', 'Courier New', Courier, monospace;
+	/* font-family: 'Silkscreen', 'Courier New', Courier, monospace; */
 	font-weight: 400;
   	font-style: normal;
 }

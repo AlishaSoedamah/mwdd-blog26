@@ -1,128 +1,154 @@
 ---
-title: 'PPK - WN 2'
+title: 'Browsers - Peter-Paul Koch'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Feb 19 2026'
 heroImage: '../../assets/blog-placeholder-about.jpg'
 ---
 
-## Peter-Paul Koch
+## Wat is een browser in technische termen?
 
-19/2/2026
-Browsers
+Een browser moet HTML, CSS en JavaScript kunnen interpreteren.
 
-Wat is een browser in technische termen?
-Een browser moet html css en js kunnen interpreteren.
+* HTML → gaat naar de HTML-parser
+* CSS → gaat naar de CSS-parser → gaat daarna naar de styling engine
+* DOM
+* AOM → Accessibility Object Model, bedoeld voor ondersteunende technologieën zoals screenreaders
+* Interface
+* JavaScript-engine
 
-- HTML -> gaat naar de HTML parser
-- CSS -> gaat naar de CSS parser -> gaat daarna naar de styling engine
-- DOM
-- AOM -> accesiblity object model is bedoeld voor accessive devices zoals screenreaders
-- Interface
-- Javasctipt engine
+De JavaScript-engine is het onderdeel dat daadwerkelijk de JavaScript-code leest en uitvoert.
 
-De Javasctipt engine is het deel dat ook echt de Javasctipt leest.
-De programeer taal Javasctipt is officeel niet een gedeelte van een browser en moet daarom dus naar zijn eigen engine gaan.
+De programmeertaal JavaScript is officieel geen onderdeel van de browser zelf en wordt daarom verwerkt door een aparte engine.
 
 ### Rendering engine
-De rendering engine parsed HTML en CSS maar doet dus niet de interface of de Javasctipt engie.
 
-Wat maakt Javasctipt een programmertaal?
-Er zitten loops en if statements in.
+De rendering engine verwerkt HTML en CSS, maar doet niets met de interface of de JavaScript-engine.
+
+### Wat maakt JavaScript een programmeertaal?
+
+Er zitten onder andere loops en `if`-statements in.
 
 ### Render blocking
-Javasctipt tenzij async of defer
 
-Als je Javascript in HTML doet dan mag de browser niet verder met de HTML parser totdat het Javasctipt script wordt geladen,
-het liefst zorgen dat de Javasctipt pas wordt geladen na dat je HTML helemaal hebt geladen.
+JavaScript is render-blocking, tenzij je `async` of `defer` gebruikt.
 
-Hetzelfde geld voor inline CSS, de layout is het kostbaarste wat de browser moet laden. CSS wordt eerst
-geparsed want de CSS is ook het lastigste gedeelte voor de browser. Als je eerst de HTML laad dan zou je de ongestijlde HTML
-webpagina zien.
+Als je JavaScript in HTML plaatst, mag de browser niet verder met de HTML-parser totdat het JavaScript-bestand is geladen. Daarom is het beter om JavaScript pas te laden nadat de HTML volledig is verwerkt.
 
-### dever vs async
-do it now (bijna nooit)
-script src
+Hetzelfde geldt voor inline CSS. De layout is het kostbaarste onderdeel dat de browser moet berekenen. CSS wordt daarom eerst geparsed, omdat dit een van de lastigste onderdelen voor de browser is. Als eerst alleen de HTML zou worden geladen, zou je een ongestylede webpagina zien.
 
-liever 1 van deze twee gebruiken:
+### Defer vs async
 
-do it later
-defer src
+#### Do it now (bijna nooit gebruiken)
 
-i dont care when you do it just not now
-async src
+```html
+<script src="script.js"></script>
+```
+
+Liever een van deze twee gebruiken:
+
+#### Do it later
+
+```html
+<script defer src="script.js"></script>
+```
+
+#### I don't care when you do it, just not now
+
+```html
+<script async src="script.js"></script>
+```
 
 ### Backward compatibility
-Alles wat de browser ooit heeft ondersteuned moet de browser voor altijd ondersteunen.
 
-[form objects].elements = input, select alle tekst areas
-bgcolor="ffffff" -> werkt nogsteeds omdat we dat vroeger ook gebruikte
-Content box model
-```<frameset> -> afstammeling <iframe>```
+Alles wat een browser ooit heeft ondersteund, moet de browser voor altijd blijven ondersteunen.
+
+* `form.elements` → bevat onder andere `input`, `select` en `textarea`
+* `bgcolor="ffffff"` → werkt nog steeds, omdat dit vroeger veel werd gebruikt
+* Content Box Model
+* `<frameset>` → voorloper van `<iframe>`
 
 ### Browser als platform
 
-"browsers are the most hostile development platforms in the world"
-- Douglas Crockford
+> "Browsers are the most hostile development platforms in the world."
+> Douglas Crockford
 
-## korte geschiedenis
-- De eerste webbrowser was de WWW browser 1990
-WWW = Wordle wide web
+## Korte geschiedenis
 
-- Allereeerste browser gebouwd door Tim Berners-Lee en consorten
-- [Herbouwd in 2019](https://worldwideweb.cern.ch/)
+* De eerste webbrowser was de **WWW Browser** (1990). WWW staat voor **World Wide Web**.
+* De allereerste browser werd gebouwd door Tim Berners-Lee en zijn team.
+* In 2019 is deze browser opnieuw gebouwd.
 
-Mosaic browser (1993)
-- Radicale verandering: een tag om plaatjes te laten zien op het web. Maar mosaic was non profit omdat het een
-universiteids project was
+### Mosaic Browser (1993)
 
-Netscape (1994)
-was niet gratis
+* Grote verandering: ondersteuning voor afbeeldingen op het web.
+* Mosaic was non-profit, omdat het een universiteitsproject was.
 
-Internet Explorer (1995)
-was gratis
+### Netscape (1994)
 
-Opera (1995)
-"wilde laten zien hoe css echt werkt", liet css beter zien dan andere browsers. Opera bleef heel lang betaald
+* Was niet gratis.
 
-IE 5 Mac (2000)
-De beste browser voor mac
+### Internet Explorer (1995)
 
-De eerste belangrijke browser:
+* Was gratis.
 
-Konqueror (2000)
-Hobby project die is uitgevonden door linux gasten op een gnome linux system.
+### Opera (1995)
 
-Safari (2003)
-webkit is de render engine van safari
-geen documentation
-js hadden ze niet echt dus daar was ook geen documentation voor
+* Wilde laten zien hoe CSS écht werkte en ondersteunde CSS beter dan veel andere browsers.
+* Opera bleef lange tijd een betaalde browser.
 
-Firefox (2004)
-soort van de opvolger van netscape 4 maar dit was een goede browser
+### IE 5 Mac (2000)
 
-Safari iOS (2007)
-Eerste mobiele browser die iedereen wel serieus nam
+* De beste browser voor Mac in die tijd.
 
-Chrome (2008)
-opensource, apple x google. chrome heeft zijn eigen rendering engine
+## De eerste belangrijke browsers
 
-Flow (2020)
-Is gemaakt door een Engels bedrijf, ondersteunt bepaalde css niet
+### Konqueror (2000)
 
-Ladybird (2024)
-Hobby project om van een drugsverslaving af te komen
+Een hobbyproject, ontwikkeld door Linux-ontwikkelaars voor een Linux-systeem.
 
-## mobiele browsers
+### Safari (2003)
 
-Samsung internet is gebaseerd op blink.
+* WebKit is de rendering engine van Safari.
+* Er was weinig documentatie beschikbaar.
+* Ook voor JavaScript was destijds weinig documentatie.
 
-Browser markt 2024
-- firefox
-- safari
-- chrome
+### Firefox (2004)
 
-Igalia is een spaans opensource bedrijf.
-Die zijn zich sinds een paar jaar aan het focusen op het bouwen van gedeeltes van rendering engines 
+Een soort opvolger van Netscape 4 en een goede browser voor die tijd.
 
-### summary
-history over browsers over de jaren heen en de basics van hoe een browser werkt
+### Safari iOS (2007)
+
+De eerste mobiele browser die door veel mensen serieus werd genomen.
+
+### Chrome (2008)
+
+* Open source.
+* Ontstaan uit samenwerking tussen Apple en Google.
+* Chrome heeft zijn eigen rendering engine.
+
+### Flow (2020)
+
+Gemaakt door een Engels bedrijf en ondersteunt bepaalde CSS-functionaliteiten niet.
+
+### Ladybird (2024)
+
+Begonnen als hobbyproject door iemand die een alternatief zocht voor zijn drugsverslaving.
+
+## Mobiele browsers
+
+Samsung Internet is gebaseerd op Blink.
+
+### Browsermarkt (2024)
+
+* Firefox
+* Safari
+* Chrome
+
+### Igalia
+
+Igalia is een Spaans open-sourcebedrijf.
+
+Het bedrijf richt zich de laatste jaren op het ontwikkelen van onderdelen van rendering engines.
+
+## Samenvatting
+Deze presentatie ging over de geschiedenis van browsers door de jaren heen en de basisprincipes van hoe een browser werkt.

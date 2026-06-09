@@ -1,130 +1,173 @@
 ---
-title: 'Robbert Broersma - WN 4'
+title: 'Formulieren maken met NL Design System - Robbert Broersma'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Mar 12 2026'
 heroImage: '../../assets/blog-placeholder-1.jpg'
 
 ---
-# WN 4
 
-## Robbert Broersma
-12/3/2026
+## Opbouw van een formulier volgens Robbert
 
-### Formulieren maken 
-Met NL design systems
+* Een introductietekst.
+* Alleen informatie vragen die nodig is.
 
-Opbouw van een formulier volgens Robbert
-- introtekst
-- informtie vragen die nodig zijn
-	"het duurt ongeveer 5 minuten om dit formulier in te vullen"
-- gebruiker kan voor inzendingen de ingevoerde waardes controleren, wijzigen of ongedaan maken 
-- na volgende of verzenden verschijnt een samenvatting van alle fouten 
-- na verzenden verschijnt er een duidelijke bevestiging
+  * Bijvoorbeeld: *"Het duurt ongeveer 5 minuten om dit formulier in te vullen."*
+* De gebruiker kan vóór het verzenden de ingevoerde gegevens controleren, wijzigen of ongedaan maken.
+* Na het klikken op **Volgende** of **Verzenden** verschijnt een overzicht van alle fouten.
+* Na het verzenden verschijnt een duidelijke bevestiging.
 
-Niet vragen om onnodige gegevens
+Vraag niet om onnodige gegevens.
 
-Een opsomming van fouten laten zien als de gebruiker het form verstuurd  boven aan het formulier.
-Dit is voor screenreaders handig. 
+Toon een overzicht van alle fouten bovenaan het formulier wanneer de gebruiker het formulier verstuurt. Dit is ook handig voor screenreadergebruikers.
 
-Controleren of ingevulde gegevens goed zijn
+Controleer of de ingevulde gegevens correct zijn.
 
-Opslaan en later verder -> optie voor mensen die beperkte energie hebben
+Bied de mogelijkheid om het formulier op te slaan en later verder te gaan. Dit is vooral handig voor mensen met beperkte energie.
 
-Je vraag is met succes opgestuurd
+Bijvoorbeeld een bevestigingstekst:
 
-### Inhoud van een formulier
-- alleen informatie vragen die nodig is
-- verpichte velden goed aangeven
-- uitleggen waarom je specifieke informatie nodig hebt
-- gebruiker dezelfde informatie niet twee keer vragen
-- geen jargon of gekke afkorting(en) gebruiken
+> *Je aanvraag is met succes verstuurd.*
 
-Leg uit waarvoor je persoonlijke gegevens voor gaat gebruiken
+## Inhoud van een formulier
 
-Kleurcontrast van componenten 
+* Vraag alleen informatie die nodig is.
+* Geef verplichte velden duidelijk aan.
+* Leg uit waarom je specifieke informatie nodig hebt.
+* Vraag de gebruiker niet twee keer om dezelfde informatie.
+* Gebruik geen jargon of onduidelijke afkortingen.
 
-Kleurcontrast van subtielere tekst
+Leg uit waarvoor persoonlijke gegevens worden gebruikt.
 
-Zijn de componenten groot genoeg
-44x44px is gebruiksvriedelijk
+### Toegankelijkheid
 
-## Fouten
+* Zorg voor voldoende kleurcontrast van componenten.
+* Zorg ook voor voldoende contrast van subtiele tekst.
+* Maak componenten groot genoeg.
 
-### Fout: Een invoerfout alleen met kleur aangeven.
-- buttons aan het begin van de regel waar iedereen ze kan vinden
-- de voortgang wordt getoond boven het formulier in tekst bv stap 2 van de 4
-- navigatie
-- het duidelijk in welke stap heet formulier daadwerkelijk wordt verzonden
-- elke invoerveld heeft een label
-- Er staat verpicht of niet verplicht in tekst en niet allen een '*'
+**44 × 44 pixels** wordt beschouwd als een gebruiksvriendelijke minimale grootte.
 
+## Veelgemaakte fouten
 
-### Fout: onduidelijk welke velden verplicht zijn
-- staat het formulier in een logische volgorde
-- bij complexe formulieren is het handig om hulp te bieden zodat email chat en telefoon
-- goede plekken zijn de intro tekst, bovenaan een formulier, in de page footer op de controlepagina
+### Fout: Een invoerfout alleen met kleur aangeven
 
-### Fout: Label niet gekoppeld aan invoer
+* Plaats knoppen aan het begin van de regel waar iedereen ze gemakkelijk kan vinden.
+* Toon de voortgang boven het formulier in tekst, bijvoorbeeld: **Stap 2 van 4**.
+* Zorg voor duidelijke navigatie.
+* Maak duidelijk in welke stap het formulier daadwerkelijk wordt verzonden.
+* Elk invoerveld heeft een label.
+* Geef in tekst aan of een veld verplicht of optioneel is en gebruik niet alleen een `*`.
 
-### Fout: afkortingen en jargon worden niet uitgelegd
-zet de uitleg buiten het label zodat ie niet te lang wordt
+### Fout: Onduidelijk welke velden verplicht zijn
 
-- aria-label="" of title="" moeten zichtbare labeltekst bevatten anders werkt het niet met spraakbesturing
+* Staat het formulier in een logische volgorde?
+* Bij complexe formulieren is het handig om hulp aan te bieden via e-mail, chat of telefoon.
+* Goede plaatsen hiervoor zijn:
 
-### Fout: haakjes en afkortingen
-- Voorna(a)m(en), beter: voornaam (1 of meerdere)
+  * de introductietekst;
+  * bovenaan het formulier;
+  * de paginafooter;
+  * de controlepagina.
 
-Makkelijker invullen
-- bekende gegevens vooraf ingevuld
-- knippen en plakken is overal toegestaan
-- autocomplete aanbieden
+### Fout: Label niet gekoppeld aan invoerveld
 
-Beschrijvingen bij een veld:
-belangrijke uitleg is altijd zichtbaar
-extra teksten bij een formulierveld zijn gekoppeld met aria-describeby op het formulier-element
-beschrijving van foitmeldingen
-De beschrijving en foutmelding van checkbox broup en radio group zijn gekoppeld aan de fieldset met aria-describedby
+Een label moet altijd gekoppeld zijn aan het juiste invoerveld.
 
-### Fout: belangrijke informatie in tooltip of placeholder
+### Fout: Afkortingen en jargon worden niet uitgelegd
 
-- De laatste stap toont een samenvatting van alle ingevoerde gegevens
-- Het formulier biedt de mogelijkheid om een inzending te controleren te wijzigen of ongedaan te maken
-- voorkom dat bdi translate="no" dat wat de gebruiker zelf heeft ingevoerd wordt vertaald. dit is met name op de controle pagina en de bevestigingspagina
+Plaats uitleg buiten het label, zodat het label niet onnodig lang wordt.
+
+`aria-label=""` of `title=""` moeten dezelfde zichtbare labeltekst bevatten, anders werkt spraakbesturing niet goed.
+
+### Fout: Haakjes en afkortingen
+
+Voorbeeld:
+
+❌ **Voorna(a)m(en)**
+
+✅ **Voornaam (één of meerdere)**
+
+## Makkelijker invullen
+
+* Bekende gegevens zijn vooraf ingevuld.
+* Knippen en plakken is overal toegestaan.
+* Gebruik `autocomplete` waar mogelijk.
+
+## Beschrijvingen bij een veld
+
+* Belangrijke uitleg is altijd zichtbaar.
+* Extra uitleg bij een formulierveld is gekoppeld via `aria-describedby` aan het formulier-element.
+* Beschrijvingen van foutmeldingen zijn gekoppeld aan het juiste veld.
+* De beschrijving en foutmelding van een checkboxgroep of radiogroep zijn gekoppeld aan de `fieldset` met `aria-describedby`.
+
+### Fout: Belangrijke informatie staat alleen in een tooltip of placeholder
+
+Belangrijke informatie moet altijd zichtbaar zijn en mag niet uitsluitend in een tooltip of placeholder staan.
+
+## Controlepagina
+
+* De laatste stap toont een samenvatting van alle ingevoerde gegevens.
+* De gebruiker kan de inzending controleren, wijzigen of ongedaan maken.
+* Voorkom dat door `translate="no"` gegevens die de gebruiker zelf heeft ingevoerd automatisch worden vertaald. Dit is vooral belangrijk op de controlepagina en de bevestigingspagina.
 
 ### Fout: Taal niet consistent
 
-Zorg dat je labels consistent zijn over het hele form heen.
-Plaatsnaam en Postcode zijn niet hetzelfde.
+Zorg dat labels overal in het formulier consistent zijn.
 
-Bevestiging
+Bijvoorbeeld:
 
-een goede bevestiging vermeld welke informatie is verstuurd
+* **Plaatsnaam**
+* **Postcode**
 
-validatie 
-de regels voor een invoerveld zijn vooraf duidelijk welke tekens, of hoelang de tekst mag zijn
+Gebruik overal dezelfde terminologie.
 
-### Fout: Geldige invoer is afgekeurd
-### Fout: Invoer moet per se met of zonder spatie
-### Fout: Helpt niet de vraag in te vullen
+## Bevestiging
 
-Foutmeldingen staan bij het betreffende veld
+Een goede bevestigingspagina vermeldt duidelijk welke informatie is verstuurd.
 
-Toetsenbord
--Doorloop het form met alleen het toesenbord zonder muis
-Wat er moet werken
-- elk invoerveld
-- elke button
-en elke link moet goed bereikbaar zijn
+## Validatie
 
-focusindicator, tabvolgorde is logishc
+De regels voor een invoerveld moeten vooraf duidelijk zijn:
 
-- Fout: Je kunt niet van begin tot eind met de tab-toets door het form heen
-- Fout: onduidelijk waar de focus is als je met je tab toets door het formulier gaat
+* welke tekens zijn toegestaan;
+* hoeveel tekens de invoer maximaal mag bevatten.
 
-Screenreader
-labels worden voorgelezen
-Beschrijving van een veld wordt voorgelezen als het veld focus krijgt.
-verplichte velden worden als verplicht aangeduid bij het voorlezen
-foutmemeldingen en feedback
+### Veelvoorkomende validatiefouten
 
-Fout: Foutmelding voor je klaar bent met invullen
+* Geldige invoer wordt afgekeurd.
+* Invoer moet verplicht mét of zonder spatie worden ingevoerd.
+* De foutmelding helpt de gebruiker niet om de vraag correct in te vullen.
+
+Foutmeldingen staan altijd bij het betreffende invoerveld.
+
+## Toetsenbordtoegankelijkheid
+
+Loop het formulier volledig door met alleen het toetsenbord, zonder muis.
+
+Alles moet bereikbaar zijn:
+
+* elk invoerveld;
+* elke knop;
+* elke link.
+
+Controleer ook:
+
+* een duidelijke focusindicator;
+* een logische tabvolgorde.
+
+### Veelvoorkomende fouten
+
+* Je kunt niet met de Tab-toets door het hele formulier navigeren.
+* Het is onduidelijk waar de focus zich bevindt tijdens het tabben.
+
+## Screenreader
+
+Controleer of:
+
+* labels worden voorgelezen;
+* beschrijvingen van een veld worden voorgelezen zodra het veld focus krijgt;
+* verplichte velden als verplicht worden aangekondigd;
+* foutmeldingen en feedback correct worden voorgelezen.
+
+### Fout
+
+Een foutmelding verschijnt al voordat de gebruiker klaar is met het invullen van het veld.
