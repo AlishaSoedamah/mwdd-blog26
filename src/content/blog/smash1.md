@@ -1,7 +1,7 @@
 ---
 title: 'Smashing day 1'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'May 28 2026'
+pubDate: 'Apr 14 2026'
 heroImage: '../../assets/blog-placeholder-1.jpg'
 
 ---

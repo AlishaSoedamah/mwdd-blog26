@@ -184,9 +184,3 @@ company called: "the impossible porject". With a dead supply chain they had all 
 polaroids still exist. now we have a hell of a community for the web. 
 
 I want a web that is easier to learn!
-
-## Björn Wijers
-
-## Julie Blanc
-
-## Jeremy Keith
