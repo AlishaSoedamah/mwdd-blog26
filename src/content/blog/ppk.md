@@ -9,12 +9,12 @@ heroImage: '../../assets/blog-placeholder-about.jpg'
 
 Een browser moet HTML, CSS en JavaScript kunnen interpreteren.
 
-* HTML → gaat naar de HTML-parser
-* CSS → gaat naar de CSS-parser → gaat daarna naar de styling engine
-* DOM
-* AOM → Accessibility Object Model, bedoeld voor ondersteunende technologieën zoals screenreaders
-* Interface
-* JavaScript-engine
+- HTML → gaat naar de HTML-parser
+- CSS → gaat naar de CSS-parser → gaat daarna naar de styling engine
+- DOM
+- AOM → Accessibility Object Model, bedoeld voor ondersteunende technologieën zoals screenreaders
+- Interface
+- JavaScript-engine
 
 De JavaScript-engine is het onderdeel dat daadwerkelijk de JavaScript-code leest en uitvoert.
 
@@ -62,10 +62,10 @@ Liever een van deze twee gebruiken:
 
 Alles wat een browser ooit heeft ondersteund, moet de browser voor altijd blijven ondersteunen.
 
-* `form.elements` → bevat onder andere `input`, `select` en `textarea`
-* `bgcolor="ffffff"` → werkt nog steeds, omdat dit vroeger veel werd gebruikt
-* Content Box Model
-* `<frameset>` → voorloper van `<iframe>`
+- `form.elements` → bevat onder andere `input`, `select` en `textarea`
+- `bgcolor="ffffff"` → werkt nog steeds, omdat dit vroeger veel werd gebruikt
+- Content Box Model
+- `<frameset>` → voorloper van `<iframe>`
 
 ### Browser als platform
 
@@ -74,31 +74,31 @@ Alles wat een browser ooit heeft ondersteund, moet de browser voor altijd blijve
 
 ## Korte geschiedenis
 
-* De eerste webbrowser was de **WWW Browser** (1990). WWW staat voor **World Wide Web**.
-* De allereerste browser werd gebouwd door Tim Berners-Lee en zijn team.
-* In 2019 is deze browser opnieuw gebouwd.
+- De eerste webbrowser was de **WWW Browser** (1990). WWW staat voor **World Wide Web**.
+- De allereerste browser werd gebouwd door Tim Berners-Lee en zijn team.
+- In 2019 is deze browser opnieuw gebouwd.
 
 ### Mosaic Browser (1993)
 
-* Grote verandering: ondersteuning voor afbeeldingen op het web.
-* Mosaic was non-profit, omdat het een universiteitsproject was.
+- Grote verandering: ondersteuning voor afbeeldingen op het web.
+- Mosaic was non-profit, omdat het een universiteitsproject was.
 
 ### Netscape (1994)
 
-* Was niet gratis.
+- Was niet gratis.
 
 ### Internet Explorer (1995)
 
-* Was gratis.
+- Was gratis.
 
 ### Opera (1995)
 
-* Wilde laten zien hoe CSS écht werkte en ondersteunde CSS beter dan veel andere browsers.
-* Opera bleef lange tijd een betaalde browser.
+- Wilde laten zien hoe CSS écht werkte en ondersteunde CSS beter dan veel andere browsers.
+- Opera bleef lange tijd een betaalde browser.
 
 ### IE 5 Mac (2000)
 
-* De beste browser voor Mac in die tijd.
+- De beste browser voor Mac in die tijd.
 
 ## De eerste belangrijke browsers
 
@@ -108,9 +108,9 @@ Een hobbyproject, ontwikkeld door Linux-ontwikkelaars voor een Linux-systeem.
 
 ### Safari (2003)
 
-* WebKit is de rendering engine van Safari.
-* Er was weinig documentatie beschikbaar.
-* Ook voor JavaScript was destijds weinig documentatie.
+- WebKit is de rendering engine van Safari.
+- Er was weinig documentatie beschikbaar.
+- Ook voor JavaScript was destijds weinig documentatie.
 
 ### Firefox (2004)
 
@@ -122,9 +122,9 @@ De eerste mobiele browser die door veel mensen serieus werd genomen.
 
 ### Chrome (2008)
 
-* Open source.
-* Ontstaan uit samenwerking tussen Apple en Google.
-* Chrome heeft zijn eigen rendering engine.
+- Open source.
+- Ontstaan uit samenwerking tussen Apple en Google.
+- Chrome heeft zijn eigen rendering engine.
 
 ### Flow (2020)
 
@@ -140,9 +140,9 @@ Samsung Internet is gebaseerd op Blink.
 
 ### Browsermarkt (2024)
 
-* Firefox
-* Safari
-* Chrome
+- Firefox
+- Safari
+- Chrome
 
 ### Igalia
 

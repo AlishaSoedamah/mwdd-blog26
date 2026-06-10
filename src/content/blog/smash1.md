@@ -12,10 +12,10 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 ### Topics covered
 
-* Flexbox
-* CSS Grid
-* Breakpoints
-* Container Queries
+- Flexbox
+- CSS Grid
+- Breakpoints
+- Container Queries
 
 The talk was aimed primarily at designers and was not overly technical.
 
@@ -37,8 +37,8 @@ Figma's Auto Layout lijkt sterk op hoe Flexbox in CSS werkt.
 
 Bij het stapsgewijs bouwen van componenten biedt Auto Layout gedrag dat vergelijkbaar is met Flexbox.
 
-* **Flexbox** is eendimensionaal (horizontaal of verticaal).
-* **CSS Grid** isis tweedimensionaal (rijen en kolommen).
+- **Flexbox** is eendimensionaal (horizontaal of verticaal).
+- **CSS Grid** isis tweedimensionaal (rijen en kolommen).
 
 Bij kaartlay-outs kan Flexbox er bijvoorbeeld voor zorgen dat kaarten om de rand heen lopen en ongelijk van formaat worden. In die gevallen biedt Grid een betere lay-outoplossing.
 

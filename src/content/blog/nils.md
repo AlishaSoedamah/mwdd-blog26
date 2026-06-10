@@ -5,7 +5,7 @@ pubDate: '4 Mar 2026'
 heroImage: '../../assets/a.jpg'
 ---
 
-Nils Binder werkt bij **9elements**. Hij is UX designer en heeft onder andere gewerkt voor **FC Schalke 04**, waar hij het UX-design van de app heeft gemaakt — zijn grootste project tot nu toe.
+Nils Binder werkt bij **9elements**. Hij is UX designer en heeft onder andere gewerkt voor **FC Schalke 04**, waar hij het UX-design van de app heeft gemaakt zijn grootste project tot nu toe.
 
 Hij heeft ook gewerkt aan een intern project bij de **OECD**, waar hij nog steeds aan betrokken is.
 
@@ -16,7 +16,7 @@ Hij gaf aan dat CSS Day 2023 voor hem wat “saai” voelde.
 
 Vroeger werden websites ontworpen in Photoshop. Tegenwoordig gebruiken we vooral Figma.
 
-Figma sluit beter aan op CSS: layout-systemen, variabelen en design tokens zijn direct vergelijkbaar met hoe CSS werkt.
+Figma sluit beter aan op CSS: layout systemen, variabelen en design tokens zijn direct vergelijkbaar met hoe CSS werkt.
 
 Maar ondanks deze betere tools rijst de vraag: **wat voor soort websites ontwerpen we eigenlijk?**
 
@@ -25,10 +25,10 @@ Maar ondanks deze betere tools rijst de vraag: **wat voor soort websites ontwerp
 
 Tools zoals:
 
-* ChatGPT
-* Figma
-* Tailwind
-* React
+- ChatGPT
+- Figma
+- Tailwind
+- React
 
 zijn krachtig, maar kunnen er ook voor zorgen dat veel websites op elkaar gaan lijken.
 
@@ -105,8 +105,8 @@ p::first-line {
 
 ### Inspirerende voorbeelden
 
-* https://www.bonabry.de/en/ → goed gebruik van view transitions
-* https://www.bonamic.de/ → veel gebruik van subgrid en creatieve layouts
+- https://www.bonabry.de/en/ → goed gebruik van view transitions
+- https://www.bonamic.de/ → veel gebruik van subgrid en creatieve layouts
 
 Deze websites laten zien dat afwijkende layouts interessant en krachtig kunnen zijn.
 
