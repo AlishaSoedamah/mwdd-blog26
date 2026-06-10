@@ -6,101 +6,234 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 ---
 
-## Marleen stikker
+##  De Digitale Stad - Marleen Stikker
 
-'De digitale stad' -> eerste publike sociale platform 
-unesco world heritage
-		
-We dont have a say over wat we zien op het web
-Meer mensen worden alert van dit.
+Marleen Stikker vertelde over **De Digitale Stad (DDS)**, het eerste publieke sociale platform in Nederland.
 
-Regulation is key
-It defends democracy
-Welcomes new entreneurs
-If you dont have regulation, 
-Creates clarity
-Stimulates creativity
-Theres a law in the making about misleading algoritms. That there shouldnt be any misleading algos
+Dit platform wordt gezien als een belangrijk onderdeel van de geschiedenis van het internet en staat zelfs op de **UNESCO Memory of the World-lijst**.
 
-There will be a law against grok en andere uitkleed ai
 
-Deze wetten gaan niet tegen inovatie. 
+## Wie bepaalt wat we online zien?
 
-Inovation needs regluation. What are your values. 
+Een belangrijk thema van de presentatie was dat gebruikers tegenwoordig steeds minder invloed hebben op wat zij op het internet te zien krijgen.
 
-Nothing neutral about big tech
-What are our values?
+Algoritmes van grote technologiebedrijven bepalen voor een groot deel welke content zichtbaar is.
 
-Campqins
-People vs big tech
-Free our feeds
-Public spaces
-Make socials social again
+Steeds meer mensen worden zich bewust van deze ontwikkeling en stellen hier kritische vragen over.
 
-Public stack
-Democracy
-Human dignity
-Privacy
 
-We dont want to be locked in we want interoparable
+## Regulering is essentieel
 
-Eurostack
-A general say in tech. 
-How can we move away from the americal cloud? The dutch central bank said that they want to move away from americal tech. We do t want the internet to be owned by companies but by people. 
+Volgens Marleen is **wetgeving (regulering)** noodzakelijk om een gezond digitaal ecosysteem te behouden.
 
-People are laid back due to the intensiry
-Big tech to public tech 
-A centralised
-B decentralized
-E federated
+Goede regulering:
 
-Is there a diffrent way for us to see feeds?
-Like a trail
+- beschermt de democratie;
+- creëert duidelijkheid;
+- stimuleert innovatie;
+- biedt ruimte aan nieuwe ondernemers;
+- voorkomt dat grote technologiebedrijven te veel macht krijgen.
 
-Bluesky is still fueled by crypo
-Alternetives
-Blacksky
-Eurosky
-Spark
-Skylight
+Innovatie en regulering sluiten elkaar volgens haar niet uit.
 
->Point 1 - the web is build for everyone
->Point 2 - everyone should be able to use the web
->Point 3 - everybody is allowed to put somethibg on the web/everyone can reaxh it
->
+> **Innovatie heeft regulering nodig.**
 
-# We need the web to be sustainable for it to serve us. 
-## Hidde de Vries
+Daarbij is het belangrijk om jezelf steeds af te vragen:
 
-Ict emissions are higher than aviation emmissions. 
+> **Welke waarden willen we als samenleving beschermen?**
 
-Use the web sustainablilty guidelines to lower emmisions
+## Misleidende algoritmes
 
-### We need the web to be ethical
-What do i think matters? 
-Balance values.
-- Ai laws
-- Respect human dignity
-- Fairness
-- Harm prevention 
-- Explicipility
+Er wordt gewerkt aan wetgeving die misleidende algoritmes moet tegengaan.
 
-### The web can be used to discriminate
-- IAMA
-- CODIO-Instrument
+Het doel hiervan is om gebruikers beter te beschermen tegen systemen die hen manipuleren of sturen zonder dat zij zich daarvan bewust zijn.
 
-### We nees the web to be accessible.
-- Images are not reable 
-- Sticky header takes over whole page when zoomed in
-- Inaccessible q&a
+De boodschap was dat deze regelgeving innovatie niet belemmert, maar juist eerlijkere en betrouwbaardere digitale producten stimuleert.
 
-### Popovertaget automatically accessible 
-		<button popovertarget="my-popover">Open Popover</button>
+## Big Tech is niet neutraal
 
-		<div popover id="my-popover">Greetings, one and all!</div>
+Volgens Marleen bestaat er niets als een neutraal platform.
 
-- Can make the web a lot more accessible
+De keuzes die grote technologiebedrijven maken, zijn gebaseerd op hun eigen belangen en waarden.
 
-1. We need the web to be fun
-2. We need the web to be ours
-3.  Too much of the web belongs to large corparations
+Daarom is het belangrijk om kritisch te blijven kijken naar de invloed van Big Tech en ons af te vragen:
+
+> **Welke waarden vinden wij belangrijk?**
+
+## Campagnes
+
+Enkele initiatieven die tijdens de presentatie werden genoemd:
+
+- **People vs Big Tech**
+- **Free Our Feeds**
+- **Public Spaces**
+- **Make Socials Social Again**
+
+Deze campagnes zetten zich in voor een opener, eerlijker en democratischer internet.
+
+## Public Stack
+
+Het concept **Public Stack** is gebaseerd op publieke waarden zoals:
+
+- democratie
+- menselijke waardigheid
+- privacy
+- openheid
+- publieke controle
+
+Het uitgangspunt is dat digitale infrastructuur ten dienste moet staan van de samenleving en niet uitsluitend van commerciële partijen.
+
+## Interoperabiliteit
+
+We willen niet afhankelijk zijn van één platform of leverancier.
+
+Daarom is **interoperabiliteit** belangrijk: verschillende systemen moeten met elkaar kunnen samenwerken en gegevens kunnen uitwisselen.
+
+Zo voorkom je een vendor lock-in en krijgen gebruikers meer vrijheid.
+
+## EuroStack
+
+Ook kwam het initiatief **EuroStack** aan bod.
+
+Dit richt zich op het versterken van Europese digitale onafhankelijkheid.
+
+Een belangrijke vraag daarbij is:
+
+> **Hoe kunnen we minder afhankelijk worden van Amerikaanse cloudproviders?**
+
+Als voorbeeld werd genoemd dat ook de **Nederlandse Bank** onderzoekt hoe zij minder afhankelijk kan worden van Amerikaanse technologie.
+
+De visie is dat het internet niet eigendom zou moeten zijn van grote bedrijven, maar een publieke infrastructuur moet blijven waar iedereen toegang toe heeft.
+
+## Van Big Tech naar Public Tech
+
+Er werden verschillende modellen voor digitale platformen besproken:
+
+- **Gecentraliseerd**: één partij heeft de volledige controle.
+- **Gedecentraliseerd**: meerdere onafhankelijke partijen beheren het netwerk.
+- **Gefedereerd**: verschillende servers werken samen volgens open standaarden.
+
+Gefedereerde netwerken bieden gebruikers meer keuze en autonomie.
+
+## Een andere manier van sociale media
+
+De presentatie stelde de vraag of we sociale media ook op een andere manier kunnen vormgeven.
+
+In plaats van algoritmische feeds zou content bijvoorbeeld chronologisch of als een soort **spoor (trail)** weergegeven kunnen worden, waardoor gebruikers meer controle krijgen over wat zij zien.
+
+## Alternatieven voor bestaande sociale netwerken
+
+Hoewel platforms zoals **Bluesky** een alternatief proberen te bieden, werden ook andere initiatieven genoemd:
+- Blacksky
+- Eurosky
+- Spark
+- Skylight
+
+Deze projecten onderzoeken nieuwe manieren om sociale media opener en gebruiksvriendelijker te maken.
+
+## Belangrijkste boodschap
+
+Marleen sloot af met drie kernprincipes van het web:
+
+> **1. Het web is gebouwd voor iedereen.**
+> **2. Iedereen moet het web kunnen gebruiken.**
+> **3. Iedereen moet iets op het web kunnen publiceren én informatie van anderen kunnen bereiken.**
+Deze principes vormen volgens haar nog steeds de basis van een open, toegankelijk en democratisch internet.
+
+
+> We need the web to be sustainable for it to serve us
+
+## Een ethisch, toegankelijk en duurzaam web - Hidde de Vries
+
+Hidde de Vries sprak over de verantwoordelijkheid die webontwikkelaars hebben om het internet duurzamer, toegankelijker en eerlijker te maken.
+
+## Duurzaamheid
+
+Een opvallend feit uit de presentatie was dat de **CO₂-uitstoot van de ICT-sector inmiddels hoger is dan die van de luchtvaartsector**.
+
+Daarom is het belangrijk om bewuste keuzes te maken tijdens het ontwerpen en ontwikkelen van websites.
+
+Een hulpmiddel hierbij zijn de **Web Sustainability Guidelines**, die handvatten bieden om de impact van websites op het milieu te verkleinen.
+
+
+## We hebben een ethisch web nodig
+Volgens Hidde moeten ontwikkelaars niet alleen nadenken over techniek, maar ook over de maatschappelijke gevolgen van hun werk.
+
+Belangrijke waarden die hierbij een rol spelen zijn:
+
+- respect voor menselijke waardigheid
+- eerlijkheid (fairness)
+- het voorkomen van schade
+- transparantie en uitlegbaarheid
+- wetgeving rondom AI
+
+Een belangrijke vraag die hij stelde was:
+
+> **Welke waarden vind jij belangrijk bij het bouwen van het web?**
+
+
+## Het web kan discrimineren
+Technologie is niet neutraal.
+
+Websites en algoritmes kunnen mensen bewust of onbewust discrimineren.
+
+Er werden verschillende hulpmiddelen genoemd om dit te onderzoeken, waaronder:
+
+- **IAMA**
+- **CODIO Instrument**
+
+Deze tools helpen ontwerpers en ontwikkelaars om mogelijke vormen van uitsluiting of discriminatie in digitale producten te herkennen.
+
+## We hebben een toegankelijk web nodig
+
+Toegankelijkheid blijft een belangrijk aandachtspunt.
+
+Voorbeelden van veelvoorkomende problemen zijn:
+
+* afbeeldingen die niet leesbaar zijn voor screenreaders doordat alternatieve tekst ontbreekt;
+* een sticky header die bij sterk inzoomen een groot deel van de pagina bedekt;
+* ontoegankelijke vraag-en-antwoordcomponenten (Q&A's).
+
+Door hier tijdens het ontwerpen rekening mee te houden, kunnen websites door een veel grotere groep mensen worden gebruikt.
+
+## Het `popover`-attribuut
+
+Een interessant voorbeeld was het nieuwe HTML `popover`-attribuut.
+
+Met relatief weinig code kun je een toegankelijke popover maken:
+
+```html
+<button popovertarget="my-popover">
+  Open popover
+</button>
+
+<div popover id="my-popover">
+  Greetings, one and all!
+</div>
+```
+
+Omdat deze functionaliteit door de browser zelf wordt ondersteund, zijn veel toegankelijkheidsvoorzieningen standaard aanwezig.
+
+Native HTML-oplossingen kunnen daardoor bijdragen aan een toegankelijker web.
+
+## Belangrijkste boodschap
+
+Hidde sloot af met drie belangrijke uitgangspunten:
+
+### 1. Het web moet leuk blijven
+
+Het web moet ruimte bieden voor creativiteit, experiment en plezier.
+
+### 2. Het web moet van ons zijn
+
+Het internet is een publieke ruimte en zou toegankelijk moeten zijn voor iedereen.
+
+### 3. Te veel van het web is in handen van grote bedrijven
+
+Een groot deel van het internet wordt tegenwoordig gecontroleerd door enkele grote technologiebedrijven.
+
+Volgens Hidde is het belangrijk om te blijven investeren in een open web waarin gebruikers, ontwikkelaars en gemeenschappen zelf invloed hebben op de technologie die zij gebruiken.
+
+
+### Niels Leenheer
+CSS DOOM LASER
