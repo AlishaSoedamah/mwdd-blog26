@@ -116,71 +116,157 @@ Zonder JavaScript kun je een pop-upmenu maken met CSS!
 		}
 	}
 
-## Whimsica11y (Whimsic accessiblility) - Sara Joy
+# Whimsica11y (Whimsic Accessibility) – Sara Joy
 
-Missing the style of old websites -> Neocities
+## Verlies van “oude web vibes”
 
-### these people are diverse and inclusive
-Many of them are are neurodivergent and or are disabled
+Sara Joy sprak over het verdwijnen van de speelse, creatieve stijl van oudere websites, zoals die op platforms als **Neocities**.
 
-### The WCAG
-To someone who is just starting to create their own website they just aren't going to read it.
+Veel van deze websites worden gemaakt door mensen die:
 
-### Do fun websites have to be accessible
-These are peoples homes, should ALL art be accessible.
-Maybe not, but it doesn't mean that we can't try.
-embedded audio -> audio
+- neurodivergent zijn
+- een beperking hebben
+- of bewust buiten de mainstream webstandaarden ontwerpen
 
-prefers-reduced-motion works in JS too!
+Deze “persoonlijke webspaces” voelen vaak vrijer en creatiever aan dan moderne, strak gestandaardiseerde websites.
 
-We've taken away things that people can't use, but does it still convay the fun message of the website?
-How do you transmit the vibes beyond visuals?
+## WCAG en toegankelijkheid
 
-some sites have to be boring and dull: gov sites for example.
-keep them boring and predictical.
+De **WCAG-richtlijnen** zijn belangrijk, maar voor beginners vaak overweldigend.
 
-### bridging the vibes gap
-- Hue selector
-- Alt text
-I found myself repeating existing advice, what if I accidentally excluded more people with my advice.
+Iemand die net begint met het bouwen van een website gaat deze richtlijnen meestal niet volledig lezen of begrijpen.
 
-### What has delighted people that use assistive technologies online?
-Answers where exclusivly about functionality of a website. The bar is just so low. The web is dull if you can't see it.
+Dit roept de vraag op: hoe maken we toegankelijkheid toegankelijker?
 
-Welcome pannel -> funny sounds
-The majority of people haven't learned braille because they lost their sight later in live;
+## Moet fun ook toegankelijk zijn?
 
-Screen readers use specific tones which allow them to get trough sites extreemly fast.
+Een centrale vraag in de talk was:
 
-### What has happend to our multi-media web
-Why is there so little audio and video outside of YouTube?
-- So much browsing happens on mobiles in public spaces -> often in silence.
-- CSS is very visual in nature
+> Moeten leuke en creatieve websites altijd volledig toegankelijk zijn?
 
-### Some ideas and exmples,
-- Blog with voice over audio counterparts.
-- Sound board
-- Keyboard usable drum machine
-- Learn more about the development of CSS speech
-- Create atmosphere or fun in visually hidden text.
-- [ALT TEXT SELFIES](https://alttextselfies.net/) Shows you the alt text of a picture without the picture
+Sara vergeleek websites met persoonlijke ruimtes:
 
-## Built to Last - Johannes Odland
-Cameras
-My diswasher started beeping, shoddy dishwaser causes flood.
-Everthing is breaking and nothing is reparable
+- sommige websites zijn “huizen” van mensen
+- en niet alle kunst hoeft volledig toegankelijk te zijn volgens strikte regels
 
-I was so frutstarted with the state of things, so I bought myself a present. An instant film adapter for
-my favortite camera. That camera is 17 years old and it still works. it has had 0 supply chain attacks. it was built to last.
+Tegelijkertijd werd benadrukt dat we altijd moeten proberen inclusiever te ontwerpen.
 
-matirials, what the camera was build out of: all metal body
-no plasic gear, no batteries no electronics.
+Voorbeelden:
 
-Now we can't build our sites out of metal but we have html/css and js which are sturdy.
+- embedded audio kan sfeer toevoegen
+- `prefers-reduced-motion` kan ook in JavaScript worden gebruikt
 
-The avrage project has 1200 dependencies, is it an update or is it a supply chain attack?
-But we're talking about camera's there was a dedicated instant photagapty community, they got togeter and started a
-company called: "the impossible porject". With a dead supply chain they had all the odds stacked against them
-polaroids still exist. now we have a hell of a community for the web. 
 
-I want a web that is easier to learn!
+## De “vibe gap”
+
+Een belangrijk probleem is de kloof tussen functionaliteit en beleving:
+
+- veel toegankelijkheidsrichtlijnen focussen op functionaliteit
+- maar laten vaak de “vibe” of emotie van een website buiten beschouwing
+
+De vraag is:
+
+> Hoe breng je sfeer en gevoel over zonder afhankelijk te zijn van puur visuele elementen?
+
+## Toegankelijkheid en creativiteit
+
+Sommige websites moeten juist bewust eenvoudig en voorspelbaar zijn, zoals:
+
+- overheidswebsites
+- formulieren
+- informatiesystemen
+
+Hier is duidelijkheid belangrijker dan expressie.
+
+## Bridging the vibes gap
+
+Mogelijke technieken om sfeer toegankelijk te maken:
+
+- kleur- en hue-selectors
+- goede alt-tekst
+- alternatieve audio of tekstuele representaties
+
+Sara gaf aan dat toegankelijkheidsadvies soms onbedoeld kan leiden tot uitsluiting als het te beperkt of eenzijdig wordt toegepast.
+
+## Wat vinden gebruikers met assistive technologies fijn?
+
+Uit ervaringen blijkt dat veel feedback vooral gaat over **functionaliteit**, omdat de lat voor veel websites nog steeds laag ligt.
+
+Voorbeelden van positieve ervaringen:
+
+- sound effects bij interacties
+- welkomschermen met audio
+- duidelijke feedback bij acties
+
+Veel gebruikers van screenreaders gebruiken hun tools extreem snel en efficiënt, vaak met specifieke audiotones.
+
+## Het verdwijnen van multimedia op het web
+
+Er werd besproken waarom het web minder audiovisueel is geworden:
+
+- veel mensen browsen op mobiele apparaten in openbare ruimtes
+- daarom wordt audio vaak vermeden
+- CSS is van nature vooral visueel gericht
+
+## Ideeën voor een rijker web
+
+Voorbeelden van meer inclusieve en creatieve toepassingen:
+
+- blogs met ingesproken audio-versies
+- interactieve soundboards
+- keyboard-gestuurde drum machines
+- experimenteren met CSS speech
+- sfeer toevoegen via visueel verborgen tekst
+- ALT TEXT SELFIES → https://alttextselfies.net/ (laat alt-tekst zien zonder afbeelding)
+
+# Built to Last – Johannes Odland
+
+## Duurzaamheid en hardware
+
+Johannes vertelde over de frustratie dat moderne producten steeds vaker snel stukgaan en moeilijk te repareren zijn.
+
+Hij gaf een persoonlijk voorbeeld:
+
+- een 17 jaar oude camera die nog steeds perfect werkt
+- volledig gemaakt van duurzame materialen
+- geen plastic tandwielen
+- geen batterijen of complexe elektronica
+
+Deze camera is “built to last”.
+
+## Vergelijking met software
+
+Hoewel we geen fysieke materialen gebruiken in webdevelopment, kunnen we wel vergelijkbare principes toepassen:
+
+- HTML, CSS en JavaScript zijn relatief stabiel
+- maar moderne projecten bevatten vaak extreem veel afhankelijkheden.
+
+Gemiddeld project:
+
+> ~1200 dependencies
+
+Dit roept vragen op over betrouwbaarheid:
+
+> Is een update echt een verbetering, of een risico in de supply chain?
+
+## Community en duurzaamheid
+
+Er werd een parallel getrokken met de analoge fotografie-community
+
+- toen Polaroid bijna verdween, ontstond “The Impossible Project”
+- een community bouwde het merk opnieuw op.
+
+Voor het web geldt iets vergelijkbaars:
+
+- we hebben een grote en actieve community;
+- maar moeten samenwerken om het web duurzaam en toegankelijk te houden.
+
+## Belangrijkste boodschap
+
+Het doel is een web dat:
+
+- eenvoudiger te leren is
+- duurzamer is
+- en langer meegaat
+
+Een web dat niet alleen snel en complex is, maar ook stabiel en begrijpelijk voor de lange termijn.
