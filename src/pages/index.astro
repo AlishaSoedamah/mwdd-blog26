@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import ContextMenu from '../components/ContextMenu.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import Footer from '../components/Footer.astro';
 ---
 
 <!doctype html>
@@ -157,11 +158,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				</details>
 			</section>
 		</main>
-		<footer>
-			<nav>
-				<div class="icon"></div>
-			</nav>
-		</footer>
+		<Footer/>
 	</body>
 </html>
 
@@ -172,13 +169,6 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 	.desktop {
 		display: flex;
-	}
-
-	.icon {
-		outline: 1px solid black;
-		border-radius: 30px;
-		width: 30px;
-		height: 30px;
 	}
 
 	.fixedContainer {

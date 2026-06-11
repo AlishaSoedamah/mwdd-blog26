@@ -203,11 +203,32 @@ summary::after {
 	position: absolute;
   	place-self: center; 
   	inset: 0;
-	border:  var(--off-black) solid 1px;
-	padding: 1rem;
+	border: blue solid 7px;
+	padding: 65px 25px 25px 25px;
 	width: clamp(300px, 100vw, 50rem);
 	z-index: 10;
 	background: white;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 7px;
+		right: 100px;
+		width: 20px;
+		aspect-ratio: 1;
+		box-shadow: 
+			2em 0 white,
+			4em 0 white,
+			6em 0 white;
+	}
+	&::before {
+		content: "";
+		background-color: blue;
+		width: 49.5rem;
+		height: 40px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }
 
 details summary::marker {
@@ -222,6 +243,13 @@ details summary::marker {
 	margin: 20px 0;
 	z-index: 0;
 } */
+
+.icon {
+	outline: 1px solid black;
+	border-radius: 30px;
+	width: 30px;
+	height: 30px;
+}
 
 @view-transition {
   navigation: auto;
@@ -257,4 +285,14 @@ details summary::marker {
     80% { transform: translate(-5%,0) }
     90% { transform: translate(5%,5%) }
     100% { transform: translate(-5%,0) }
+}
+
+@keyframes --color-boxes {
+  100% {
+    box-shadow:
+	  60px 0 rgb(0, 255, 0),
+      15px 0 blue,
+      30px 0 red,
+      45px 0 hotpink;
+  }
 }
