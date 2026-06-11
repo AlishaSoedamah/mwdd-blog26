@@ -92,7 +92,7 @@ with interpolate-size can animate from height 0 to height auto.
 
 #### Popover API
 
-Zonder JavaScript kun je een pop-upmenu maken met CSS!
+Zonder JavaScript kun je een popupmenu maken met CSS!
 
 	nav {
 		border: none;
@@ -116,11 +116,11 @@ Zonder JavaScript kun je een pop-upmenu maken met CSS!
 		}
 	}
 
-# Whimsica11y (Whimsic Accessibility) – Sara Joy
+## Whimsica11y (Whimsic Accessibility) - Sara Joy
 
-## Verlies van “oude web vibes”
+### Verlies van “oude web vibes”
 
-Sara Joy sprak over het verdwijnen van de speelse, creatieve stijl van oudere websites, zoals die op platforms als **Neocities**.
+Sara Joy sprak over het verdwijnen van de speelse, creatieve stijl van oudere websites, zoals die op platforms als Neocities.
 
 Veel van deze websites worden gemaakt door mensen die:
 
@@ -130,15 +130,15 @@ Veel van deze websites worden gemaakt door mensen die:
 
 Deze “persoonlijke webspaces” voelen vaak vrijer en creatiever aan dan moderne, strak gestandaardiseerde websites.
 
-## WCAG en toegankelijkheid
+### WCAG en toegankelijkheid
 
-De **WCAG-richtlijnen** zijn belangrijk, maar voor beginners vaak overweldigend.
+De WCAG richtlijnen zijn belangrijk, maar voor beginners vaak overweldigend.
 
 Iemand die net begint met het bouwen van een website gaat deze richtlijnen meestal niet volledig lezen of begrijpen.
 
 Dit roept de vraag op: hoe maken we toegankelijkheid toegankelijker?
 
-## Moet fun ook toegankelijk zijn?
+### Moet fun ook toegankelijk zijn?
 
 Een centrale vraag in de talk was:
 
@@ -157,7 +157,7 @@ Voorbeelden:
 - `prefers-reduced-motion` kan ook in JavaScript worden gebruikt
 
 
-## De “vibe gap”
+### De “vibe gap”
 
 Een belangrijk probleem is de kloof tussen functionaliteit en beleving:
 
@@ -168,7 +168,7 @@ De vraag is:
 
 > Hoe breng je sfeer en gevoel over zonder afhankelijk te zijn van puur visuele elementen?
 
-## Toegankelijkheid en creativiteit
+### Toegankelijkheid en creativiteit
 
 Sommige websites moeten juist bewust eenvoudig en voorspelbaar zijn, zoals:
 
@@ -178,19 +178,19 @@ Sommige websites moeten juist bewust eenvoudig en voorspelbaar zijn, zoals:
 
 Hier is duidelijkheid belangrijker dan expressie.
 
-## Bridging the vibes gap
+### Bridging the vibes gap
 
 Mogelijke technieken om sfeer toegankelijk te maken:
 
-- kleur- en hue-selectors
-- goede alt-tekst
+- kleur en hue selectors
+- goede alt tekst
 - alternatieve audio of tekstuele representaties
 
 Sara gaf aan dat toegankelijkheidsadvies soms onbedoeld kan leiden tot uitsluiting als het te beperkt of eenzijdig wordt toegepast.
 
-## Wat vinden gebruikers met assistive technologies fijn?
+### Wat vinden gebruikers met assistive technologies fijn?
 
-Uit ervaringen blijkt dat veel feedback vooral gaat over **functionaliteit**, omdat de lat voor veel websites nog steeds laag ligt.
+Uit ervaringen blijkt dat veel feedback vooral gaat over functionaliteit, omdat de lat voor veel websites nog steeds laag ligt.
 
 Voorbeelden van positieve ervaringen:
 
@@ -200,7 +200,7 @@ Voorbeelden van positieve ervaringen:
 
 Veel gebruikers van screenreaders gebruiken hun tools extreem snel en efficiënt, vaak met specifieke audiotones.
 
-## Het verdwijnen van multimedia op het web
+### Het verdwijnen van multimedia op het web
 
 Er werd besproken waarom het web minder audiovisueel is geworden:
 
@@ -208,20 +208,20 @@ Er werd besproken waarom het web minder audiovisueel is geworden:
 - daarom wordt audio vaak vermeden
 - CSS is van nature vooral visueel gericht
 
-## Ideeën voor een rijker web
+### Ideeën voor een rijker web
 
 Voorbeelden van meer inclusieve en creatieve toepassingen:
 
-- blogs met ingesproken audio-versies
+- blogs met ingesproken audio versies
 - interactieve soundboards
-- keyboard-gestuurde drum machines
+- keyboard gestuurde drum machines
 - experimenteren met CSS speech
 - sfeer toevoegen via visueel verborgen tekst
-- ALT TEXT SELFIES → https://alttextselfies.net/ (laat alt-tekst zien zonder afbeelding)
+- ALT TEXT SELFIES → https://alttextselfies.net/ (laat alt tekst zien zonder afbeelding)
 
-# Built to Last – Johannes Odland
+## Built to Last - Johannes Odland
 
-## Duurzaamheid en hardware
+### Duurzaamheid en hardware
 
 Johannes vertelde over de frustratie dat moderne producten steeds vaker snel stukgaan en moeilijk te repareren zijn.
 
@@ -234,7 +234,7 @@ Hij gaf een persoonlijk voorbeeld:
 
 Deze camera is “built to last”.
 
-## Vergelijking met software
+### Vergelijking met software
 
 Hoewel we geen fysieke materialen gebruiken in webdevelopment, kunnen we wel vergelijkbare principes toepassen:
 
@@ -249,9 +249,9 @@ Dit roept vragen op over betrouwbaarheid:
 
 > Is een update echt een verbetering, of een risico in de supply chain?
 
-## Community en duurzaamheid
+### Community en duurzaamheid
 
-Er werd een parallel getrokken met de analoge fotografie-community
+Er werd een parallel getrokken met de analoge fotografie community
 
 - toen Polaroid bijna verdween, ontstond “The Impossible Project”
 - een community bouwde het merk opnieuw op.
@@ -261,7 +261,7 @@ Voor het web geldt iets vergelijkbaars:
 - we hebben een grote en actieve community;
 - maar moeten samenwerken om het web duurzaam en toegankelijk te houden.
 
-## Belangrijkste boodschap
+### Belangrijkste boodschap
 
 Het doel is een web dat:
 

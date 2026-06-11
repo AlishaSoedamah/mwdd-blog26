@@ -12,7 +12,7 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 - Alleen informatie vragen die nodig is.
 - Bijvoorbeeld: *"Het duurt ongeveer 5 minuten om dit formulier in te vullen."*
 - De gebruiker kan vóór het verzenden de ingevoerde gegevens controleren, wijzigen of ongedaan maken.
-- Na het klikken op **Volgende** of **Verzenden** verschijnt een overzicht van alle fouten.
+- Na het klikken op Volgende of Verzenden verschijnt een overzicht van alle fouten.
 - Na het verzenden verschijnt een duidelijke bevestiging.
 
 Vraag niet om onnodige gegevens.
@@ -43,14 +43,14 @@ Leg uit waarvoor persoonlijke gegevens worden gebruikt.
 - Zorg ook voor voldoende contrast van subtiele tekst.
 - Maak componenten groot genoeg.
 
-**44 × 44 pixels** wordt beschouwd als een gebruiksvriendelijke minimale grootte.
+44 × 44 pixels wordt beschouwd als een gebruiksvriendelijke minimale grootte.
 
 ## Veelgemaakte fouten
 
 ### Fout: Een invoerfout alleen met kleur aangeven
 
 - Plaats knoppen aan het begin van de regel waar iedereen ze gemakkelijk kan vinden.
-- Toon de voortgang boven het formulier in tekst, bijvoorbeeld: **Stap 2 van 4**.
+- Toon de voortgang boven het formulier in tekst, bijvoorbeeld: Stap 2 van 4.
 - Zorg voor duidelijke navigatie.
 - Maak duidelijk in welke stap het formulier daadwerkelijk wordt verzonden.
 - Elk invoerveld heeft een label.
@@ -81,9 +81,9 @@ Plaats uitleg buiten het label, zodat het label niet onnodig lang wordt.
 
 Voorbeeld:
 
-slecht: **Voorna(a)m(en)**
+slecht: Voorna(a)m(en)
 
-goed: **Voornaam (één of meerdere)**
+goed: Voornaam (één of meerdere)
 
 ## Makkelijker invullen
 
@@ -114,8 +114,8 @@ Zorg dat labels overal in het formulier consistent zijn.
 
 Bijvoorbeeld:
 
-- **Plaatsnaam**
-- **Postcode**
+- Plaatsnaam
+- Postcode
 
 Gebruik overal dezelfde terminologie.
 

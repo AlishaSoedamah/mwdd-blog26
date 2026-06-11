@@ -14,9 +14,9 @@ Een browser moet HTML, CSS en JavaScript kunnen interpreteren.
 - DOM
 - AOM → Accessibility Object Model, bedoeld voor ondersteunende technologieën zoals screenreaders
 - Interface
-- JavaScript-engine
+- JavaScript engine
 
-De JavaScript-engine is het onderdeel dat daadwerkelijk de JavaScript-code leest en uitvoert.
+De JavaScript engine is het onderdeel dat daadwerkelijk de JavaScript-code leest en uitvoert.
 
 De programmeertaal JavaScript is officieel geen onderdeel van de browser zelf en wordt daarom verwerkt door een aparte engine.
 
@@ -32,7 +32,7 @@ Er zitten onder andere loops en `if`-statements in.
 
 JavaScript is render-blocking, tenzij je `async` of `defer` gebruikt.
 
-Als je JavaScript in HTML plaatst, mag de browser niet verder met de HTML-parser totdat het JavaScript-bestand is geladen. Daarom is het beter om JavaScript pas te laden nadat de HTML volledig is verwerkt.
+Als je JavaScript in HTML plaatst, mag de browser niet verder met de HTML parser totdat het JavaScript bestand is geladen. Daarom is het beter om JavaScript pas te laden nadat de HTML volledig is verwerkt.
 
 Hetzelfde geldt voor inline CSS. De layout is het kostbaarste onderdeel dat de browser moet berekenen. CSS wordt daarom eerst geparsed, omdat dit een van de lastigste onderdelen voor de browser is. Als eerst alleen de HTML zou worden geladen, zou je een ongestylede webpagina zien.
 
@@ -74,14 +74,14 @@ Alles wat een browser ooit heeft ondersteund, moet de browser voor altijd blijve
 
 ## Korte geschiedenis
 
-- De eerste webbrowser was de **WWW Browser** (1990). WWW staat voor **World Wide Web**.
-- De allereerste browser werd gebouwd door Tim Berners-Lee en zijn team.
-- In 2019 is deze browser opnieuw gebouwd.
+- De eerste webbrowser was de WWW Browser (1990). WWW staat voor World Wide Web
+- De allereerste browser werd gebouwd door Tim Berners-Lee en zijn team
+- In 2019 is deze browser opnieuw gebouwd
 
 ### Mosaic Browser (1993)
 
 - Grote verandering: ondersteuning voor afbeeldingen op het web.
-- Mosaic was non-profit, omdat het een universiteitsproject was.
+- Mosaic was nonprofit, omdat het een universiteitsproject was
 
 ### Netscape (1994)
 
@@ -93,8 +93,8 @@ Alles wat een browser ooit heeft ondersteund, moet de browser voor altijd blijve
 
 ### Opera (1995)
 
-- Wilde laten zien hoe CSS écht werkte en ondersteunde CSS beter dan veel andere browsers.
-- Opera bleef lange tijd een betaalde browser.
+- Wilde laten zien hoe CSS écht werkte en ondersteunde CSS beter dan veel andere browsers
+- Opera bleef lange tijd een betaalde browser
 
 ### IE 5 Mac (2000)
 
@@ -128,7 +128,7 @@ De eerste mobiele browser die door veel mensen serieus werd genomen.
 
 ### Flow (2020)
 
-Gemaakt door een Engels bedrijf en ondersteunt bepaalde CSS-functionaliteiten niet.
+Gemaakt door een Engels bedrijf en ondersteunt bepaalde CSS functionaliteiten niet.
 
 ### Ladybird (2024)
 
@@ -146,7 +146,7 @@ Samsung Internet is gebaseerd op Blink.
 
 ### Igalia
 
-Igalia is een Spaans open-sourcebedrijf.
+Igalia is een Spaans open sourcebedrijf.
 
 Het bedrijf richt zich de laatste jaren op het ontwikkelen van onderdelen van rendering engines.
 

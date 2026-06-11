@@ -8,12 +8,12 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 ## Media queries vs container queries
 
-Kevin Powell legde het verschil uit tussen **media queries** en **container queries** en hoe deze de manier waarop we responsive layouts bouwen veranderen.
+Kevin Powell legde het verschil uit tussen media queries en container queries en hoe deze de manier waarop we responsive layouts bouwen veranderen.
 
 
 ## Problemen met media queries
 
-Bij traditionele layouts met **media queries** en `grid-template-columns` loop je vaak tegen problemen aan.
+Bij traditionele layouts met media queries en `grid-template-columns` loop je vaak tegen problemen aan.
 
 Bijvoorbeeld: zodra je padding verandert, moet je soms werken met “magische getallen” om de layout goed te laten uitlijnen.
 
@@ -22,7 +22,7 @@ Dit maakt layouts minder flexibel en gevoeliger voor kleine aanpassingen.
 
 ## Container queries als oplossing
 
-Met **container queries** kun je layouts laten reageren op de grootte van hun container in plaats van het volledige viewport.
+Met container queries kun je layouts laten reageren op de grootte van hun container in plaats van het volledige viewport.
 
 Je kunt bijvoorbeeld berekeningen gebruiken zoals:
 
@@ -41,8 +41,8 @@ Maar volgens Kevin is dat beter dan werken met onvoorspelbare “magic numbers�
 
 ## Verschil in gedrag
 
-- **Media queries** reageren op de volledige viewport (bijvoorbeeld browserbreedte of font-size van de browser).
-- **Container queries** reageren op de grootte van de container zelf.
+- Media queries reageren op de volledige viewport (bijvoorbeeld browserbreedte of font-size van de browser).
+- Container queries reageren op de grootte van de container zelf.
 
 Hierdoor zijn componenten veel beter herbruikbaar.
 
@@ -86,7 +86,7 @@ Container queries worden steeds krachtiger.
 
 ### Container style queries
 
-Nog niet volledig ondersteund in browsers zoals Firefox, maar ze maken het mogelijk om styles toe te passen op basis van container-eigenschappen.
+Nog niet volledig ondersteund in browsers zoals Firefox, maar ze maken het mogelijk om styles toe te passen op basis van container eigenschappen.
 
 ### Container scroll-state()
 
@@ -120,8 +120,8 @@ Wanneer je naar beneden scrollt verdwijnt de header, en wanneer je terug omhoog 
 
 ## Belangrijkste verschil
 
-- **Media queries** kijken naar de hele pagina.
-- **Container queries** kijken naar de beschikbare ruimte van een component.
+- Media queries kijken naar de hele pagina.
+- Container queries kijken naar de beschikbare ruimte van een component.
 
 Dit maakt container queries veel flexibeler voor moderne component-based layouts.
 

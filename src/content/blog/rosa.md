@@ -19,13 +19,13 @@ Een hacker is een persoon die vaardig is in informatietechnologie en alternatiev
 - Learn through failure
 - Collective research
 - Skill sharing
-- Hands-on ervaring met hardware, servers, websites en networking
+- Hands on ervaring met hardware, servers, websites en networking
 
 Het idee is om erachter te komen hoeveel je zelf kunt maken en beheren. Hoe meer je zelf bouwt, hoe meer controle je behoudt.
 
 Maar dit wordt steeds lastiger.
 
-De enige oplossing lijkt vaak: **nieuw kopen**.
+De enige oplossing lijkt vaak: nieuw kopen.
 
 Dit leidt tot een grotere afhankelijkheid.
 
@@ -35,8 +35,8 @@ Planned obsolescence werkt reparatie en hacken actief tegen.
 
 Voorbeelden:
 
-- Elektronica die moeilijk te repareren is (bijv. iPhones met niet-standaard schroeven)
-- Chromebooks die vaak na 2–3 jaar verouderen of niet meer bruikbaar zijn
+- Elektronica die moeilijk te repareren is (bijv. iPhones met niet standaard schroeven)
+- Chromebooks die vaak na 2/3 jaar verouderen of niet meer bruikbaar zijn
 
 Soms moet je zelfs hardware aanpassen of solderen om iets nog werkend te krijgen.
 
@@ -67,7 +67,7 @@ Kenmerken:
 - bewust omgaan met energie en beschikbaarheid
 
 
-## Rosa – The Travelling Server
+## Rosa - The Travelling Server
 
 - Publieke sysadmin-sessies
 - Volledig gedocumenteerd

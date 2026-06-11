@@ -8,9 +8,9 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 ##  De Digitale Stad - Marleen Stikker
 
-Marleen Stikker vertelde over **De Digitale Stad (DDS)**, het eerste publieke sociale platform in Nederland.
+Marleen Stikker vertelde over De Digitale Stad (DDS), het eerste publieke sociale platform in Nederland.
 
-Dit platform wordt gezien als een belangrijk onderdeel van de geschiedenis van het internet en staat zelfs op de **UNESCO Memory of the World-lijst**.
+Dit platform wordt gezien als een belangrijk onderdeel van de geschiedenis van het internet en staat zelfs op de UNESCO Memory of the World lijst.
 
 
 ## Wie bepaalt wat we online zien?
@@ -24,7 +24,7 @@ Steeds meer mensen worden zich bewust van deze ontwikkeling en stellen hier krit
 
 ## Regulering is essentieel
 
-Volgens Marleen is **wetgeving (regulering)** noodzakelijk om een gezond digitaal ecosysteem te behouden.
+Volgens Marleen is wetgeving (regulering) noodzakelijk om een gezond digitaal ecosysteem te behouden.
 
 Goede regulering:
 
@@ -36,11 +36,11 @@ Goede regulering:
 
 Innovatie en regulering sluiten elkaar volgens haar niet uit.
 
-> **Innovatie heeft regulering nodig.**
+> Innovatie heeft regulering nodig.
 
 Daarbij is het belangrijk om jezelf steeds af te vragen:
 
-> **Welke waarden willen we als samenleving beschermen?**
+> Welke waarden willen we als samenleving beschermen?
 
 ## Misleidende algoritmes
 
@@ -58,22 +58,22 @@ De keuzes die grote technologiebedrijven maken, zijn gebaseerd op hun eigen bela
 
 Daarom is het belangrijk om kritisch te blijven kijken naar de invloed van Big Tech en ons af te vragen:
 
-> **Welke waarden vinden wij belangrijk?**
+> Welke waarden vinden wij belangrijk?
 
 ## Campagnes
 
 Enkele initiatieven die tijdens de presentatie werden genoemd:
 
-- **People vs Big Tech**
-- **Free Our Feeds**
-- **Public Spaces**
-- **Make Socials Social Again**
+- People vs Big Tech
+- Free Our Feeds
+- Public Spaces
+- Make Socials Social Again
 
 Deze campagnes zetten zich in voor een opener, eerlijker en democratischer internet.
 
 ## Public Stack
 
-Het concept **Public Stack** is gebaseerd op publieke waarden zoals:
+Het concept Public Stack is gebaseerd op publieke waarden zoals:
 
 - democratie
 - menselijke waardigheid
@@ -87,21 +87,21 @@ Het uitgangspunt is dat digitale infrastructuur ten dienste moet staan van de sa
 
 We willen niet afhankelijk zijn van één platform of leverancier.
 
-Daarom is **interoperabiliteit** belangrijk: verschillende systemen moeten met elkaar kunnen samenwerken en gegevens kunnen uitwisselen.
+Daarom is interoperabiliteit belangrijk: verschillende systemen moeten met elkaar kunnen samenwerken en gegevens kunnen uitwisselen.
 
-Zo voorkom je een vendor lock-in en krijgen gebruikers meer vrijheid.
+Zo voorkom je een vendor lock in en krijgen gebruikers meer vrijheid.
 
 ## EuroStack
 
-Ook kwam het initiatief **EuroStack** aan bod.
+Ook kwam het initiatief EuroStack aan bod.
 
 Dit richt zich op het versterken van Europese digitale onafhankelijkheid.
 
 Een belangrijke vraag daarbij is:
 
-> **Hoe kunnen we minder afhankelijk worden van Amerikaanse cloudproviders?**
+> Hoe kunnen we minder afhankelijk worden van Amerikaanse cloudproviders?
 
-Als voorbeeld werd genoemd dat ook de **Nederlandse Bank** onderzoekt hoe zij minder afhankelijk kan worden van Amerikaanse technologie.
+Als voorbeeld werd genoemd dat ook de Nederlandse Bank onderzoekt hoe zij minder afhankelijk kan worden van Amerikaanse technologie.
 
 De visie is dat het internet niet eigendom zou moeten zijn van grote bedrijven, maar een publieke infrastructuur moet blijven waar iedereen toegang toe heeft.
 
@@ -109,9 +109,9 @@ De visie is dat het internet niet eigendom zou moeten zijn van grote bedrijven, 
 
 Er werden verschillende modellen voor digitale platformen besproken:
 
-- **Gecentraliseerd**: één partij heeft de volledige controle.
-- **Gedecentraliseerd**: meerdere onafhankelijke partijen beheren het netwerk.
-- **Gefedereerd**: verschillende servers werken samen volgens open standaarden.
+- Gecentraliseerd: één partij heeft de volledige controle.
+- Gedecentraliseerd: meerdere onafhankelijke partijen beheren het netwerk.
+- Gefedereerd: verschillende servers werken samen volgens open standaarden.
 
 Gefedereerde netwerken bieden gebruikers meer keuze en autonomie.
 
@@ -119,11 +119,11 @@ Gefedereerde netwerken bieden gebruikers meer keuze en autonomie.
 
 De presentatie stelde de vraag of we sociale media ook op een andere manier kunnen vormgeven.
 
-In plaats van algoritmische feeds zou content bijvoorbeeld chronologisch of als een soort **spoor (trail)** weergegeven kunnen worden, waardoor gebruikers meer controle krijgen over wat zij zien.
+In plaats van algoritmische feeds zou content bijvoorbeeld chronologisch of als een soort spoor (trail) weergegeven kunnen worden, waardoor gebruikers meer controle krijgen over wat zij zien.
 
 ## Alternatieven voor bestaande sociale netwerken
 
-Hoewel platforms zoals **Bluesky** een alternatief proberen te bieden, werden ook andere initiatieven genoemd:
+Hoewel platforms zoals Bluesky een alternatief proberen te bieden, werden ook andere initiatieven genoemd:
 - Blacksky
 - Eurosky
 - Spark
@@ -135,9 +135,9 @@ Deze projecten onderzoeken nieuwe manieren om sociale media opener en gebruiksvr
 
 Marleen sloot af met drie kernprincipes van het web:
 
-> **1. Het web is gebouwd voor iedereen.**
-> **2. Iedereen moet het web kunnen gebruiken.**
-> **3. Iedereen moet iets op het web kunnen publiceren én informatie van anderen kunnen bereiken.**
+> 1. Het web is gebouwd voor iedereen.
+> 2. Iedereen moet het web kunnen gebruiken.
+> 3. Iedereen moet iets op het web kunnen publiceren én informatie van anderen kunnen bereiken.
 Deze principes vormen volgens haar nog steeds de basis van een open, toegankelijk en democratisch internet.
 
 
@@ -149,11 +149,11 @@ Hidde de Vries sprak over de verantwoordelijkheid die webontwikkelaars hebben om
 
 ## Duurzaamheid
 
-Een opvallend feit uit de presentatie was dat de **CO₂-uitstoot van de ICT-sector inmiddels hoger is dan die van de luchtvaartsector**.
+Een opvallend feit uit de presentatie was dat de CO₂uitstoot van de ICT sector inmiddels hoger is dan die van de luchtvaartsector.
 
 Daarom is het belangrijk om bewuste keuzes te maken tijdens het ontwerpen en ontwikkelen van websites.
 
-Een hulpmiddel hierbij zijn de **Web Sustainability Guidelines**, die handvatten bieden om de impact van websites op het milieu te verkleinen.
+Een hulpmiddel hierbij zijn de Web Sustainability Guidelines, die handvatten bieden om de impact van websites op het milieu te verkleinen.
 
 
 ## We hebben een ethisch web nodig
@@ -169,7 +169,7 @@ Belangrijke waarden die hierbij een rol spelen zijn:
 
 Een belangrijke vraag die hij stelde was:
 
-> **Welke waarden vind jij belangrijk bij het bouwen van het web?**
+> Welke waarden vind jij belangrijk bij het bouwen van het web?
 
 
 ## Het web kan discrimineren
@@ -179,8 +179,8 @@ Websites en algoritmes kunnen mensen bewust of onbewust discrimineren.
 
 Er werden verschillende hulpmiddelen genoemd om dit te onderzoeken, waaronder:
 
-- **IAMA**
-- **CODIO Instrument**
+- IAMA
+- CODIO Instrument
 
 Deze tools helpen ontwerpers en ontwikkelaars om mogelijke vormen van uitsluiting of discriminatie in digitale producten te herkennen.
 
@@ -192,7 +192,7 @@ Voorbeelden van veelvoorkomende problemen zijn:
 
 * afbeeldingen die niet leesbaar zijn voor screenreaders doordat alternatieve tekst ontbreekt;
 * een sticky header die bij sterk inzoomen een groot deel van de pagina bedekt;
-* ontoegankelijke vraag-en-antwoordcomponenten (Q&A's).
+* ontoegankelijke vraag en antwoordcomponenten (Q&A's).
 
 Door hier tijdens het ontwerpen rekening mee te houden, kunnen websites door een veel grotere groep mensen worden gebruikt.
 
@@ -214,7 +214,7 @@ Met relatief weinig code kun je een toegankelijke popover maken:
 
 Omdat deze functionaliteit door de browser zelf wordt ondersteund, zijn veel toegankelijkheidsvoorzieningen standaard aanwezig.
 
-Native HTML-oplossingen kunnen daardoor bijdragen aan een toegankelijker web.
+Native HTML oplossingen kunnen daardoor bijdragen aan een toegankelijker web.
 
 ## Belangrijkste boodschap
 
