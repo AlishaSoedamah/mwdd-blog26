@@ -6,7 +6,6 @@
 
 :focus {
 	outline: var(--off-black) 5px solid;
-	z-index: 100;
 }
 
 * {
