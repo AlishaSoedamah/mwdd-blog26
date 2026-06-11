@@ -166,14 +166,14 @@ import ContextMenu from '../components/ContextMenu.astro';
 		align-items: center;
 	}
 
-	.folder {
+	article {
+		background: blue;
 		display: flex;
 		flex-direction: column;
 		outline: 1px solid var(--off-black);
 		padding: 75px 25px 40px 25px;
 		border-radius: 5px;
 		width: 1000px;
-		/* box-shadow: 15px 15px 0 var(--off-black); */
 	}
 
 	.hero {
@@ -195,11 +195,12 @@ import ContextMenu from '../components/ContextMenu.astro';
 	}
 
 	.map {
+		/* background: radial-gradient(#0000ff, green); */
+		background: radial-gradient(blue, white);
 		outline: 1px solid var(--off-black);
 		position: relative;
 		padding: 10px;
 		height: 35px;
-		background-color: var(--bg);
 		animation: moveUp 1s ease;
 	}
 
@@ -210,7 +211,7 @@ import ContextMenu from '../components/ContextMenu.astro';
 
 	.map:hover {
 		cursor: pointer;
-		background-color: var(--bg-hover);
+		background: radial-gradient(rgb(0, 0, 218),  var(--bg-hover));
 		.tab {
 			background-color: var(--bg-hover);
 		}
@@ -222,12 +223,12 @@ import ContextMenu from '../components/ContextMenu.astro';
 		border-top: 1px solid var(--off-black);
 		border-left: 1px solid var(--off-black);
 		border-right: 1px solid var(--off-black);
-		background-color: var(--bg);
 		position: absolute;
 		bottom: 35px;
 		padding: 10px 40px;
 		border-radius: 5px 5px 0 0;
 		display: flex;
+		background-color: white;
 		justify-content: space-between;
 	}
 
