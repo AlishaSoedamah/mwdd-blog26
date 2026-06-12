@@ -317,5 +317,31 @@ Offset-anchor
 shape()
 
 ## Modern UI Patterns - Una Kravets
+AI - there is so much change right now and change is scary. What does this mean for us as developers? How does this effect what we do?
 
-## Contextualism Adam Argyle
+### How to build
+I think it's really important to know what to build or how to build.
+How do you know that you're making a high quality web experience.
+
+I wanted to dig into what a good User experience was.
+
+5 key UX principles 
+1. Respect user preferences
+2. Maximise content, reduce noice
+3. Implement natural interactions
+4. Provide guided navigation
+5. Adapt to the form factor
+
+### 1 Respect user preferences
+Theming, motion. Think about the users context, the user being part of the design journey.
+
+### 2 Maximise content, reduce noice
+Avoid popups, on a web app you get an install our app, this is very bad.
+
+### 3 Implement natural interactions
+Intentional animation, view-transitions. Animation is going to trigger user interaction. Animating between states so your user is more forgiving
+
+### 4 Provide guided navigation 
+
+### 5 Adapt to the form factor
+Leverage touch based intuitive interactions, consider minimum touch target sized, adapt the layout and UI pattern
