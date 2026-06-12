@@ -211,14 +211,15 @@ summary::after {
 	&::after {
 		content: "";
 		position: absolute;
-		top: 7px;
-		right: 100px;
-		width: 20px;
+		top: 10px;
+		left: -20px;
+		width: 15px;
 		aspect-ratio: 1;
+		border-radius: 15px;
 		box-shadow: 
-			2em 0 white,
-			4em 0 white,
-			6em 0 white;
+			2em 0 rgb(0, 255, 68),
+			4em 0 rgb(229, 255, 0),
+			6em 0 rgb(255, 0, 0);
 	}
 	&::before {
 		content: "";

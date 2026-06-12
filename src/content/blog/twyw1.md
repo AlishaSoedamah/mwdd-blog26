@@ -235,5 +235,78 @@ Een groot deel van het internet wordt tegenwoordig gecontroleerd door enkele gro
 Volgens Hidde is het belangrijk om te blijven investeren in een open web waarin gebruikers, ontwikkelaars en gemeenschappen zelf invloed hebben op de technologie die zij gebruiken.
 
 
-### Niels Leenheer
-CSS DOOM LASER
+## CSS Doom Laser - Niels Leenheer
+## CSS Doom Laser - Niels Leenheer
+I get obsessed sometimes, web standards, oscilloscopes, northern lights, lego, clocks..and so much more.
+But mostly about the web. Lately my obsession has been making a lazer clock.
+
+I've been fascinated by lazer projectors, I don't know how to connect one to my laptop.
+oscilloscopes are really cool too even if they are not lazers.
+
+### How I used css animations to draw a clock on an oscilloscope
+Well not really, it's more..
+
+### How I used web audio to blow up an 1980's oscilloscope and almost caused a fire.
+It's 4 simple figures.
+root: {
+	--hours: 10;
+	--minutes: 10;
+	--seconds: 10;
+}
+
+@keyframes rotate-360 {
+	from {transform: rotate(0)}
+	to {transform: rotate(0)}
+}
+
+We need to generate two signals 1 for the x-plate and one for the y-plate.
+
+Any shape can be expressed with these two.
+Now how do we get our coordinates, we end up with an array of numbers.
+We do this 30 times per second. We just get the css animations for free.
+
+This is a clock on an oscilloscope, it's really cool but it's not power efficient (it's terrible). We can do so much more with this.
+We can run any SVG + animation on this . You can run CSS and JS on this as well.
+
+### Now what?
+Redundancy.
+My scope has exploded, I find myself on a 5 hour train, I have nothing todo so I build an oscilloscope simulator.
+
+I created doom. It also works on the oscilloscope.
+It looks great if you keep in mind that we are generating lines, and it is great but it isn't the real doom game. We have all this data, that got me thinking
+We can recreate doom with css. Eventually I started adding more and more. The render is almost 100% CSS.
+
+### But why?
+Javascript should only do what only javascript can do. CSS can do this
+The next question should probably be are you crazy??
+
+Every wall/floor/ceiling is a div. Everything is transformed with 3d transformed
+And passed to css as custom properties. We insert this into the DOM and CSS handles the rest.
+It's not a full 3d scene which is why it translates so well to CSS.
+
+We don't move around the word, the world moves around us. 
+We just move the world as a whole the world is static. If we hove up the stairs the world moves down. 
+
+Maybe you've already noticed that sprites like barrels are faced to the player. Billboarded using the play angle.
+
+Doors, just a transition between two heights that's all there is to it.
+The difficult part is collision.
+
+We have all sort of things we can shoot like monsters and barrels. We use background position to show us the right angle. 
+One important detail is that we're using steps animations. Fully automatic and powered by css.
+
+Bullets are flying through space with a CSS animations. A new div is added to the DOM with CSS properties.
+If we were to use the transform property we can't use transform again as it would overwrite the last transform.
+It removes itself from the dom at the end of the animation.
+
+When the player is moving around, you can see the player bob around. 
+Always run the animation but have it on the paused state. When the user is running put it on the running state. CSS doom is responsive.
+I've added multiplayer support and it's amazing that it actually works.
+It's thousands of divs and CSS.
+
+CSS was never meant to do this but it's amazing that it can do this.
+It's quite playable for this. 
+
+### But why stop here?
+Is there more to this story, I created a CSS flamethrower!
+Turns out that connecting a lazer to a computer is relatively easy because it also takes an X and Y.
