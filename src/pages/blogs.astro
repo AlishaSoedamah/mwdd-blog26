@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import ContextMenu from '../components/ContextMenu.astro';
 import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 ---
 
 <!doctype html>
@@ -10,7 +11,6 @@ import Footer from '../components/Footer.astro';
 		<BaseHead title="blog" description="blog" />
 	</head>
 	<body>
-		<!-- <ContextMenu/> -->
 		<!-- <svg>
 			<filter id="noiseFilter">
 				<feTurbulence
@@ -22,6 +22,8 @@ import Footer from '../components/Footer.astro';
 				</feTurbulence>
 			</filter>
 		</svg> -->
+		<ContextMenu/>
+		<Header/>
 		<main>
 			<a href="/">Back to home</a>
 			<div class="hero">

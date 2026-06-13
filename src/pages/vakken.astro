@@ -3,7 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import ContextMenu from '../components/ContextMenu.astro';
 import Footer from '../components/Footer.astro';
-
+import Header from '../components/Header.astro';
 ---
 
 <!doctype html>
@@ -24,6 +24,8 @@ import Footer from '../components/Footer.astro';
 		</filter>
 	</svg>
 	<ContextMenu/>
+	<Header/>
+	<h1>Vakken</h1>
 	<main>
 		<details class="auto-close" name="open_one">
 			<summary>

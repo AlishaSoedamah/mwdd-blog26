@@ -3,12 +3,16 @@ import BaseHead from '../components/BaseHead.astro';
 import ContextMenu from '../components/ContextMenu.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<script>
+			import "prop-for-that/head"
+		</script>
 	</head>
 	<body>
 		<div id="preloader" class="fixedContainer">
@@ -22,6 +26,7 @@ import Footer from '../components/Footer.astro';
 				</div>
 			</div>
 		</div>
+		<Header/>
 		<ContextMenu/>
 		<main>
 			<section class="desktop">
@@ -159,6 +164,16 @@ import Footer from '../components/Footer.astro';
 		align-items: start;
 	}
 
+	@container style(--live-online: 0) {
+		.tile--online { color: var(--limit); }
+		.tile__online::after { content: 'offline'; }
+	}
+
+	.tile__gauge i {
+		inline-size: calc(var(--live-battery-level) * 100%);
+	}
+
+
 	.desktop {
 		display: flex;
 	}
@@ -168,6 +183,7 @@ import Footer from '../components/Footer.astro';
 		z-index: 10;
 		width: 100vw;
 		height: 100vh;
+		font-size: 2em;
 		background: blue;
 		color: white;
 	}

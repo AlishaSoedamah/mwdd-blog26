@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import ContextMenu from '../components/ContextMenu.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 ---
 
 <!doctype html>
@@ -12,8 +13,10 @@ import Footer from '../components/Footer.astro';
 	</head>
 <body>
 	<ContextMenu/>
+	<Header/>
 	<section>
 		<main>
+			<h1>Leerdoelen</h1>
 			<details class="auto-close" name="open_one">
 				<summary>
 					<p>leerdoel_1.md</p>
