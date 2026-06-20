@@ -1,0 +1,53 @@
+---
+interface Props {
+  url: string;
+  name: string;
+  session: string;
+}
+
+const { url, name, session } = Astro.props;
+---
+
+<a href={url}>
+	<div class="map">
+			<div class="tab">
+				<mark>{name}</mark>
+				<mark>{session}</mark>
+			</div>
+	</div>
+</a>
+
+<style>
+	.map {
+		background: radial-gradient(blue, white);
+		outline: 1px solid var(--off-black);
+		position: relative;
+		padding: 10px;
+		height: 35px;
+		animation: moveUp 1s ease;
+	}
+
+	.map:hover {
+		cursor: pointer;
+		background: radial-gradient(rgb(0, 0, 218),  var(--bg-hover));
+		.tab {
+			background-color: var(--bg-hover);
+		}
+	}
+
+	.tab {
+		width: 250px;
+		color: black;
+		border-top: 1px solid var(--off-black);
+		border-left: 1px solid var(--off-black);
+		border-right: 1px solid var(--off-black);
+		position: absolute;
+		bottom: 35px;
+		padding: 10px 40px;
+		border-radius: 5px 5px 0 0;
+		display: flex;
+		background-color: white;
+		justify-content: space-between;
+	}
+
+</style>

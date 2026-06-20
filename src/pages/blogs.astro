@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import ContextMenu from '../components/ContextMenu.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import Folder from '../components/Folder.astro';
 ---
 
 <!doctype html>
@@ -20,127 +21,22 @@ import Header from '../components/Header.astro';
 				<h1 class="post-title">Blogs</h1>
 				<p>Mijn collectie van blogs van de sprekers voor de Minor Web Design & Development (MWDD)</p>
 			</div>
-			<article class="folder">
-				<a href="/blog/kilian/">
-					<div class="map">
-						<div class="tab odd">
-							<mark>Kilian</mark>
-							<mark>00</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/ppk/">
-					<div class="map">
-						<div class="tab even">
-							<mark>PPK</mark>
-							<mark>01</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/nils/">
-					<div class="map">
-						<div class="tab odd">
-							<mark>Nils</mark>
-							<mark>02</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/robbert/">
-					<div class="map">
-						<div class="tab middle">
-							<mark>Robbert</mark>
-							<mark>03</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/rosa/">
-					<div class="map">
-						<div class="tab even">
-							<mark>Rosa</mark>
-							<mark>04</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/johan/">
-					<div class="map">
-						<div class="tab odd">
-							<mark>Johan</mark>
-							<mark>05</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/smash1/">
-					<div class="map">
-						<div class="tab middle">
-							<mark>Smashing conf</mark>
-							<mark>dag 1</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/smash2/">
-					<div class="map">
-						<div class="tab even">
-							<mark>Smashing conf</mark>
-							<mark>dag 2</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/hans/">
-					<div class="map">
-						<div class="tab middle">
-							<mark>Hans</mark>
-							<mark>06</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/q42/">
-					<div class="map">
-						<div class="tab odd">
-							<mark>Q42</mark>
-							<mark>07</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/voorhoede/">
-					<div class="map">
-						<div class="tab even">
-							<mark>Voorhoede</mark>
-							<mark>08</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/twyw1">
-					<div class="map">
-						<div class="tab middle">
-							<mark>TWYW</mark>
-							<mark>dag 1</mark>
-						</div>
-					</div>
-				</a>
-					<a href="/blog/twyw2">
-					<div class="map">
-						<div class="tab odd">
-							<mark>TWYW</mark>
-							<mark>dag 2</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/cssday1">
-					<div class="map">
-						<div class="tab even">
-							<mark>CSS day</mark>
-							<mark>dag 1</mark>
-						</div>
-					</div>
-				</a>
-				<a href="/blog/cssday2">
-					<div class="map">
-						<div class="tab middle">
-							<mark>CSS day</mark>
-							<mark>dag 2</mark>
-						</div>
-					</div>
-				</a>
+			<article>
+				<Folder url="/blog/kilian" name="Kilian" session="00"/>
+				<Folder url="/blog/ppk" name="PPK" session="01"/>
+				<Folder url="/blog/nils" name="Nils" session="02"/>
+				<Folder url="/blog/robbert" name="Robbert" session="03"/>
+				<Folder url="/blog/rosa" name="Rosa" session="04"/>
+				<Folder url="/blog/johan" name="Johan" session="05"/>
+				<Folder url="/blog/smash1" name="Smashing conf" session="dag 1"/>
+				<Folder url="/blog/smash2" name="Smashing conf" session="dag 2"/>
+				<Folder url="/blog/hans" name="Hans" session="06"/>
+				<Folder url="/blog/q42" name="Q42" session="07"/>
+				<Folder url="/blog/voorhoede" name="Voorhoede" session="08"/>
+				<Folder url="/blog/twyw1" name="TWYW" session="dag 1"/>
+				<Folder url="/blog/twyw2" name="TWYW" session="dag 2"/>
+				<Folder url="/blog/cssday1" name="CSS Day" session="dag 1"/>
+				<Folder url="/blog/cssday2" name="CSS Day" session="dag 2"/>
 			</article>
 		</main>
 		<Footer/>
@@ -165,7 +61,8 @@ import Header from '../components/Header.astro';
 		outline: 1px solid var(--off-black);
 		padding: 75px 25px 40px 25px;
 		border-radius: 5px;
-		width: 1000px;
+		width: min(1000px, 100%);
+		margin: 0 20px;
 	}
 
 	.hero {
@@ -189,43 +86,9 @@ import Header from '../components/Header.astro';
 		animation-iteration-count: infinite;
 		animation-timing-function: steps(2);
 	}
-
-	.map {
-		/* background: radial-gradient(#0000ff, green); */
-		background: radial-gradient(blue, white);
-		outline: 1px solid var(--off-black);
-		position: relative;
-		padding: 10px;
-		height: 35px;
-		animation: moveUp 1s ease;
-	}
-
 	.blog-content {
 		width: 80ch;
 		padding: 25px 0;
-	}
-
-	.map:hover {
-		cursor: pointer;
-		background: radial-gradient(rgb(0, 0, 218),  var(--bg-hover));
-		.tab {
-			background-color: var(--bg-hover);
-		}
-	}
-
-	.tab {
-		width: 250px;
-		color: black;
-		border-top: 1px solid var(--off-black);
-		border-left: 1px solid var(--off-black);
-		border-right: 1px solid var(--off-black);
-		position: absolute;
-		bottom: 35px;
-		padding: 10px 40px;
-		border-radius: 5px 5px 0 0;
-		display: flex;
-		background-color: white;
-		justify-content: space-between;
 	}
 
 	.odd {
@@ -262,13 +125,27 @@ import Header from '../components/Header.astro';
 		flex-wrap: wrap;
 	}
 
-@keyframes moveUp {
-	0% {
-		margin-top: -25px;
+	@keyframes moveUp {
+		0% {
+			margin-top: -25px;
+		}
+		100% {
+			margin-top: 0;
+		}
 	}
-	100% {
-		margin-top: 0;
+
+	@media (max-width: 0px) {
+		.odd {
+			left: 0px;
+		}
+
+		.even {
+			right: 0;
+		}
+
+		.middle {
+			right: 0;
+		}
 	}
-}
 
 </style>
