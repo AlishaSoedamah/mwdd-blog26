@@ -20,7 +20,7 @@ main {
 }
 
 body {
-	font-family: 'Arial', Courier, monospace;
+	font-family: Arial, Courier, monospace;
 	background-color: var(--bg);
 }
 
@@ -41,7 +41,6 @@ body {
 
 p {
 	line-height: 150%;
-	/* font-family: 'Silkscreen', 'Courier New', Courier, monospace; */
 	font-weight: 400;
   	font-style: normal;
 }
@@ -168,7 +167,7 @@ svg {
 }
 
 details {
-	position: relative;
+	/* position: relative; */
 	display: inline-block;
 }
 

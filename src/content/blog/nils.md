@@ -9,7 +9,7 @@ Nils Binder werkt bij 9elements Hij is UX designer en heeft onder andere gewerkt
 
 Hij heeft ook gewerkt aan een intern project bij de OECD waar hij nog steeds aan betrokken is.
 
-Hij gaf aan dat CSS Day 2023 voor hem wat “saai” voelde.
+Hij gaf aan dat CSS Day 2023 voor hem wat saai voelde.
 
 
 ### Van Photoshop naar Figma

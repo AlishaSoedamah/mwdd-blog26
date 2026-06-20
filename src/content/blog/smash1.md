@@ -6,9 +6,9 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 ---
 
-## Christine Vallaure – *The Invisible Divide*
+## Christine Vallaure - The Invisible Divide
 
-*Van Moon Learning*
+Van Moon Learning
 
 ### Topics covered
 
@@ -31,7 +31,7 @@ Het gebruik van `display: flex` verandert deze aanpak echter. Een flexcontainer 
 
 Naarmate layouts complexer worden, ontstaat er veel nesting. Deze geneste layouts reageren goed op veranderingen in grootte en inhoud.
 
-Figma's Auto Layout lijkt sterk op hoe Flexbox in CSS werkt.
+Figmas Auto Layout lijkt sterk op hoe Flexbox in CSS werkt.
 
 ### Flexbox vs. Grid
 
@@ -68,7 +68,7 @@ Christine besprak hoe AI kan helpen bij designwerk, maar benadrukte dat ontwerpe
 
 Ze demonstreerde de combinatie van AI met ontwerptools door een Figma bestand als context te gebruiken en Claude in te zetten ter ondersteuning van het werk.
 
-Ze betoogde dat een zekere mate van 'rommel' en imperfectie noodzakelijk is, omdat dit unieke producten oplevert in plaats van generieke, door AI gegenereerde ontwerpen.
+Ze betoogde dat een zekere mate van rommel en imperfectie noodzakelijk is, omdat dit unieke producten oplevert in plaats van generieke, door AI gegenereerde ontwerpen.
 
 ### Takeaways
 
@@ -84,18 +84,16 @@ Een beetje creatieve chaos is nodig om sterke ontwerpsystemen te bouwen.
 
 De presentatie legde moderne layout technieken op een heel toegankelijke manier uit. Hoewel veel concepten bekend waren, bleef de presentatie boeiend en werd nooit saai.
 
----
-
 ## TJ Pitre
 
-### *AI Without the Chaos: Context-Based Design Systems in Practice*
+### AI Without the Chaos: Context-Based Design Systems in Practice
 
 De kernboodschap van de presentatie was dat AI veel beter presteert wanneer het de juiste context heeft, en een goed onderhouden designsystem biedt die context.
 
 ### AI in the design process
 AI kan verschillende fasen van het ontwerpproces ondersteunen:
 
-- Ideeën genereren
+- Ideeen genereren
 - Kwaliteitscontrole van het ontwerp
 - Validatie
 - Overdracht van ontwerp naar ontwikkeling
@@ -112,12 +110,12 @@ In de live demo:
 
 - De knopcomponenten scoorden aanvankelijk 54%.
 - Ontbrekende componentbeschrijvingen werden automatisch gegenereerd met behulp van AI.
-- Componenten die vaste waarden in plaats van variabelen gebruikten, werden geïdentificeerd en bijgewerkt.
+- Componenten die vaste waarden in plaats van variabelen gebruikten, werden geidentificeerd en bijgewerkt.
 - Een belangrijk punt was dat door AI gegenereerde beschrijvingen nog steeds moeten worden gecontroleerd en idealiter door een mens moeten worden geschreven of goedgekeurd.
 - Na de verbeteringen behaalde het designsystem een ​​score van 100%.
 
 ### Design to Development
-De presentatie ging ook kort in op MCP (Model Context Protocol) als een manier om AI te voorzien van een rijkere context tussen ontwerp- en ontwikkelingsworkflows.
+De presentatie ging ook kort in op MCP (Model Context Protocol) als een manier om AI te voorzien van een rijkere context tussen ontwerp en ontwikkelingsworkflows.
 
 ### Takeaways
 

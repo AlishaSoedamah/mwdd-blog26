@@ -9,20 +9,20 @@ heroImage: '../../assets/blog-placeholder-about.jpg'
 
 Een browser moet HTML, CSS en JavaScript kunnen interpreteren.
 
-- HTML → gaat naar de HTML-parser
-- CSS → gaat naar de CSS-parser → gaat daarna naar de styling engine
+- HTML gaat naar de HTML parser
+- CSS gaat naar de CSS parser gaat daarna naar de styling engine
 - DOM
-- AOM → Accessibility Object Model, bedoeld voor ondersteunende technologieën zoals screenreaders
+- AOM Accessibility Object Model, bedoeld voor ondersteunende technologieën zoals screenreaders
 - Interface
 - JavaScript engine
 
-De JavaScript engine is het onderdeel dat daadwerkelijk de JavaScript-code leest en uitvoert.
+De JavaScript engine is het onderdeel dat daadwerkelijk de JavaScript code leest en uitvoert.
 
 De programmeertaal JavaScript is officieel geen onderdeel van de browser zelf en wordt daarom verwerkt door een aparte engine.
 
 ### Rendering engine
 
-De rendering engine verwerkt HTML en CSS, maar doet niets met de interface of de JavaScript-engine.
+De rendering engine verwerkt HTML en CSS, maar doet niets met de interface of de JavaScriptengine.
 
 ### Wat maakt JavaScript een programmeertaal?
 

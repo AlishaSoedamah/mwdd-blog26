@@ -4,15 +4,13 @@ import ContextMenu from '../components/ContextMenu.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import "prop-for-that/head";
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<script>
-			import "prop-for-that/head"
-		</script>
 	</head>
 	<body>
 		<div id="preloader" class="fixedContainer">
@@ -75,10 +73,10 @@ import Header from '../components/Header.astro';
 					<div class="content">		
 						<h3>Reflectie na de hackaton 2/3</h3>
 						<p>
-							Tijdens mijn projecten ben ik gegroeid in zowel web development als mijn manier van ontwikkelen. Ik ben beter geworden in het maken van consistente designs waarbij onderdelen goed bij elkaar passen en samen één geheel vormen. Hierdoor let ik bewuster op thema's, CSS technieken en de algemene uitstraling van een website. Ik merk dat mijn ontwerpen hierdoor professioneler aanvoelen.
-							Daarnaast ben ik georganiseerder gaan werken in code. Waar ik eerder soms zonder duidelijke structuur werkte, denk ik nu meer na over de opbouw van mijn bestanden en componenten. Ik heb nieuwe manieren ontdekt om mijn code overzichtelijker en efficiënter te maken. Dit helpt niet alleen mijzelf tijdens het ontwikkelen, maar maakt het ook makkelijker om later onderdelen aan te passen of terug te vinden.
-							Ook ben ik me bewuster geworden van toegankelijkheid binnen websites. Ik heb meer geleerd over hoe screen readers werken en waarom het belangrijk is om websites toegankelijk te maken voor verschillende gebruikers. Hierdoor let ik nu beter op semantische HTML, duidelijke structuur en het correct gebruiken van labels en elementen. Ik realiseer me dat toegankelijkheid niet iets extra’s is, maar een belangrijk onderdeel van goed webdesign en development.
-							Wat ik vooral meeneem uit deze periode is dat een goed eindresultaat niet alleen draait om hoe iets eruitziet, maar ook om structuur, gebruiksvriendelijkheid en toegankelijkheid. In toekomstige projecten wil ik mezelf verder ontwikkelen in het combineren van design, techniek en accessibility.
+							Tijdens mijn projecten ben ik beter geworden in het maken van websites die één geheel vormen. Ik merk dat mijn ontwerpen hierdoor meer als 1 ding aanvoelen ipv een collectie van dingen.
+							Daarnaast ben ik georganiseerder gaan werken in mijn code. Waar ik eerst zonder duidelijke structuur werkte denk ik nu meer na over de opbouw van mijn layouts en componenten. Ik heb nieuwe manieren gevonden om mijn code overzichtelijker te maken. Dit helpt niet alleen mezelf maar maakt het ook makkelijker om later onderdelen aan te passen of terug te vinden.
+							Ik ben bewuster geworden van toegankelijkheid op websites, ik heb meer geleerd over hoe screen readers werken en waarom het belangrijk is om websites toegankelijk te maken voor verschillende gebruikers (niet alleen blinde gebruikers). Hierdoor let ik nu beter op semantische code en duidelijke structuur. Ik realiseer me dat toegankelijkheid niet iets extra’s is maar een belangrijk onderdeel van development.
+							Wat ik vooral meeneem is dat een goed eindresultaat niet alleen gaat om hoe iets eruitziet maar ook om structuur, gebruiksvriendelijkheid en toegankelijkheid. In toekomstige projecten wil ik mezelf verder uitdagen in het toepassen van accessibility.
 						</p>
 						<h4>Inzichten Weekly Nerds tot nu toe</h4>
 						<p>Ik vond de WN van Robbert Broersma het meest interesant omdat ik vooral daaruit inspo heb gekregen voor het vak BT. Ik heb uit zijn talk het volgende gehaald:</p>
@@ -92,14 +90,14 @@ import Header from '../components/Header.astro';
 						<h4>Hackaton uitkomsten</h4>
 						<p>
 							Dit was de eerste groeps opdracht van de minor, tijdens de hackaton heeft ons team een website gemaakt voor Nebula Xplorer.
-							Wij hebben de eerste plek gewonnen bij de hackaton en mochten naar the smashing confrence!
+							Wij hebben tijdens deze hackaton de eerste plek gewonnen bij en mochten naar Smashing Confrence!
 						</p>
 						<h4>Mijn inbreng</h4>
 						<p>Ik heb voor de website het design gemaakt in figma en het middelste gedeelte
 							van de website responsive gebouwd.
 						</p>
 						<h4>Nieuwe inzichten</h4>
-						<p>...</p>
+						<p>Groepsopdachten onder tijdsdruk kan je erg creatieve uitkomsten hebben</p>
 						<h5>Dag 1 - 23.03.2026</h5>
 						<p>
 							Tijdens de eerste dag hadden we het over alle dingen die we op de website wilde laten terug komen zoals de satellite
@@ -137,9 +135,129 @@ import Header from '../components/Header.astro';
 					</summary>
 					<div class="content">
 						<h3>Reflectie op meesterproef 3/3</h3>
-						<h4>Mijn inbreng</h4>
-						<h4>Reflectie</h4>
-						<h4>Blik op de toekomst</h4>
+						<p>
+							De grootste uitdaging lag voor mij bij de rol die ik binnen het team nam. Ik werd vaak gezien als degene met de meeste kennis van github en de terminal waardoor veel inhoudelijke vragen over github bij mij terecht kwamen wat niet erg was maar het was. Tijdens merge conflicten en het mergen van brances werd het soms lastig. Dit bracht ons best wel veel stress tijdens het project, vooral dezelfde errors overnieuw zien werd oud.
+							De samenwerking binnen het team verliep over het algemeen goed. Hoewel de communicatie niet altijd even duidelijk was werden de gemaakte afspraken uiteindelijk nagekomen en werkte iedereen gezamenlijk toe naar het eindresultaat. Deze ervaring heeft mij laten inzien hoe belangrijk heldere communicatie is voor een efficiënte samenwerking en het voorkomen van misverstanden.
+						</p>
+						<h4>In het kort wat er gedaan is in de 5 weken</h4>
+						<h5>Week 1</h5>
+						<p>Kennis gemaakt met het bedrijf en de opdrachtgever</p>
+						<p>Opmerkbare dingen:</p>
+						<ul>
+							<li>Roger gebeld en het eerste contact gelged omdat er een miscommunicatie is ontstaan</li>
+							<li>Het bedrijf had niet echt een pand dus we gebruikte Rogers woonkamer (geen kantoor zoals ze hadden gezegd?)</li>
+							<li>Peter en Roger hebben al een oplossing voor wat ze willen hebben op de site -> een korte versie voor screen readers en een normale versie voor niet slechtziende</li>
+							<li>Heel klein ”bedrijf” -> maar 4 mensen</li>
+							<li>Ze hebben nog niet echt een idee van hoe de knop voor de switch van de website eruit gaat zien </li>
+							<li>De huidige website bevat te veel dode links  en lege pagina’s</li>
+							<li>Ik heb de hero gedesigned en de cards, uiteindelijk heb ik de cards uitgebouwd op de eerste versie van de website</li>
+							<li>"Is blind zijn erg omdat dat wordt verteld of is dat zo omdat het ook echt erg is?"</li>
+						</ul>
+						<p>Mijn gemaakte gedeelte: Het ontwerp voor de website hero en de cards die eronder kwamen. Ik heb in de eerste versie van de website de cards uitgewerkt op de index pagina.</p>
+						<h5>Week 2</h5>
+						<p>Bepaald wat er in de website komt en wat de nieuwe sitemap van de site gaat worden.</p>
+						<p>Vooral met elkaar afgesproken wat we gaan bouwen en welke mijlpalen we opgaan stellen voor de komende weken van het project.</p>
+						<ul>
+							<li>De dode links weglaten in de final versie</li>
+							<li>De final sitemap gemaakt en besloten</li>
+							<li>We gaan GEEN CMS gebruiken voor de videlo website</li>
+							<li>Mijlpalen stellen voor in de komende 3 weken</li>
+							<li>Gebruiken ze google analytics? Dan moet er een cookie op de site. Gebruiken ze geen Analytics? Waarom niet?</li>
+							<li>Ze willen geen google analytics, dat is buiten de scope van het project voor peter en roger, indien Daan vragen volgende week.</li>
+						</ul>
+						<h5>Waar ik tegen aan liep</h5>
+						<p>
+							De planning voor het project wordt pas echt gemaakt als de test van Peter en Roger is geweest. Zonder hun input werken we eigenlijk alleen 
+							maar met aannamens, dit vond ik best wel verveelend omdat ik zelf vaak vooruit plan.
+
+							Nu hebben we: twee websites compact en uitgebreid
+							Hiermee zijn we al een stuk dichter bij het eind resultaat. 
+
+							Wat we missen: nog een goed menu dat alles aan elkaar linked
+							Wat we hebben: de hele website in HTML structuur een idee van de huisstijl
+
+							Dit project was meer dan alleen maar een website maken. Het was o.a. content filteren, content weglaten die eigenlijk niet klopte op de huidige site 
+							Waar zij (videlio) ook pas achter kwam tijdens de test. Contact onderhouden, weekelijksre plannings maken elke dag een standup en checkout doen zodat je
+							op de hoogte was van wat iedereen had gedaan. Vooruit plannen, 
+						</p>
+						<h5>Week 3</h5>
+						<p>
+							Voor deze week was het vooral belangrijk dat de website een toegangkelijkheids menu kreeg.
+							Overal was deze week erg stressvol, we gingen toch last minute de website overzetten in astro en 
+							hadden daar nog 2 weken voor. De 3e test ging ook best goed, Peter en Roger waren er vooral blij met de comapacte switch maar de website 
+							was nog niet voldoende vanuit de HVA. 
+						</p>
+						<ul>
+							<li>Regels voor styling afgesproken (1 global.css met algemene styling van de h1, buttons en kleuren).</li>
+							<li>Nogmaals complimenten voor de toegankelijkheids switch → heel goed. Dat was eigenlijk onze visie/onze gedachte nog een tip: eerste indruk</li>
+							<li>Wat betekend dat blokje compact, als je het veranderd naar compacte tekst dan is dat duidelijker, en uitgebreide tekst. "Jullie hebben echt hard gewerkt deze week! Goed gedaan" - Peter</li>
+						</ul>
+						<h5>Week 4</h5>
+						<p>
+							Doel voor deze week: site overzetten in astro
+							Dit doel is gelukt. Ik heb de index.html naar een index.astro overgezet en alle media/links goed gelinkt aan
+							de pagina. De uitgebreide pagina is dus weer zo goed als af.
+						</p>
+						<h5>Wat ging goed?</h5>
+						<ul>
+							<li>Website is overgezet in astro</li>
+							<li>Blog in een dynamische pagina zetten</li>
+							<li>Data fetchen uit een .js pagina</li>
+						</ul>
+						<h5>Wat ging er minder?</h5>
+						<ul>
+							<li>Tijdsnood</li>
+							<li>CSS is all over the place</li>
+						</ul>
+						<h5>Week 5</h5>
+						<p>Doel voor deze week: de afgemaakte website opleveren, eindpres doen</p>
+						<p>
+							In de laatste week kwam ik er achter dat we eigenlijk dubble pagina's hadden voor ons werk. Op zich is het ook een manier maar het had
+							wel beter gekunt. Als we de isCompact boolean hadden vanaf het begin hadden gebruikt en alle data in een json file hadden gezet dan zou het
+							best wel makkelijk zijn gegaan. Omdat we eerst alles in HTMl/CSS hadden gebouwd hadden we eigenlijk die versie overgezet in astro en hebben daardoor niet echt kunnen nadenken over templates/layouts die we konden hergebruiken wat jammer is.
+						</p>
+						<h5>Wat ging goed?</h5>
+						<p>De site is een goed geheel geworden en is goed aan elkaar gelinked</p>
+						<h5>Wat ging er minder?</h5>
+						<p>Geen WP integratie omdat wij dat niet meer gaan oppakken</p>
+						<h3>Hoe heb ik mijn leerdoelen behaald tijdens deze 5 weken?</h3>
+						<h4>1 A11y accessiblity testen</h4>
+						<p>
+							Gedurende periode hebben mijn team en ik 5 tests gedaan waarvan 1 buiten videlio was.
+							Wat staat er op de website qua A11y:
+						</p>
+						<ul>
+							<li>Keyboard Accessibility</li>
+							<li>Visual Focus Indicators</li>
+							<li>Semantic HTML</li>
+							<li>popover -> esc werkt</li>
+							<li>contrast is op gelet</li>
+							<li>Heel vroeg in het process kan je switchen naar de compacte toegankelijke versie</li>
+						</ul>
+						<h4>2 Kwaliteit > kwantiteit</h4>
+						<p>
+							We hebben uiteindelijk besloten om niet de Wordpress integratie te doen omdat het niet binnen de focus van onze opdracht past (Het is best moeilijk om astro in Wordpress te doen). Vooral in het toegankelijkheids filter, je kan meerdere settings aan/uit zetten zoals zwart wit filter en veel meer filter opties. Ik was eigenlijk veel meer bezig met wat MOET er in de filter staan/ zijn een paar knoppen eigenlijk ook niet al genoeg.
+							Roger zei ook wat boeit het dat de tekst groter of kleiner kan worden gemaakt als iemand het toch niet kan zien.
+						</p>
+						<h4>3 meer initiatief nemen voor de taken</h4>
+						<ul>
+							<li>Tijdens het project kwam ik met het ontwerp van de website</li>
+							<li>Heb ik het eerste contact gelegd met Roger</li>
+							<li>Heb ik veel geholpen met de  brances mergen omdat mijn team daar nog mee moest leren werken</li>
+							<li>Heb ik de toegankgelijkheids filter gemaakt en aangepast</li>
+							<li>Astro opgezet en regels gemaakt voor wat er wel en niet op kan</li>
+							<li>Layouts gemaakt, components aangemaakt</li>
+							<li>Mee gedaan aan de standups van de dag</li>
+							<li>Mee denken over de algemene structuur van de site </li>
+						</ul>
+						<h4>Week 6</h4>
+						<p>Herk</p>
+						<h5>Toekomst (nice to haves)</h5>
+						<ul>
+							<li>Wordpress integratie</li>
+							<li>Font-scaling ook in de localStorage</li>
+							<li>Kalender voor workshops</li>
+						</ul>
 						<h4>Wat ik meeneem van de weekly nerds/conferenties</h4>
 						<h5>Rosa</h5>
 						<p>Keep thinkering</p>
@@ -171,11 +289,6 @@ import Header from '../components/Header.astro';
 
 	.tile__gauge i {
 		inline-size: calc(var(--live-battery-level) * 100%);
-	}
-
-
-	.desktop {
-		display: flex;
 	}
 
 	.fixedContainer {
@@ -238,11 +351,11 @@ import Header from '../components/Header.astro';
 	}
 
 	document.addEventListener('click', (event) => {
-  document.querySelectorAll('details.auto-close').forEach((details) => {
-    if (details.open && !details.contains(event.target)) {
-      details.open = false;
-    }
-  });
-});
+		document.querySelectorAll('details.auto-close').forEach((details) => {
+			if (details.open && !details.contains(event.target)) {
+			details.open = false;
+			}
+		});
+	});
 
 </script>

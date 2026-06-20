@@ -10,8 +10,8 @@ heroImage: '../../assets/blog-placeholder-1.jpg'
 
 - Een introductietekst.
 - Alleen informatie vragen die nodig is.
-- Bijvoorbeeld: *"Het duurt ongeveer 5 minuten om dit formulier in te vullen."*
-- De gebruiker kan vóór het verzenden de ingevoerde gegevens controleren, wijzigen of ongedaan maken.
+- Bijvoorbeeld: Het duurt ongeveer 5 minuten om dit formulier in te vullen.
+- De gebruiker kan voor het verzenden de ingevoerde gegevens controleren, wijzigen of ongedaan maken.
 - Na het klikken op Volgende of Verzenden verschijnt een overzicht van alle fouten.
 - Na het verzenden verschijnt een duidelijke bevestiging.
 
@@ -25,7 +25,7 @@ Bied de mogelijkheid om het formulier op te slaan en later verder te gaan. Dit i
 
 Bijvoorbeeld een bevestigingstekst:
 
-> *Je aanvraag is met succes verstuurd.*
+> Je aanvraag is met succes verstuurd.
 
 ## Inhoud van een formulier
 
@@ -43,7 +43,7 @@ Leg uit waarvoor persoonlijke gegevens worden gebruikt.
 - Zorg ook voor voldoende contrast van subtiele tekst.
 - Maak componenten groot genoeg.
 
-44 × 44 pixels wordt beschouwd als een gebruiksvriendelijke minimale grootte.
+44 x 44 pixels wordt beschouwd als een gebruiksvriendelijke minimale grootte.
 
 ## Veelgemaakte fouten
 
@@ -83,7 +83,7 @@ Voorbeeld:
 
 slecht: Voorna(a)m(en)
 
-goed: Voornaam (één of meerdere)
+goed: Voornaam (een of meerdere)
 
 ## Makkelijker invullen
 
