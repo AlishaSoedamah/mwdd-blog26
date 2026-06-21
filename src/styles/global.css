@@ -11,26 +11,13 @@
 	outline: var(--off-black) 5px solid;
 }
 
+@font-face {
+	font-family: "pixel";
+	src: url(/src/assets/fonts/pixelFont.ttf);
+}
 
 @view-transition {
   navigation: auto;
-}
-
-.post-title {
-  view-transition-name: post-title;
-}
-
-.folder {
-	view-transition-name: folder-expand;
-}
-
-.post-title { view-transition-name: post-title; }
-
-.folder { view-transition-name: folder-expand;}
-
-::view-transition-old(post-title),
-::view-transition-new(post-title) {
-  animation-duration: .5s;
 }
 
 * {
@@ -45,7 +32,7 @@ main {
 }
 
 body {
-	font-family: Arial, Courier, monospace;
+	font-family: 'Helvetica', Courier, monospace;
 	background-color: var(--bg);
 }
 
@@ -56,13 +43,18 @@ p {
 }
 
 mark {
+	font-family: "pixel", Arial, Helvetica, sans-serif;
 	background-color: transparent;
-	font-family: 'Silkscreen', 'Courier New', Courier, monospace;
 	font-weight: 400;
   	font-style: normal;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: "pixel", Arial, Helvetica, sans-serif;
+}
+
 h1 {
+	padding: 25px;
 	font-size: 4em;
 	text-align: center;
 }
@@ -97,21 +89,6 @@ button:hover {
 
 img {
 	width: 500px;
-	border-radius: 5px;
-}
-
-ol li {
-	width: 80ch;
-	margin: 10px 0;
-}
-
-footer {
-	outline: var(--off-black) solid 1px;
-	padding: 20px;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100vw;
 }
 
 svg {
@@ -198,7 +175,6 @@ details summary::marker {
 		left: -20px;
 		width: 15px;
 		aspect-ratio: 1;
-		border-radius: 15px;
 		box-shadow: 
 			2em 0 rgb(0, 255, 68),
 			4em 0 rgb(229, 255, 0),
@@ -215,13 +191,6 @@ details summary::marker {
 	}
 }
 
-.icon {
-	outline: 1px solid var(--off-black);
-	border-radius: 30px;
-	width: 30px;
-	height: 30px;
-}
-
 @keyframes --color-boxes {
   100% {
     box-shadow:
@@ -229,5 +198,47 @@ details summary::marker {
       15px 0 blue,
       30px 0 red,
       45px 0 hotpink;
+  }
+}
+
+.post-title {
+  view-transition-name: post-title;
+}
+
+.folder {
+	view-transition-name: folder-expand;
+}
+
+.post-title { view-transition-name: post-title; }
+
+.folder { view-transition-name: folder-expand;}
+
+::view-transition-old(post-title),
+::view-transition-new(post-title) {
+  animation-duration: .5s;
+}
+
+/* Range: fill the track up to the current value */
+input[type="range"] {
+  background: linear-gradient(
+    to right in oklab,
+    var(--theme) calc(var(--live-value-pct) * 100%),
+    var(--track) 0
+  );
+}
+
+/* Pointer position on an element */
+.card {
+  background: radial-gradient(
+    circle at var(--live-pointer-x) var(--live-pointer-y),
+    hotpink,
+    transparent
+  );
+}
+
+/* Only style when all form fields are valid */
+@container style(--live-all-valid: 1) {
+  button[type="submit"] {
+    background: green;
   }
 }

@@ -19,6 +19,10 @@ const { url, name, session, side } = Astro.props;
 </li>
 
 <style>
+	li {
+		list-style: none;
+	}
+
 	.map {
 		background: radial-gradient(blue, white);
 		outline: 1px solid var(--off-black);
@@ -45,7 +49,6 @@ const { url, name, session, side } = Astro.props;
 		position: absolute;
 		bottom: 35px;
 		padding: 10px 40px;
-		border-radius: 5px 5px 0 0;
 		display: flex;
 		background-color: white;
 		justify-content: space-between;

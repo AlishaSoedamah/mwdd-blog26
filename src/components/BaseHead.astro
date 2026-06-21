@@ -5,7 +5,6 @@ import '../styles/global.css';
 import type { ImageMetadata } from 'astro';
 import FallbackImage from '../assets/blog-placeholder-1.jpg';
 import { SITE_TITLE } from '../consts';
-import { Font } from 'astro:assets';
 
 interface Props {
 	title: string;
@@ -34,8 +33,6 @@ const { title, image = FallbackImage } = Astro.props;
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 <meta name="generator" content={Astro.generator} />
-
-<Font cssVariable="--font-atkinson" preload />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />

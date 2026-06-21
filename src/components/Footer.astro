@@ -1,5 +1,30 @@
 <footer>
 	<nav>
-		<div class="icon"></div>
+		<ul>
+			<li><a href="/">Desktop</a></li>
+			<li><a href="/vakken">Vakken</a></li>
+			<li><a href="/blogs">WN</a></li>
+			<li><a href="/leerdoelen">Leerdoelen</a></li>
+		</ul>
 	</nav>
 </footer>
+
+<style>
+	footer {
+		outline: var(--off-black) solid 1px;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100vw;
+		ul {
+			display: flex;
+			padding: 0;
+			list-style-type: none;
+			li {
+				border-right: 1px solid var(--off-black);
+				padding: 10px;
+				width: 130px;
+			}
+		}
+	}
+</style>

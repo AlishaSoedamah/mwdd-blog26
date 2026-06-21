@@ -6,7 +6,8 @@ import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import DesktopFolder from '../components/DesktopFolder.astro';
 import LoadingScreen from '../components/LoadingScreen.astro';
-import "prop-for-that/head";
+import Popup from '../components/Popup.astro';
+import Notification from '../components/Notification.astro';
 ---
 
 <!doctype html>
@@ -15,16 +16,16 @@ import "prop-for-that/head";
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<LoadingScreen />
-		<Header/>
+		<!-- <LoadingScreen/> -->
 		<ContextMenu/>
+		<Header/>
 		<main>
+			<Notification />
 			<section>
-				<DesktopFolder url="/blogs" name="Blogs"/>
+				<Popup />
+				<DesktopFolder url="/blogs" name="Weekly Nerd"/>
 				<DesktopFolder url="/leerdoelen" name="Leerdoelen"/>
 				<DesktopFolder url="/vakken" name="Vakken"/>
-			
-
 				<details class="auto-close" name="open_one">
 					<summary>
 						<p>sprint0.md</p>

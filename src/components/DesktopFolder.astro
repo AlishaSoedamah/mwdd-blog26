@@ -5,17 +5,16 @@ interface Props {
 }
 
 const { url, name } = Astro.props;
-
 ---
 
-<a href={url}>
-	<div class="popup">
+<div class="popup">
+	<a href={url}>
 		<div class="desktop-folder">
 			<div class="index-tab"></div>
 		</div>
-		<p class="post-title">{name}</p>
-	</div>
-</a>
+		<p>{name}</p>
+	</a>
+</div>
 
 <style>
 	.desktop-folder {
