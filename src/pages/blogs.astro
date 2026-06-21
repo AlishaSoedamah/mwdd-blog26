@@ -22,21 +22,21 @@ import Folder from '../components/Folder.astro';
 				<p>Mijn collectie van blogs van de sprekers voor de Minor Web Design & Development (MWDD)</p>
 			</div>
 			<article>
-				<Folder url="/blog/kilian" name="Kilian" session="00"/>
-				<Folder url="/blog/ppk" name="PPK" session="01"/>
-				<Folder url="/blog/nils" name="Nils" session="02"/>
-				<Folder url="/blog/robbert" name="Robbert" session="03"/>
-				<Folder url="/blog/rosa" name="Rosa" session="04"/>
-				<Folder url="/blog/johan" name="Johan" session="05"/>
-				<Folder url="/blog/smash1" name="Smashing conf" session="dag 1"/>
-				<Folder url="/blog/smash2" name="Smashing conf" session="dag 2"/>
-				<Folder url="/blog/hans" name="Hans" session="06"/>
-				<Folder url="/blog/q42" name="Q42" session="07"/>
-				<Folder url="/blog/voorhoede" name="Voorhoede" session="08"/>
-				<Folder url="/blog/twyw1" name="TWYW" session="dag 1"/>
-				<Folder url="/blog/twyw2" name="TWYW" session="dag 2"/>
-				<Folder url="/blog/cssday1" name="CSS Day" session="dag 1"/>
-				<Folder url="/blog/cssday2" name="CSS Day" session="dag 2"/>
+				<Folder url="/blog/kilian" name="Kilian" session="00" side="odd"/>
+				<Folder url="/blog/ppk" name="PPK" session="01" side="middle"/>
+				<Folder url="/blog/nils" name="Nils" session="02" side="even"/>
+				<Folder url="/blog/robbert" name="Robbert" session="03" side="odd"/>
+				<Folder url="/blog/rosa" name="Rosa" session="04" side="middle"/>
+				<Folder url="/blog/johan" name="Johan" session="05" side="odd"/>
+				<Folder url="/blog/smash1" name="Smashing" session="dag 1" side="middle"/>
+				<Folder url="/blog/smash2" name="Smashing" session="dag 2" side="even"/>
+				<Folder url="/blog/hans" name="Hans" session="06" side="odd" />
+				<Folder url="/blog/q42" name="Q42" session="07" side="middle"/>
+				<Folder url="/blog/voorhoede" name="Voorhoede" session="08" side="odd"/>
+				<Folder url="/blog/twyw1" name="TWYW" session="dag 1" side="even"/>
+				<Folder url="/blog/twyw2" name="TWYW" session="dag 2" side="middle"/>
+				<Folder url="/blog/cssday1" name="CSS Day" session="dag 1" side="even"/>
+				<Folder url="/blog/cssday2" name="CSS Day" session="dag 2" side="odd"/>
 			</article>
 		</main>
 		<Footer/>
@@ -44,12 +44,6 @@ import Folder from '../components/Folder.astro';
 </html>
 
 <style>
-	:root {
-	--bg: #DEDEDE;
-	--bg-hover: #cdcdcd;
-	--off-black: rgb(26, 26, 26);
-	}
-
 	main {
 		align-items: center;
 	}
@@ -65,14 +59,6 @@ import Folder from '../components/Folder.astro';
 		margin: 0 20px;
 	}
 
-	.hero {
-		padding: 50px 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-	}
-
 	.deco {
 		width: 15px;
 		aspect-ratio: 1;
@@ -86,44 +72,6 @@ import Folder from '../components/Folder.astro';
 		animation-iteration-count: infinite;
 		animation-timing-function: steps(2);
 	}
-	.blog-content {
-		width: 80ch;
-		padding: 25px 0;
-	}
-
-	.odd {
-		left: 45px;
-	}
-
-	.ref {
-		width: 80ch;
-	}
-
-	.even {
-		right: 45px;
-	}
-
-	.middle {
-		right: 350px;
-	}
-
-	.blog-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.active {
-		background: var(--bg-hover);
-	}
-
-	.vakken-container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 25px;
-		flex-wrap: wrap;
-	}
 
 	@keyframes moveUp {
 		0% {
@@ -131,20 +79,6 @@ import Folder from '../components/Folder.astro';
 		}
 		100% {
 			margin-top: 0;
-		}
-	}
-
-	@media (max-width: 0px) {
-		.odd {
-			left: 0px;
-		}
-
-		.even {
-			right: 0;
-		}
-
-		.middle {
-			right: 0;
 		}
 	}
 

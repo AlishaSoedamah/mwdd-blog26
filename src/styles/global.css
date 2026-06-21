@@ -2,10 +2,33 @@
 	--bg: #DEDEDE;
 	--bg-hover: #cdcdcd;
 	--off-black: rgb(26, 26, 26);
+	--bg-popover: rgb(238, 238, 238);
 }
 
 :focus {
 	outline: var(--off-black) 5px solid;
+}
+
+
+@view-transition {
+  navigation: auto;
+}
+
+.post-title {
+  view-transition-name: post-title;
+}
+
+.folder {
+	view-transition-name: folder-expand;
+}
+
+.post-title { view-transition-name: post-title; }
+
+.folder { view-transition-name: folder-expand;}
+
+::view-transition-old(post-title),
+::view-transition-new(post-title) {
+  animation-duration: .5s;
 }
 
 * {
@@ -23,21 +46,6 @@ body {
 	font-family: Arial, Courier, monospace;
 	background-color: var(--bg);
 }
-
-/* body::before {
-	z-index: 3;
-	position: absolute;
-	left: 0;
-	top: 0;
-	content: "";
-	width: 150vw;
-	height: 150vh;
-	mix-blend-mode: color-burn;
-	opacity: 100%;
-	filter: url(#noiseFilter) contrast(100%);
-	animation: --move-static 0.5s infinite;
-	pointer-events: none;
-} */
 
 p {
 	line-height: 150%;
@@ -71,7 +79,7 @@ a {
 	text-decoration: none;
 }
 
-button {
+/* button {
 	padding: 10px;
 	background-color: rgb(255, 220, 62);
 	border: 1px solid var(--off-black);
@@ -83,7 +91,7 @@ button {
 
 button:hover {
 	cursor: pointer;
-}
+} */
 
 img {
 	width: 500px;
@@ -132,8 +140,8 @@ svg {
 
 .index-tab {
 	background-color: blue;
-	border-top: 1px solid black;
-	border-left: 1px solid black;
+	border-top: 1px solid var(--off-black);
+	border-left: 1px solid var(--off-black);
 	border-right: 1px solid var(--off-black);
 	padding: 5px;
 	width: 50px;
@@ -149,10 +157,10 @@ svg {
     top: -1px;
 	width: 25px;
 	aspect-ratio: 1;
-	border-top: #DEDEDE solid 1px;
-	border-right: #DEDEDE solid 1px;
-	border-left: rgb(0, 0, 0) solid 1px;
-	border-bottom: rgb(0, 0, 0) solid 1px;
+	border-top: var(--bg) solid 1px;
+	border-right: var(--bg) solid 1px;
+	border-left: var(--off-black) solid 1px;
+	border-bottom: var(--off-black) solid 1px;
 	z-index: 1;
 	&::after {
 		content: "";
@@ -167,12 +175,11 @@ svg {
 }
 
 details {
-	/* position: relative; */
 	display: inline-block;
 }
 
 summary {
-	background-color: white;
+	background-color: var(--bg-popover);
 	position: relative;
 	width: 100px;
 	height: 120px;
@@ -185,17 +192,20 @@ summary {
 	&:hover {
 		cursor: pointer;
 	}
+	&::after {
+		content: "";
+		top: -5px;
+		right: -16px;
+		transform: rotateZ(45deg);
+		position: absolute;
+		width: 40px;
+		height: 20px;
+		background-color: var(--bg);
+	}
 }
 
-summary::after {
+details summary::marker {
 	content: "";
-	top: -5px;
-    right: -16px;
-	transform: rotateZ(45deg);
-	position: absolute;
-	width: 40px;
-	height: 20px;
-	background-color: var(--bg);
 }
 
 .content {
@@ -223,7 +233,7 @@ summary::after {
 	&::before {
 		content: "";
 		background-color: blue;
-		width: 49.5rem;
+		width: inherit;
 		height: 40px;
 		position: absolute;
 		top: 0;
@@ -231,60 +241,11 @@ summary::after {
 	}
 }
 
-details summary::marker {
-	content: "";
-}
-
-/* .file-desktop {
-	position: relative;
-	width: 100px;
-	height: 120px;
-	border: rgb(0, 0, 0) solid 1px;
-	margin: 20px 0;
-	z-index: 0;
-} */
-
 .icon {
 	outline: 1px solid black;
 	border-radius: 30px;
 	width: 30px;
 	height: 30px;
-}
-
-@view-transition {
-  navigation: auto;
-}
-
-.post-title {
-  view-transition-name: post-title;
-}
-
-.folder {
-	view-transition-name: folder-expand;
-}
-
-.post-title { view-transition-name: post-title; }
-
-.folder { view-transition-name: folder-expand;}
-
-::view-transition-old(post-title),
-::view-transition-new(post-title) {
-  animation-duration: .5s;
-}
-
-
-@keyframes --move-static {
-	0% { transform: translate(0,0) }
-    10% { transform: translate(-5%,-5%) }
-    20% { transform: translate(5%,5%) }
-    30% { transform: translate(-5%,-5%) }
-    40% { transform: translate(5%,5%) }
-    50% { transform: translate(-5%,5%) }
-    60% { transform: translate(5%,0) }
-    70% { transform: translate(0,10%) }
-    80% { transform: translate(-5%,0) }
-    90% { transform: translate(5%,5%) }
-    100% { transform: translate(-5%,0) }
 }
 
 @keyframes --color-boxes {

@@ -3,14 +3,15 @@ interface Props {
   url: string;
   name: string;
   session: string;
+  side: string;
 }
 
-const { url, name, session } = Astro.props;
+const { url, name, session, side } = Astro.props;
 ---
 
 <a href={url}>
 	<div class="map">
-			<div class="tab">
+			<div class={`tab ${side}`}>
 				<mark>{name}</mark>
 				<mark>{session}</mark>
 			</div>
@@ -50,4 +51,29 @@ const { url, name, session } = Astro.props;
 		justify-content: space-between;
 	}
 
+	.odd {
+		left: 45px;
+	}
+
+	.even {
+		right: 45px;
+	}
+
+	.middle {
+		right: 350px;
+	}
+
+	@media (max-width: 0px) {
+		.odd {
+			left: 0px;
+		}
+
+		.even {
+			right: 0;
+		}
+
+		.middle {
+			right: 0;
+		}
+	}
 </style>

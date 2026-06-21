@@ -27,14 +27,10 @@ Veel animatie en transitions
 # TODOs be4 19 June
 
 - [x] Heel sicke loader maken
-- [ ] Add noise SVG filter animation
-- [ ] Make homepage -> moet zeg maar ook echt een desktop voorstellen...
 - [ ] Transitions from homepage to other pages with View Transition API
-- [ ] Pick font
 - [ ] Add dark mode
 - [ ] Responsive
-- [ ] Give it more...vibe
-- [ ] Fix all typos
+- [x] Fix all typos
 - [ ] Micro animations
 - [x] Make other pages vakken/leerdoelen
 - [x] Maak eigen context menu -> html,css,js
@@ -47,3 +43,4 @@ Veel animatie en transitions
 ## Credit
 
 This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/draggable
