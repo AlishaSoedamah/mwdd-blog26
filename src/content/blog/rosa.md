@@ -50,9 +50,9 @@ Je hebt geen idee wat er in een datacenter gebeurt.
 
 ## Kan het ook anders?
 
-Ja, er zijn alternatieven.
+Ja, er zijn alternatieven!
 
-### Low-tech Magazine server
+### Low tech Magazine server
 
 - Raspberry Pi op zonne energie
 - Afhankelijk van zonlicht en batterij
@@ -69,26 +69,23 @@ Kenmerken:
 
 ## Rosa - The Travelling Server
 
-- Publieke sysadmin-sessies
+- Publieke sysadmin sessies
 - Volledig gedocumenteerd
 - Collaborative project
-
 
 ## Wat doet een server?
 
 Een server is een computer waarop je bestanden (zoals HTML) zet, zodat anderen die via het internet kunnen benaderen.
 
-## Voorbeeld: eco-driven servers
+## Voorbeeld: ecodriven servers
 
 - Gebruik van bestaande middelen
-- Bash-scripts die bijvoorbeeld DNS elk uur updaten
+- Bash scripts die bijvoorbeeld DNS elk uur updaten
 - Focus op minimale infrastructuur
 
 Soms is de enige downtime stroomuitval.
 
-
 ## Rosa
-
 Rosa werkt momenteel aan een alternatieve kalender voor Rotterdam.
 
 ## Static site generators ❤️
@@ -110,3 +107,6 @@ Voorbeelden:
 
 - Elke donderdag in Rotterdam
 - LAG social evening elke vrijdagavond
+
+## Take Aways:
+Keep tinkering, Eleventy -> static site generator die minder impact heeft op de server, eco driven hosting

@@ -170,3 +170,7 @@ Controleer of:
 ### Fout
 
 Een foutmelding verschijnt al voordat de gebruiker klaar is met het invullen van het veld.
+
+## Take Aways:
+Geen jargon of gekke afkorting(en) gebruiken, icons van 44x44px zijn gebruiksvriedelijk, het duidelijk in welke stap heet formulier daadwerkelijk wordt verzonden, rr staat verpicht of niet verplicht in tekst en niet allen een '*' en
+elk invoerveld heeft een label

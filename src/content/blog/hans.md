@@ -62,3 +62,8 @@ als jij naar nu.nl gaat met een brand new installed chrome browser, hoeveel part
 ### Is er nog een websitebezoek dat niet bij Google in beeld is?
 - AI is echt een probleem als we het hebben over privacy, vooral agentic AI die tools gaan steeds verder jouw computer in 
 - Tweede probleem is dat het een andere soort surveillance mogelijk maakt en data bewaard
+
+## Take aways:
+Deze talk heeft me laten realiseren wat AI zou kunnen doen met persoonsgegevens, hoe je het beste
+wel om kan gaan met gebruikers data en dat cookies veel meer tracken dan dat ik eerst door had. Dit
+geeft mij over het algemeen meer kracht om baas te zijn over MIJN data en waar dat gebruikt voor gaat worden.

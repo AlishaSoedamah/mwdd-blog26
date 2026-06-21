@@ -15,7 +15,6 @@ import Folder from '../components/Folder.astro';
 		<ContextMenu/>
 		<Header/>
 		<main>
-			<a href="/">Back to home</a>
 			<div class="hero">
 				<div class="deco"></div>
 				<h1 class="post-title">Weekly Nerds</h1>
@@ -45,6 +44,7 @@ import Folder from '../components/Folder.astro';
 <style>
 	main {
 		align-items: center;
+		padding-inline: 20px;
 	}
 
 	ul {
@@ -54,7 +54,6 @@ import Folder from '../components/Folder.astro';
 		outline: 1px solid var(--off-black);
 		padding: 75px 25px 40px 25px;
 		width: min(1000px, 100%);
-		margin: 0 20px;
 	}
 
 	.deco {

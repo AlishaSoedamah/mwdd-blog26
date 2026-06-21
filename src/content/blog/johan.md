@@ -19,3 +19,5 @@ Hoe dan wel het web toegankelijk maken?
 - Martijn (visueel beperkt), Martijn haakt af als een website te veel tekst heeft
 - Guido (autisme): last van licht dus heeft een donkere modus nodig, duidelijke informatie nodig, snel veel prikkels (en overprikkeld worden).
 
+## Take Aways:
+De WCAG is lang niet zo inclusief als ie hoort te zijn. Design vooral met gebruikers in mind.

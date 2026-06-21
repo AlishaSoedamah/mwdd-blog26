@@ -345,3 +345,7 @@ Intentional animation, view-transitions. Animation is going to trigger user inte
 
 ### 5 Adapt to the form factor
 Leverage touch based intuitive interactions, consider minimum touch target sized, adapt the layout and UI pattern
+
+## Take aways:
+CSS is growing into its own, grid lanes exist but am not sure where to use them but nice to have an option
+like this in web dev, reduce noice so your users can actually use the website.

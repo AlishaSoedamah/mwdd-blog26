@@ -96,3 +96,7 @@ Bij het ontwerpen van een offline-first applicatie moet vanaf het begin rekening
 De gebruiker moet de applicatie kunnen blijven gebruiken zonder dat essentiële functionaliteiten wegvallen.
 
 Offline ondersteuning is daarmee geen extra functie, maar een uitgangspunt van het ontwerp.
+
+## Take Aways:
+Als een front-end developer is je main gig niet alleen maar websites developen maar ook klanten door een CMS wegwijs maken en ook uitleggen
+dat een temp link niet de echte website is.

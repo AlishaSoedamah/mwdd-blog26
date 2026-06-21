@@ -19,30 +19,37 @@ const { url, name, session, side } = Astro.props;
 </li>
 
 <style>
+	a {
+		display: inline-block;
+		padding: 12px 132px;
+	}
+
+	mark {
+		color: var(--off-black);
+	}
+
 	li {
 		list-style: none;
 	}
 
 	.map {
-		background: radial-gradient(blue, white);
+		background: radial-gradient(var(--folder-color), var(--switch-folder));
 		outline: 1px solid var(--off-black);
 		position: relative;
 		padding: 10px;
 		height: 35px;
 		animation: moveUp 1s ease;
-	}
-
-	.map:hover {
-		cursor: pointer;
-		background: radial-gradient(rgb(0, 0, 218),  var(--bg-hover));
-		.tab {
-			background-color: var(--bg-hover);
+		&:hover {
+			cursor: pointer;
+			background: radial-gradient(var(--folder-hov), var(--bg-hover));
+			.tab {
+				background-color: var(--bg-hover);
+			}
 		}
 	}
 
 	.tab {
 		width: 250px;
-		color: black;
 		border-top: 1px solid var(--off-black);
 		border-left: 1px solid var(--off-black);
 		border-right: 1px solid var(--off-black);
@@ -50,7 +57,7 @@ const { url, name, session, side } = Astro.props;
 		bottom: 35px;
 		padding: 10px 40px;
 		display: flex;
-		background-color: white;
+		background-color: var(--bg);
 		justify-content: space-between;
 	}
 
@@ -66,13 +73,27 @@ const { url, name, session, side } = Astro.props;
 		right: 350px;
 	}
 
-	@media (max-width: 0px) {
+	@media (max-width: 800px) {
 		.odd {
-			left: 0px;
+			left: 10px;
 		}
 
 		.even {
-			right: 0;
+			right: 150px;
+		}
+
+		.middle {
+			right: 10px;
+		}
+	}
+
+	@media (max-width: 500px) {
+		.odd {
+			left: 0;
+		}
+
+		.even {
+			right: 15px;
 		}
 
 		.middle {

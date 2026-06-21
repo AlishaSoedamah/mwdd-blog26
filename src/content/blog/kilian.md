@@ -32,3 +32,6 @@ Een goed voorbeeld hiervan is een toggle (uitklapbaar element). Waar vroeger vaa
 ```
 
 Dit laat zien dat HTML steeds meer ingebouwde functionaliteit biedt, waardoor het niet altijd nodig is om JavaScript te gebruiken. Dat sluit goed aan bij het principe van The Rule of Least Power: gebruik de eenvoudigste oplossing die voldoet aan de gewenste functionaliteit.
+
+## Take Aways:
+HTML en CSS kunnen meer dan dat ik in eerste instantie dacht verder geen take aways voor deze talk.

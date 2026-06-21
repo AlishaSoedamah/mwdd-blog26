@@ -110,9 +110,10 @@ p::first-line {
 
 Deze websites laten zien dat afwijkende layouts interessant en krachtig kunnen zijn.
 
-### Belangrijkste inzicht
+## Take Aways:
 
 Designers leveren vaak een statisch 2D ontwerp zonder interacties of animaties.
 
 Als creative coder ligt de uitdaging bij jou om die extra laag toe te voegen:
 beweging, interactie en dynamiek maken het web interessant.
+

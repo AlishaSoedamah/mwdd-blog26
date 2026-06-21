@@ -150,5 +150,5 @@ Igalia is een Spaans open sourcebedrijf.
 
 Het bedrijf richt zich de laatste jaren op het ontwikkelen van onderdelen van rendering engines.
 
-## Samenvatting
-Deze presentatie ging over de geschiedenis van browsers door de jaren heen en de basisprincipes van hoe een browser werkt.
+## Take Aways:
+Ik vond het wel leuk om te leren over de basisprincipes van hoe een browser werkt maar had niet zo veel aan de rest van de presentatie die ging over de geschiedenis van browsers door de jaren.

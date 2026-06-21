@@ -313,3 +313,8 @@ Option:checked = the selected option
 optgroup -> looks bad but you can adda  legend element in there.
 
 attr function in css.
+
+## Take aways:
+color gamuts are interesting, want to use the deatails tag for my blog site so I can create a 
+low effort pop over. View transitions have come a long way, its time to use them!
+use a type scale thing for headings.

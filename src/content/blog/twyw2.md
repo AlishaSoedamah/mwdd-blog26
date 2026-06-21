@@ -270,3 +270,6 @@ Het doel is een web dat:
 - en langer meegaat
 
 Een web dat niet alleen snel en complex is, maar ook stabiel en begrijpelijk voor de lange termijn.
+
+## Take Aways:
+AI heeft vooral een plek op het web voor accessiblility. Ik had niet door hoe dit handig zou kunnen zijn voor iemand die slechtziend is totdat Leonie had laten zien de huidige web ervaring erg matig is zelfs als er alt tags op plaatjes zitten.

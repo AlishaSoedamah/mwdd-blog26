@@ -5,11 +5,25 @@
 	--bg-popover: rgb(238, 238, 238);
 	--folder-color: rgb(0, 0, 192);
 	--bg-content: rgb(190, 190, 190);
+	--switch-folder: white;
+	--folder-hov: rgb(0, 0, 218);
 }
 
-:focus {
-	outline: var(--off-black) 5px solid;
+:root:has(input[name="hoogcontrast"]:checked) {
+	--bg: #212121;
+	--bg-hover: #020202;
+	--off-black: rgb(240, 240, 240);
+	--bg-popover: rgb(37, 37, 37);
+	--folder-color: rgb(9, 255, 0);
+	--bg-content: rgb(0, 0, 0);
+	--switch-folder: rgb(0, 0, 192);
+	--folder-hov: rgb(5, 163, 0);
+
 }
+
+/* :focus {
+	outline: var(--off-black) 5px solid;
+} */
 
 @font-face {
 	font-family: "pixel";
@@ -37,6 +51,7 @@ body {
 }
 
 p {
+	color: var(--off-black);
 	line-height: 150%;
 	font-weight: 400;
   	font-style: normal;
@@ -50,6 +65,7 @@ mark {
 }
 
 h1, h2, h3, h4, h5, h6 {
+	color: var(--off-black);
 	font-family: "pixel", Arial, Helvetica, sans-serif;
 }
 

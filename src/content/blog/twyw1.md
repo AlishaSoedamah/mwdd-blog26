@@ -28,10 +28,10 @@ Volgens Marleen is wetgeving (regulering) noodzakelijk om een gezond digitaal ec
 
 Goede regulering:
 
-- beschermt de democratie;
-- creëert duidelijkheid;
-- stimuleert innovatie;
-- biedt ruimte aan nieuwe ondernemers;
+- beschermt de democratie
+- creëert duidelijkheid
+- stimuleert innovatie
+- biedt ruimte aan nieuwe ondernemers
 - voorkomt dat grote technologiebedrijven te veel macht krijgen.
 
 Innovatie en regulering sluiten elkaar volgens haar niet uit.
@@ -310,3 +310,6 @@ It's quite playable for this.
 ### But why stop here?
 Is there more to this story, I created a CSS flamethrower!
 Turns out that connecting a lazer to a computer is relatively easy because it also takes an X and Y.
+
+## Take Aways:
+Privacy, neem je data terug, goeie regulering van het web is nodig om het niet commerceel te laten worden
