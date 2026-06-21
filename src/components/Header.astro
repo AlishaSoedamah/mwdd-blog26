@@ -6,7 +6,7 @@
 		</ul>
 		<label>
 			Hoog contrast
-			<input type="checkbox" name="hoogcontrast" value="hoogcontrast">
+			<input type="checkbox" name="hoogcontrast" value="highcontrast">
 		</label>
 	</nav>
 </header>
@@ -19,14 +19,42 @@
 				margin: 0;
 				padding: 0;
 				display: flex;
+				justify-content: space-between;
 				align-items: end;
 				list-style: none;
+				li {
+					color: var(--off-black);
+				}
 			}
 		}
+	}
+
+	label {
+		color: var(--off-black);
 	}
 </style>
 
 <script>
+    const input = document.querySelector('[value="highcontrast"]');
+
+    if (localStorage.getItem('theme') === 'highcontrast') {
+        input.checked = true;
+    }
+
+    input.addEventListener('change', () => {
+        if (input.checked) {
+            document.documentElement.classList.add('high-contrast');
+            localStorage.setItem('theme', 'highcontrast');
+        } else {
+            document.documentElement.classList.remove('high-contrast');
+            localStorage.removeItem('theme');
+        }
+    });
+
+    if (localStorage.getItem('theme') === 'highcontrast') {
+        document.documentElement.classList.add('high-contrast');
+    }
+
 var timeDesk = document.getElementById('timeDesktop');
 
 function time() {
