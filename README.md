@@ -44,3 +44,4 @@ Veel animatie en transitions
 
 This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/draggable
+https://codepen.io/jkasun/pen/QrLjXP

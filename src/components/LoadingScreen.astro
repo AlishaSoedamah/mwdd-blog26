@@ -1,0 +1,71 @@
+<div id="preloader">
+		<p>Loading</p>
+		<p>0x004000</p>
+		<p>0x004001</p>
+		<p>0x004002</p>
+		<p>0x004003</p>
+		<p>0x004004</p>
+
+		<p>H3.......</p>
+		<p>.........</p>
+		<p>.........</p>
+		<p>.........</p>
+		<p>.........</p>
+
+		<p>> Init...</p>
+		<p>> Init creativity...</p>
+		<p>> Booting...</p>
+		<p class="counter">0%</p>
+		<p>Booting the system...</p>
+</div>
+
+<style>
+	#preloader {
+		position: fixed;
+		z-index: 10;
+		width: 100vw;
+		height: 100vh;
+		font-size: 2em;
+		background: var(--bg-folder);
+		color: white;
+	}
+
+	@keyframes fadeOut {
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+</style>
+
+<script>
+	const counter = document.querySelector(".counter");
+	const preloader = document.getElementById('preloader');
+
+	let current = 0;
+	const target = 100;
+	const speed = 30;
+
+	const interval = setInterval(() => {
+	current++;
+	counter.textContent = current + "%";
+
+		if (current >= target) {
+			counter.textContent = ":D";
+			clearInterval(interval);
+		}
+	}, speed);
+
+	if (sessionStorage.getItem('preloaderShown')) {
+		preloader.style.display = 'none';
+	} else {
+		sessionStorage.setItem('preloaderShown', 'true');
+
+		setTimeout(() => {
+		preloader.style.display = 'none';
+		}, 5000);
+	}
+</script>

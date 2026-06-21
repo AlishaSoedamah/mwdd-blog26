@@ -3,6 +3,8 @@
 	--bg-hover: #cdcdcd;
 	--off-black: rgb(26, 26, 26);
 	--bg-popover: rgb(238, 238, 238);
+	--folder-color: rgb(0, 0, 192);
+	--bg-content: rgb(190, 190, 190);
 }
 
 :focus {
@@ -104,7 +106,7 @@ ol li {
 }
 
 footer {
-	outline: rgb(0, 0, 0) solid 1px;
+	outline: var(--off-black) solid 1px;
 	padding: 20px;
 	position: fixed;
 	left: 0;
@@ -117,38 +119,8 @@ svg {
 	height: 0;
 }
 
-.desktop {
-	padding: 30px;
-}
-
 .container {
 	margin: 0 10px;
-}
-
-.desktop-folder {
-	background-color: blue;
-	outline: 1px solid black;
-	padding: 10px;
-	position: relative;
-	width: 140px;
-	height: 80px;
-	margin: 2cap 0;
-	&:hover {
-		cursor: pointer;
-	}
-}
-
-.index-tab {
-	background-color: blue;
-	border-top: 1px solid var(--off-black);
-	border-left: 1px solid var(--off-black);
-	border-right: 1px solid var(--off-black);
-	padding: 5px;
-	width: 50px;
-	height: 10px;
-	position: absolute;
-	bottom: 80px;
-	left: -1px;
 }
 
 .file-corner {
@@ -209,14 +181,16 @@ details summary::marker {
 }
 
 .content {
+	height: 500px;
+	overflow: auto;
 	position: absolute;
   	place-self: center; 
   	inset: 0;
-	border: blue solid 7px;
+	border: var(--folder-color) solid 7px;
 	padding: 65px 25px 25px 25px;
 	width: clamp(300px, 100vw, 50rem);
 	z-index: 10;
-	background: white;
+	background: var(--bg-content);
 	&::after {
 		content: "";
 		position: absolute;
@@ -232,7 +206,7 @@ details summary::marker {
 	}
 	&::before {
 		content: "";
-		background-color: blue;
+		background-color: var(--folder-color);
 		width: inherit;
 		height: 40px;
 		position: absolute;
@@ -242,7 +216,7 @@ details summary::marker {
 }
 
 .icon {
-	outline: 1px solid black;
+	outline: 1px solid var(--off-black);
 	border-radius: 30px;
 	width: 30px;
 	height: 30px;

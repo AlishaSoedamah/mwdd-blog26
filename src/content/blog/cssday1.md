@@ -80,7 +80,7 @@ So why dont we do it for websites?
 Examples for diffrent websites:
 
 Whta happens is the nav bar gets obbsured by thw search bar 
-If we go on blue sly theres a slightly overflowing menu
+If we go on blue sky theres a slightly overflowing menu
 On apples websites we get a truncated nav
 
 Linkedins searchbar gets squashed ... truncation text doesnt fit on the page.

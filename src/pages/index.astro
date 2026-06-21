@@ -4,6 +4,8 @@ import ContextMenu from '../components/ContextMenu.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import DesktopFolder from '../components/DesktopFolder.astro';
+import LoadingScreen from '../components/LoadingScreen.astro';
 import "prop-for-that/head";
 ---
 
@@ -13,45 +15,16 @@ import "prop-for-that/head";
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<div id="preloader" class="fixedContainer">
-			<div class="blink">
-					<p>Loading</p>
-					<p>> Init...</p>
-					<p>> Init creativity...</p>
-					<p>> Booting...</p>
-					<p class="counter">0%</p>
-					<p>Booting the system...</p>
-				</div>
-			</div>
-		</div>
+		<LoadingScreen />
 		<Header/>
 		<ContextMenu/>
 		<main>
-			<section class="desktop">
-				<a class="post-link" href="/blogs">
-					<div class="folder container">
-						<div class="desktop-folder">
-							<div class="index-tab"></div>
-						</div>
-						<p class="post-title">Blogs</p>
-					</div>
-				</a>
-				<a href="/leerdoelen">
-					<div class="container">
-						<div class="desktop-folder">
-							<div class="index-tab"></div>
-						</div>
-						<p>Leerdoelen</p>
-					</div>
-				</a>
-				<a href="/vakken">
-					<div class="container">
-						<div class="desktop-folder">
-							<div class="index-tab"></div>
-						</div>
-						<p>Vakken</p>
-					</div>
-				</a>
+			<section>
+				<DesktopFolder url="/blogs" name="Blogs"/>
+				<DesktopFolder url="/leerdoelen" name="Leerdoelen"/>
+				<DesktopFolder url="/vakken" name="Vakken"/>
+			
+
 				<details class="auto-close" name="open_one">
 					<summary>
 						<p>sprint0.md</p>
@@ -136,7 +109,7 @@ import "prop-for-that/head";
 					<div class="content">
 						<h3>Reflectie op meesterproef 3/3</h3>
 						<p>
-							De grootste uitdaging lag voor mij bij de rol die ik binnen het team nam. Ik werd vaak gezien als degene met de meeste kennis van github en de terminal waardoor veel inhoudelijke vragen over github bij mij terecht kwamen wat niet erg was maar het was. Tijdens merge conflicten en het mergen van brances werd het soms lastig. Dit bracht ons best wel veel stress tijdens het project, vooral dezelfde errors overnieuw zien werd oud.
+							De grootste uitdaging lag voor mij bij de rol die ik binnen het team nam. Ik werd vaak gezien als degene met de meeste kennis van github en de terminal waardoor veel inhoudelijke vragen over github bij mij terecht kwamen wat niet erg was maar wel meer werk was dan ik eerst dacht. Tijdens merge conflicten en het mergen van brances werd het soms lastig. Dit bracht ons best wel veel stress tijdens het project, vooral dezelfde errors overnieuw zien werd oud.
 							De samenwerking binnen het team verliep over het algemeen goed. Hoewel de communicatie niet altijd even duidelijk was werden de gemaakte afspraken uiteindelijk nagekomen en werkte iedereen gezamenlijk toe naar het eindresultaat. Deze ervaring heeft mij laten inzien hoe belangrijk heldere communicatie is voor een efficiënte samenwerking en het voorkomen van misverstanden.
 						</p>
 						<h4>In het kort wat er gedaan is in de 5 weken</h4>
@@ -276,86 +249,3 @@ import "prop-for-that/head";
 		<Footer/>
 	</body>
 </html>
-
-<style>
-	main {
-		align-items: start;
-	}
-
-	@container style(--live-online: 0) {
-		.tile--online { color: var(--limit); }
-		.tile__online::after { content: 'offline'; }
-	}
-
-	.tile__gauge i {
-		inline-size: calc(var(--live-battery-level) * 100%);
-	}
-
-	.fixedContainer {
-		position: fixed;
-		z-index: 10;
-		width: 100vw;
-		height: 100vh;
-		font-size: 2em;
-		background: blue;
-		color: white;
-	}
-
-	.blink {
-  		animation: blinker 1s linear infinite;
-	}
-
-	@keyframes fadeOut {
-		from {
-			opacity: 1;
-		}
-		to {
-			opacity: 0;
-			visibility: hidden;
-		}
-	}
-
-	@keyframes blinker {
-	50% {
-		opacity: 0;
-	}
-	}
-</style>
-
-<script>
-	const counter = document.querySelector(".counter");
-	const preloader = document.getElementById('preloader');
-
-	let current = 0;
-	const target = 100;
-	const speed = 30;
-
-	const interval = setInterval(() => {
-	current++;
-	counter.textContent = current + "%";
-
-		if (current >= target) {
-			counter.textContent = ":D";
-			clearInterval(interval);
-		}
-	}, speed);
-
-	if (sessionStorage.getItem('preloaderShown')) {
-		preloader.style.display = 'none';
-	} else {
-		sessionStorage.setItem('preloaderShown', 'true');
-
-		setTimeout(() => {
-		preloader.style.display = 'none';
-		}, 5000);
-	}
-
-	document.addEventListener('click', (event) => {
-		document.querySelectorAll('details.auto-close').forEach((details) => {
-			if (details.open && !details.contains(event.target)) {
-			details.open = false;
-			}
-		});
-	});
-
-</script>

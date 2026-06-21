@@ -9,14 +9,14 @@ interface Props {
 const { url, name, session, side } = Astro.props;
 ---
 
-<a href={url}>
-	<div class="map">
-			<div class={`tab ${side}`}>
-				<mark>{name}</mark>
-				<mark>{session}</mark>
-			</div>
-	</div>
-</a>
+<li class="map">
+	<a href={url}>
+		<div class={`tab ${side}`}>
+			<mark>{name}</mark>
+			<mark>{session}</mark>
+		</div>
+	</a>
+</li>
 
 <style>
 	.map {

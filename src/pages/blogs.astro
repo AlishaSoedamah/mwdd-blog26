@@ -21,7 +21,7 @@ import Folder from '../components/Folder.astro';
 				<h1 class="post-title">Blogs</h1>
 				<p>Mijn collectie van blogs van de sprekers voor de Minor Web Design & Development (MWDD)</p>
 			</div>
-			<article>
+			<ul>
 				<Folder url="/blog/kilian" name="Kilian" session="00" side="odd"/>
 				<Folder url="/blog/ppk" name="PPK" session="01" side="middle"/>
 				<Folder url="/blog/nils" name="Nils" session="02" side="even"/>
@@ -37,7 +37,7 @@ import Folder from '../components/Folder.astro';
 				<Folder url="/blog/twyw2" name="TWYW" session="dag 2" side="middle"/>
 				<Folder url="/blog/cssday1" name="CSS Day" session="dag 1" side="even"/>
 				<Folder url="/blog/cssday2" name="CSS Day" session="dag 2" side="odd"/>
-			</article>
+			</ul>
 		</main>
 		<Footer/>
 	</body>
@@ -48,8 +48,8 @@ import Folder from '../components/Folder.astro';
 		align-items: center;
 	}
 
-	article {
-		background: blue;
+	ul {
+		background: var(--folder-color);
 		display: flex;
 		flex-direction: column;
 		outline: 1px solid var(--off-black);

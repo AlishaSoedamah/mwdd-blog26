@@ -1,0 +1,44 @@
+---
+interface Props {
+  url: string;
+  name: string;
+}
+
+const { url, name } = Astro.props;
+
+---
+
+<a href={url}>
+	<div class="popup">
+		<div class="desktop-folder">
+			<div class="index-tab"></div>
+		</div>
+		<p class="post-title">{name}</p>
+	</div>
+</a>
+
+<style>
+	.desktop-folder {
+		cursor: move;
+		background-color: var(--folder-color);
+		outline: 1px solid var(--off-black);
+		padding: 10px;
+		position: relative;
+		width: 140px;
+		height: 80px;
+		margin: 2cap 0;
+	}
+
+	.index-tab {
+		background-color: var(--folder-color);
+		border-top: 1px solid var(--off-black);
+		border-left: 1px solid var(--off-black);
+		border-right: 1px solid var(--off-black);
+		padding: 5px;
+		width: 50px;
+		height: 10px;
+		position: absolute;
+		bottom: 80px;
+		left: -1px;
+	}
+</style>
