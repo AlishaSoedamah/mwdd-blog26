@@ -2,7 +2,9 @@
 	<nav>
 		<ul>
 			<li id="timeDesktop"></li>
-			<li>Battery</li>
+			<li id="battery">Battery level:
+				<p id="title"></p>
+			</li>
 		</ul>
 		<label>
 			Hoog contrast
@@ -15,6 +17,7 @@
 	header {
 		border-bottom: 1px solid var(--off-black);
 		nav {
+			padding-inline: 10px;
 			ul {
 				margin: 0;
 				padding: 0;
@@ -32,9 +35,23 @@
 	label {
 		color: var(--off-black);
 	}
+
+	#title {
+		text-align: right;
+	}
 </style>
 
 <script>
+	//battery lvl - https://www.youtube.com/watch?v=x1B07Z3vYO4
+	document.addEventListener("DOMContentLoaded", function() {
+  		navigator.getBattery().then(function(battery) {
+    		var level = battery.level;
+    		document.getElementById("title").innerHTML = (level * 100) + "%";
+    		document.getElementById("battery").style.backgroundPosition = (level * 100) + "%";
+  		});
+	});
+
+	//localStorage highcontrast - 
     const input = document.querySelector('[value="highcontrast"]');
 
     if (localStorage.getItem('theme') === 'highcontrast') {
@@ -55,16 +72,17 @@
         document.documentElement.classList.add('high-contrast');
     }
 
-var timeDesk = document.getElementById('timeDesktop');
+	//get time of day
+	var timeDesk = document.getElementById('timeDesktop');
 
-function time() {
-  var d = new Date();
-  var m = d.getMinutes();
-  var h = d.getHours();
-  timeDesk.textContent = 
-    ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2);
-}
+	function time() {
+	var d = new Date();
+	var m = d.getMinutes();
+	var h = d.getHours();
+	timeDesk.textContent = 
+		("0" + h).substr(-2) + ":" + ("0" + m).substr(-2);
+	}
 
-setInterval(time, 1000);
+	setInterval(time, 1000);
 
 </script>
