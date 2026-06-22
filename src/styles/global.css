@@ -128,7 +128,6 @@ summary {
 	height: 120px;
 	border:  var(--off-black) solid 1px;
 	margin: 20px 10px;
-	z-index: 0;
 	p {
 		margin-top: 130px;
 	}
@@ -165,7 +164,7 @@ img {
 	border: var(--folder-color) solid 7px;
 	padding: 65px 25px 25px 25px;
 	width: clamp(300px, 100vw, 50rem);
-	z-index: 10;
+	z-index: 9999;
 	background: var(--bg-content);
 	&::after {
 		content: "";
