@@ -69,8 +69,15 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "pixel", Arial, Helvetica, sans-serif;
 }
 
+h2, h3, h4, h5, h6 {
+	line-height: 45px;
+	padding: 15px 0;
+
+}
+
 h1 {
-	padding: 25px;
+	line-height: 100px;
+	padding: 25px 0;
 	font-size: 4em;
 	text-align: center;
 }
@@ -84,24 +91,18 @@ h3 {
 	margin: 15px 0;
 }
 
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
 a {
 	color: var(--off-black);
 	text-decoration: none;
 }
-
-/* button {
-	padding: 10px;
-	background-color: rgb(255, 220, 62);
-	border: 1px solid var(--off-black);
-	border-radius: 5px;
-	width: 200px;
-	margin-top: 25px;
-    align-self: center;
-}
-
-button:hover {
-	cursor: pointer;
-} */
 
 img {
 	width: 500px;
@@ -112,31 +113,14 @@ svg {
 	height: 0;
 }
 
-.container {
-	margin: 0 10px;
+xmp,
+ul > li {
+	color: var(--off-black);
 }
 
-.file-corner {
-	position: absolute;
-	right: -1px;
-    top: -1px;
-	width: 25px;
-	aspect-ratio: 1;
-	border-top: var(--bg) solid 1px;
-	border-right: var(--bg) solid 1px;
-	border-left: var(--off-black) solid 1px;
-	border-bottom: var(--off-black) solid 1px;
-	z-index: 1;
-	&::after {
-		content: "";
-		position: absolute;
-		background: var(--off-black);
-		width: 35px;
-		height: 1px;
-		transform: rotate(45deg);
-		top: 11px;
-		right: -6px;
-	}
+.screen {
+	display: block;
+	padding-inline: 20px;
 }
 
 details {
@@ -187,14 +171,14 @@ details summary::marker {
 	&::after {
 		content: "";
 		position: absolute;
-		top: 10px;
-		left: -20px;
-		width: 15px;
+		top: 7px;
+		left: -30px;
+		width: 20px;
 		aspect-ratio: 1;
 		box-shadow: 
-			2em 0 rgb(0, 255, 68),
-			4em 0 rgb(229, 255, 0),
-			6em 0 rgb(255, 0, 0);
+			2em 0 var(--bg-hover),
+			4em 0 var(--bg-hover),
+			6em 0 var(--bg-hover);
 	}
 	&::before {
 		content: "";
@@ -207,14 +191,32 @@ details summary::marker {
 	}
 }
 
-@keyframes --color-boxes {
-  100% {
-    box-shadow:
-	  60px 0 rgb(0, 255, 0),
-      15px 0 blue,
-      30px 0 red,
-      45px 0 hotpink;
-  }
+
+.container {
+	margin: 0 10px;
+}
+
+.file-corner {
+	position: absolute;
+	right: -1px;
+    top: -1px;
+	width: 25px;
+	aspect-ratio: 1;
+	border-top: var(--bg) solid 1px;
+	border-right: var(--bg) solid 1px;
+	border-left: var(--off-black) solid 1px;
+	border-bottom: var(--off-black) solid 1px;
+	z-index: 1;
+	&::after {
+		content: "";
+		position: absolute;
+		background: var(--off-black);
+		width: 35px;
+		height: 1px;
+		transform: rotate(45deg);
+		top: 11px;
+		right: -6px;
+	}
 }
 
 .post-title {
@@ -234,27 +236,9 @@ details summary::marker {
   animation-duration: .5s;
 }
 
-/* Range: fill the track up to the current value */
-input[type="range"] {
-  background: linear-gradient(
-    to right in oklab,
-    var(--theme) calc(var(--live-value-pct) * 100%),
-    var(--track) 0
-  );
-}
-
-/* Pointer position on an element */
-.card {
-  background: radial-gradient(
-    circle at var(--live-pointer-x) var(--live-pointer-y),
-    hotpink,
-    transparent
-  );
-}
-
-/* Only style when all form fields are valid */
-@container style(--live-all-valid: 1) {
-  button[type="submit"] {
-    background: green;
-  }
+@media (max-width: 500px)
+{
+	h1 {
+		line-height: 60px;
+	}
 }

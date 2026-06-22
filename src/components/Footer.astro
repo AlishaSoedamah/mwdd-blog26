@@ -1,10 +1,15 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+
 <footer>
 	<nav>
 		<ul>
-			<li><a href="/">Desktop</a></li>
-			<li><a href="/vakken">Vakken</a></li>
-			<li><a href="/blogs">WN</a></li>
-			<li><a href="/leerdoelen">Leerdoelen</a></li>
+			<li><a href="/" class={currentPath === "/" ? "active" : ""}>Desktop</a></li>
+			<li><a href="/vakken" class={currentPath === "/vakken" ? "active" : ""}>Vakken</a></li>
+			<li><a href="/blogs" class={currentPath === "/blogs" ? "active" : ""}>Nerds</a></li>
+			<li><a href="/leerdoelen" class={currentPath === "/leerdoelen" ? "active" : ""}>Leerdoelen</a></li>
 		</ul>
 	</nav>
 </footer>
@@ -27,5 +32,13 @@
 				width: 130px;
 			}
 		}
+	}
+
+	 a.active {
+		text-decoration: underline;
+		color: var(--bg);
+		background: var(--folder-color);
+		padding: 10px;
+		border-radius: 60px 60px 0 0 ;
 	}
 </style>

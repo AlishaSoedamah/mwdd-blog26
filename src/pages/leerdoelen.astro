@@ -4,6 +4,7 @@ import ContextMenu from '../components/ContextMenu.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import MusicCard from '../components/MusicCard.astro';
 ---
 
 <!doctype html>
@@ -14,79 +15,49 @@ import Header from '../components/Header.astro';
 <body>
 	<ContextMenu/>
 	<Header/>
+	<h1>Leerdoelen</h1>
 	<main>
-		<h1>Leerdoelen</h1>
+		<ul>
+			<MusicCard>
+				<h2>Leerdoel 1</h2>
+				<p>
+					A11y, accessibility, testen. Niet alleen bewust zijn maar ook echt begrijpen wat het
+					beste werkt voor een bepaalde groep mensen en daar dan je product op aanpassen.
+				</p>
+			</MusicCard>
+			<MusicCard>
+				<h2>Leerdoel 2</h2>
+				<p>
+					Kwaliteit > kwantiteit. Eigenlijk wil je liever een goed klein gedeelte hebben
+					van een website dan de hele website die dan slecht gebouwd is en de "wauw" mist. Ik heb heel vaak dat ik maar gewoon iets wil maken dat "af"
+					is en niet per se tot de details is uitgewerkt. Wat jammer is want ik kan best goed iets uitwerken als ik er echt voor ga zitten. Om dit
+					leerdoel te halen ga ik hier bewuster van worden en ga ik me meer focusen op micro interacties/details.
+				</p>
+			</MusicCard>
+			<MusicCard>
+				<h2>Leerdoel 3</h2>
+				<p>
+					Professionele doelen: voor het professionele doel wil ik vooral meer initiatief nemen voor de taken binnen 
+					meesterproef omdat ik vaak wegval bij groeps projecten als iets niet gaat zoals ik dat wil. Ik
+					ben van plan dit te doen door bepaalde taken op me te nemen, mijn mening naar de groep te uiten 
+					en vaker om hulp vragen als ik vast zit.
+				</p>
+			</MusicCard>
+		</ul>
 	</main>
-	<!-- <section>
-		<main>
-			<h1>Leerdoelen</h1>
-
-			<details class="auto-close" name="open_one">
-				<summary>
-					<p>leerdoel_1.md</p>
-					<div class="file-corner"></div>
-				</summary>
-				<article class="content">
-					<h2>Leerdoel 1</h2>
-					<p>
-						A11y, accessibility, testen. Niet alleen bewust zijn maar ook echt begrijpen wat het
-						beste werkt voor een bepaalde groep mensen en daar dan je product op aanpassen.
-					</p>
-				</article>
-			</details>
-			<details class="auto-close" name="open_one">
-				<summary>
-					<p>leerdoel_2.md</p>
-					<div class="file-corner"></div>
-				</summary>
-				<article class="content">
-					<h2>Leerdoel 2</h2>
-					<p>
-						Kwaliteit > kwantiteit. Eigenlijk wil je liever een goed klein gedeelte hebben
-						van een website dan de hele website die dan slecht gebouwd is en de "wauw" mist. Ik heb heel vaak dat ik maar gewoon iets wil maken dat "af"
-						is en niet per se tot de details is uitgewerkt. Wat jammer is want ik kan best goed iets uitwerken als ik er echt voor ga zitten. Om dit
-						leerdoel te halen ga ik hier bewuster van worden en ga ik me meer focusen op micro interacties/details.
-					</p>
-				</article>
-			</details>
-				<details class="auto-close" name="open_one">
-				<summary>
-					<p>leerdoel_3.md</p>
-					<div class="file-corner"></div>
-				</summary>
-				<article class="content">
-					<h2>Leerdoel 3</h2>
-					<p>
-						Professionele doelen: voor het professionele doel wil ik vooral meer initiatief nemen voor de taken binnen 
-						meesterproef omdat ik vaak wegval bij groeps projecten als iets niet gaat zoals ik dat wil. Ik
-						ben van plan dit te doen door bepaalde taken op me te nemen, mijn mening naar de groep te uiten 
-						en vaker om hulp vragen als ik vast zit.
-					</p>
-				</article>
-			</details>
-		</main>
-	</section> -->
 	<Footer/>
 </body>
 </html>
 
 <style>
-	details:nth-child(1)
-	{
-		left: 10px;
-		top: 10px;
-	}
-
-	details:nth-child(2)
-	{
-		left: 40px;
-		top: 10px;
-	}
-
-	details:nth-child(3)
-	{
-		left: 200px;
-		bottom: 100px;
+	ul {
+		list-style-type: none;
+		display: grid;
+		justify-items: center;
+		justify-content: center;
+		padding: 0;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 500px));
+		gap: 50px;
 	}
 </style>
 <script>

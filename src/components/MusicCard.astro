@@ -1,0 +1,37 @@
+<li>
+	<nav>
+		<ol>
+			<li>💿</li>
+			<li>View</li>
+			<li>Options</li>
+			<li>Help</li>
+		</ol>
+	</nav>
+	<slot></slot>
+</li>
+
+<style>
+	li:not(nav li) {
+		margin: 0 15px;
+		width: clamp(200px, 80vw, 500px);
+		aspect-ratio: 1;
+		outline: var(--folder-color) 10px solid;
+		background: var(--bg-content);
+	}
+
+	nav > ol {
+		background: var(--folder-color);
+		color: var(--bg);
+		padding: 2px 0 10px 0;
+		margin: 0;
+		display: flex;
+		gap: 10px;
+	}
+
+	nav > ol > li {
+		list-style-type: none;
+		&:not(:first-child) {
+			text-decoration: underline;
+		}
+	}
+</style>
