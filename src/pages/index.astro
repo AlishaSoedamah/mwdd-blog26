@@ -20,7 +20,7 @@ import LoadingScreen from '../components/LoadingScreen.astro';
 				<DesktopFolder url="/blogs" name="Weekly Nerd"/>
 				<DesktopFolder url="/leerdoelen" name="Leerdoelen"/>
 				<DesktopFolder url="/vakken" name="Vakken"/>
-				<details class="draggable auto-close" name="open_one">
+				<details class="auto-close" name="open_one">
 					<summary>
 						<p>sprint0.md</p>
 						<div class="file-corner"></div>
@@ -34,7 +34,7 @@ import LoadingScreen from '../components/LoadingScreen.astro';
 						</p>
 					</div>
 				</details>
-				<details class="draggable auto-close" name="open_one">
+				<details class="auto-close" name="open_one">
 					<summary>
 						<p>hackaton.md</p>
 						<div class="file-corner"></div>
@@ -97,7 +97,7 @@ import LoadingScreen from '../components/LoadingScreen.astro';
 						<p>De laaste dag van de hackaton, afsluiting en de reflectie inleveren</p>
 					</div>
 				</details>
-				<details class="draggable auto-close" name="open_one">
+				<details class="auto-close" name="open_one">
 					<summary>
 						<p>meesterproef.md</p>
 						<div class="file-corner"></div>
@@ -252,47 +252,6 @@ import LoadingScreen from '../components/LoadingScreen.astro';
 		text-decoration: underline;
 	}
 
-	.draggable {
-		position: fixed;
-		cursor: grab;
-  	}
-
-	.draggable:nth-of-type(1) { 
-		top: 400px; 
-		left: 300px; 
-	}
-
-	.draggable:nth-of-type(2) {
-		top: 100px;
-    	left: 208px;
-	}
-
-	.draggable:nth-of-type(3) { 
-		top: 200px;
-    	left: 550px;
-	}
-
-	@media (max-width: 700px) {
-		.draggable {
-			position: relative;
-			cursor: grab;
-  		}
-
-		.draggable:nth-of-type(1) { 
-			top: 50px; 
-			left: 100px; 
-		}
-
-		.draggable:nth-of-type(2) {
-			top: -136px;
-			left: 28px;
-		}
-
-		.draggable:nth-of-type(3) { 
-			top: -171px;
-			left: 0;
-		}
-	}
 </style>
 
 <script>
@@ -303,24 +262,4 @@ import LoadingScreen from '../components/LoadingScreen.astro';
 		}
 		});
 	});
-
-	//claude helped me move things...
- 	document.querySelectorAll('.draggable').forEach(el => {
-		let offsetX, offsetY;
-
-		el.addEventListener('mousedown', (e) => {
-		offsetX = e.clientX - el.getBoundingClientRect().left;
-		offsetY = e.clientY - el.getBoundingClientRect().top;
-
-		const onMove = (e) => {
-			el.style.left = `${e.clientX - offsetX}px`;
-			el.style.top = `${e.clientY - offsetY}px`;
-		};
-
-		document.addEventListener('mousemove', onMove);
-		document.addEventListener('mouseup', () => {
-			document.removeEventListener('mousemove', onMove);
-		}, { once: true });
-		});
-  });
 </script>

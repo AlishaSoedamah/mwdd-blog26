@@ -1,25 +1,24 @@
 <div id="preloader">
-		<p>Loading</p>
-		<p>0x004000</p>
-		<p>0x004001</p>
-		<p>0x004002</p>
-		<p>0x004003</p>
-		<p>0x004004</p>
-		<p>> Init...</p>
-		<p>> Init opinions...</p>
-		<p>> Booting...</p>
-		<p class="counter">0%</p>
-		<p>Booting the system...</p>
+	<h1 class="counter">0%</h1>
+	<p>Booting the system...</p>
 </div>
 
 <style>
 	#preloader {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
 		position: fixed;
 		z-index: 10;
 		width: 100vw;
 		height: 100vh;
 		font-size: 2em;
-		background: var(--folder-color);
+		background: rgb(0, 0, 218);
+		color: white;
+	}
+
+	h1, p {
 		color: white;
 	}
 
