@@ -5,7 +5,7 @@ pubDate: 'Jun 10 2026'
 heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
-## Léonie Watson
+## Leonie Watson
 Schermlezers op het web
 Voorbeeld: Calvin Klein
 Leest de materiaalsamenstelling van de kleding voor, maar geeft geen goed voorbeeld van hoe het kledingstuk eruitziet.
