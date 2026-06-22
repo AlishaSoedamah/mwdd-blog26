@@ -58,15 +58,20 @@ import MusicCard from '../components/MusicCard.astro';
 		padding: 0;
 		grid-template-columns: repeat(auto-fill, minmax(200px, 500px));
 		gap: 50px;
+		padding-bottom: 100px;
 	}
+
+	h2, p {
+		padding-inline: 25px;
+	}
+
 </style>
 <script>
 	document.addEventListener('click', (event) => {
-  document.querySelectorAll('details.auto-close').forEach((details) => {
-    if (details.open && !details.contains(event.target)) {
-      details.open = false;
-    }
-  });
-});
-
+		document.querySelectorAll('details.auto-close').forEach((details) => {
+		if (details.open && !details.contains(event.target)) {
+			details.open = false;
+		}
+		});
+	});
 </script>

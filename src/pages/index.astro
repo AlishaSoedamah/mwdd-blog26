@@ -7,7 +7,6 @@ import Header from '../components/Header.astro';
 import DesktopFolder from '../components/DesktopFolder.astro';
 import LoadingScreen from '../components/LoadingScreen.astro';
 import Popup from '../components/Popup.astro';
-import Notification from '../components/Notification.astro';
 ---
 
 <!doctype html>
@@ -16,13 +15,12 @@ import Notification from '../components/Notification.astro';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<!-- <LoadingScreen/> -->
+		<LoadingScreen/>
 		<ContextMenu/>
 		<Header/>
 		<main>
-			<Notification />
 			<section>
-				<!-- <Popup /> -->
+				<Popup />
 				<section class="screen">
 					<DesktopFolder url="/blogs" name="Weekly Nerd"/>
 					<DesktopFolder url="/leerdoelen" name="Leerdoelen"/>
@@ -33,7 +31,7 @@ import Notification from '../components/Notification.astro';
 							<div class="file-corner"></div>
 						</summary>
 						<div class="content">
-							<h3>Reflectie na sprint0 1/3</h3>
+							<h3>Reflectie na sprint 0 1/3</h3>
 							<a href="https://alishasoedamahintrowebsitewdd2026.netlify.app/" target="_blank">Website</a>
 							<p>
 								Ik heb een site gemaakt waar een gedachte achter zit en mijn persoonlijke interesses komen hierin samen. Ik ben erg blij met de javascript code die een stuk kleiner is geworden door data-* te gebuiken op mijn HTML cards. Over het algemeen vond ik de opdracht wel leuk maar had ik vooral problemen met oplossingen bedenken voor mijn website. Ik wist nog niet wat het ander thema ging worden totdat Lynn tegen mij zei: "wat vond jij nou echt leuk vroeger?". Toen was het antwoord al snel duidelijk en had ik eindelijk een andere richting gevonden voor mijn tweede thema op de site. Overal: vaker feedback vragen op je werk zodat je sneller uitkomt op een antwoord dan er alleen mee zitten.

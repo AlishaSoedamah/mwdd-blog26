@@ -8,9 +8,34 @@
 		</ol>
 	</nav>
 	<slot></slot>
+	<div>
+		<button>⇄</button>
+		<button>◀</button>
+		<button>||</button>
+		<button>▶︎</button>
+		<button>↻</button>
+	</div>
+	<label>
+		<input type="range">
+	</label>
+	<div>
+		<p>00:00</p>
+		<p>03:11</p>
+	</div>
 </li>
 
 <style>
+	input[type="range"] {
+		-webkit-appearance: none;
+        appearance: none; 
+        cursor: pointer;
+        outline: none;
+        overflow: hidden;
+		height: 10px;
+		margin: 0 25px;
+		width: calc(100% - 55px);
+	}
+
 	li:not(nav li) {
 		margin: 0 15px;
 		width: clamp(200px, 80vw, 500px);
@@ -34,4 +59,62 @@
 			text-decoration: underline;
 		}
 	}
+
+	button {
+		background: none;
+		border: none;
+		color: var(--folder-color);
+		padding: 10px;
+		font-size: 30px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	div:nth-of-type(1) {
+		padding-top: 20px;
+	}
+
+	div:nth-of-type(2) {
+		padding-inline: 25px;
+		justify-content: space-between;
+	}
+
+	/* stupid range bar fix */
+    input[type="range"]::-webkit-slider-runnable-track {
+        height: 15px;
+        background: var(--bg);
+    }
+
+    input[type="range"]::-moz-range-track {
+        height: 15px;
+        background: var(--bg);
+        border-radius: 16px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none; 
+        height: 15px;
+        width: 15px;
+        background-color: hotpink;
+        border-radius: 50%;
+        border: 2px solid var(--folder-color);
+        box-shadow: -407px 0 0 400px var(--folder-color);
+    }
+
+    input[type="range"]::-moz-range-thumb {
+            height: 15px;
+            width: 15px;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 1px solid var(--folder-color);
+            box-shadow: -407px 0 0 400px var(--folder-color);
+    }
 </style>
