@@ -88,7 +88,7 @@ Soms is de enige downtime stroomuitval.
 ## Rosa
 Rosa werkt momenteel aan een alternatieve kalender voor Rotterdam.
 
-## Static site generators ❤️
+## Static site generators
 
 - Minder belasting op servers
 - Als het faalt, heb je nog steeds Markdown

@@ -1,26 +1,22 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import ContextMenu from '../components/ContextMenu.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import DesktopFolder from '../components/DesktopFolder.astro';
 import LoadingScreen from '../components/LoadingScreen.astro';
-import Popup from '../components/Popup.astro';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<LoadingScreen/>
-		<ContextMenu/>
 		<Header/>
 		<main>
 			<section>
-				<Popup />
 				<section class="screen">
 					<DesktopFolder url="/blogs" name="Weekly Nerd"/>
 					<DesktopFolder url="/leerdoelen" name="Leerdoelen"/>
@@ -241,7 +237,7 @@ import Popup from '../components/Popup.astro';
 							<p>Layouts don't have to be boring</p>
 							<h5>Hans</h5>
 							<p>Eigenlijk gewoon common sense over hoe je met elkaar om zou moeten gaan, zo moeten we ook omgaan met gegevens. Dit gaat over persoonsgegevens.</p>
-							<h5>Léonie Watson</h5>
+							<h5>Leonie Watson</h5>
 							<p>AI compensates for the shortcomings of the web</p>
 							<h5>Cyd Stumpel</h5>
 							<p>When you deliberately design for the worst acceptable experience first, everything that comes after becomes an enhancement instead of a requirement.</p>

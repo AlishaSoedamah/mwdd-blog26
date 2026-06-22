@@ -2,14 +2,23 @@
 	<nav>
 		<ul>
 			<li id="timeDesktop"></li>
-			<li id="battery">Battery level:
+			<li>
+				<label>
+					⏾
+				<input type="radio" name="contrast" value="highcontrast">
+				</label>
+			</li>
+			<li>
+				<label>
+					☀
+					<input type="radio" name="contrast" value="lowcontrast">
+				</label>
+			</li>
+			<li id="battery">
+				<span></span>
 				<p id="title"></p>
 			</li>
 		</ul>
-		<label>
-			Hoog contrast
-			<input type="checkbox" name="hoogcontrast" value="highcontrast">
-		</label>
 	</nav>
 </header>
 
@@ -23,7 +32,7 @@
 				padding: 0;
 				display: flex;
 				justify-content: space-between;
-				align-items: end;
+				align-items: center;
 				list-style: none;
 				li {
 					color: var(--off-black);
@@ -33,12 +42,54 @@
 	}
 
 	label {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 25px;
 		color: var(--off-black);
+		&:hover {
+			cursor: pointer;
+		}
+		input {
+			display: none;
+		}
 	}
 
 	#title {
 		text-align: right;
 	}
+
+	#battery {
+		display: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			right: 60px;
+			top: 14px;
+			width: 20px;
+			height: 10px;
+			outline: 1px solid var(--off-black);
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			right: 65px;
+			top: 14px;
+			width: 15px;
+			height: 10px;
+			background: var(--off-black);
+		}
+	}
+
+	span {
+			position: absolute;
+			right: 57px;
+			top: 16px;
+			width: 3px;
+			height: 6px;
+			background: var(--bg);
+			border-right: var(--off-black) 1px solid;
+			border-top: var(--off-black) 1px solid;
+			border-bottom: var(--off-black) 1px solid;
+		}
 </style>
 
 <script>
@@ -50,27 +101,6 @@
     		document.getElementById("battery").style.backgroundPosition = (level * 100) + "%";
   		});
 	});
-
-	//localStorage highcontrast - 
-    const input = document.querySelector('[value="highcontrast"]');
-
-    if (localStorage.getItem('theme') === 'highcontrast') {
-        input.checked = true;
-    }
-
-    input.addEventListener('change', () => {
-        if (input.checked) {
-            document.documentElement.classList.add('high-contrast');
-            localStorage.setItem('theme', 'highcontrast');
-        } else {
-            document.documentElement.classList.remove('high-contrast');
-            localStorage.removeItem('theme');
-        }
-    });
-
-    if (localStorage.getItem('theme') === 'highcontrast') {
-        document.documentElement.classList.add('high-contrast');
-    }
 
 	//get time of day
 	var timeDesk = document.getElementById('timeDesktop');
@@ -85,4 +115,36 @@
 
 	setInterval(time, 1000);
 
+		const inputs = document.querySelectorAll('[name="contrast"]');
+
+	//theme switch
+	const allInputs = document.querySelectorAll('[name="contrast"]');
+
+	allInputs.forEach(input => {
+	input.addEventListener('change', (e) => {
+		const isHigh = e.target.value === 'highcontrast';
+
+		if (isHigh) {
+		document.documentElement.classList.add('high-contrast');
+		localStorage.setItem('theme', 'highcontrast');
+		} else {
+		document.documentElement.classList.remove('high-contrast');
+		localStorage.removeItem('theme');
+		}
+
+		// sync all inputs to match
+		allInputs.forEach(i => {
+		i.checked = i.value === (isHigh ? 'highcontrast' : 'lowcontrast');
+		});
+	});
+	});
+
+	// set initial state on load
+	const saved = localStorage.getItem('theme');
+	allInputs.forEach(i => {
+	i.checked = i.value === (saved ?? 'lowcontrast');
+	});
+	if (saved === 'highcontrast') {
+	document.documentElement.classList.add('high-contrast');
+	}
 </script>

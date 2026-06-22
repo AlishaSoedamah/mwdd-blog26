@@ -5,3 +5,15 @@ document.addEventListener('click', (event) => {
     }
   });
 });
+
+//geluid bij link click
+document.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const audio = new Audio('bing.mp3');
+    audio.play();
+    audio.addEventListener('ended', () => {
+      window.location.href = link.href;
+    });
+  });
+});

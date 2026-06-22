@@ -1,15 +1,15 @@
 :root {
-	--bg: #DEDEDE;
-	--bg-hover: #adadad;
-	--off-black: rgb(26, 26, 26);
-	--bg-popover: rgb(238, 238, 238);
-	--folder-color: rgb(0, 0, 192);
-	--bg-content: rgb(190, 190, 190);
-	--switch-folder: white;
-	--folder-hov: rgb(0, 0, 218);
+  --bg: #DEDEDE;
+  --bg-hover: #adadad;
+  --off-black: rgb(26, 26, 26);
+  --bg-popover: rgb(238, 238, 238);
+  --folder-color: rgb(0, 0, 192);
+  --bg-content: rgb(190, 190, 190);
+  --switch-folder: white;
+  --folder-hov: rgb(0, 0, 218);
 }
 
-:root:has(input[name="hoogcontrast"]:checked) {
+:root:has(input[name="contrast"][value="highcontrast"]:checked) {
 	--bg: #212121;
 	--bg-hover: #020202;
 	--off-black: rgb(240, 240, 240);
@@ -18,7 +18,6 @@
 	--bg-content: rgb(0, 0, 0);
 	--switch-folder: rgb(0, 0, 192);
 	--folder-hov: rgb(5, 163, 0);
-
 }
 
 @font-face {
