@@ -10,10 +10,11 @@ import MusicCard from '../components/MusicCard.astro';
 <html lang="nl">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<script defer src="/public/main.js"></script>
 	</head>
 <body>
 	<Header/>
-	<h1>Leerdoelen</h1>
+	<h1 class="leerdoelen-title">Leerdoelen</h1>
 	<main>
 		<ul>
 			<MusicCard>
@@ -61,12 +62,3 @@ import MusicCard from '../components/MusicCard.astro';
 	}
 
 </style>
-<script>
-	document.addEventListener('click', (event) => {
-		document.querySelectorAll('details.auto-close').forEach((details) => {
-		if (details.open && !details.contains(event.target)) {
-			details.open = false;
-		}
-		});
-	});
-</script>

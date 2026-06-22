@@ -11,15 +11,16 @@ import LoadingScreen from '../components/LoadingScreen.astro';
 <html lang="nl">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<script defer src="/public/main.js"></script>
 	</head>
 	<body>
 		<LoadingScreen/>
 		<Header/>
 		<main>
 			<section class="screen">
-				<DesktopFolder url="/blogs" name="Weekly Nerd"/>
-				<DesktopFolder url="/leerdoelen" name="Leerdoelen"/>
-				<DesktopFolder url="/vakken" name="Vakken"/>
+				<DesktopFolder url="/blogs" name="Weekly Nerd" titleTrans="post-title"/>
+				<DesktopFolder url="/leerdoelen" name="Leerdoelen" titleTrans="leerdoelen-title"/>
+				<DesktopFolder url="/vakken" name="Vakken" titleTrans="vakken-title"/>
 				<details class="auto-close" name="open_one">
 					<summary>
 						<p>sprint0.md</p>
@@ -253,13 +254,3 @@ import LoadingScreen from '../components/LoadingScreen.astro';
 	}
 
 </style>
-
-<script>
-	document.addEventListener('click', (event) => {
-		document.querySelectorAll('details.auto-close').forEach((details) => {
-		if (details.open && !details.contains(event.target)) {
-			details.open = false;
-		}
-		});
-	});
-</script>

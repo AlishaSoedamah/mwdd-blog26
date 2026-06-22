@@ -2,9 +2,10 @@
 interface Props {
   url: string;
   name: string;
+  titleTrans: string;
 }
 
-const { url, name } = Astro.props;
+const { url, name, titleTrans } = Astro.props;
 ---
 
 <div class="popup">
@@ -12,7 +13,7 @@ const { url, name } = Astro.props;
 		<div class="desktop-folder">
 			<div class="index-tab"></div>
 		</div>
-		<p>{name}</p>
+		<p class={titleTrans}>{name}</p>
 	</a>
 </div>
 
@@ -23,7 +24,6 @@ const { url, name } = Astro.props;
 
 	.desktop-folder {
 		display: inline-block;
-		cursor: move;
 		background-color: var(--folder-color);
 		outline: 1px solid var(--off-black);
 		padding: 10px;

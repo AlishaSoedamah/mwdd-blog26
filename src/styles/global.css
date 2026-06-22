@@ -114,7 +114,7 @@ ul > li {
 
 .screen {
 	display: block;
-	padding-inline: 20px;
+	padding: 20px;
 }
 
 details {
@@ -221,17 +221,30 @@ img {
   view-transition-name: post-title;
 }
 
-.folder {
-	view-transition-name: folder-expand;
+.leerdoelen-title {
+  view-transition-name: post-leerdoelen;
 }
 
-.post-title { view-transition-name: post-title; }
-
-.folder { view-transition-name: folder-expand;}
+.vakken-title {
+  view-transition-name: post-vakken;
+}
 
 ::view-transition-old(post-title),
-::view-transition-new(post-title) {
-  animation-duration: .5s;
+::view-transition-new(post-title)
+{
+  animation-duration: .2s;
+}
+
+::view-transition-old(post-leerdoelen),
+::view-transition-new(post-leerdoelen)
+{
+  animation-duration: .2s;
+}
+
+::view-transition-old(post-vakken),
+::view-transition-new(post-vakken)
+{
+  animation-duration: .2s;
 }
 
 @media (max-width: 500px)
